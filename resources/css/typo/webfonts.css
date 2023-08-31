@@ -1,0 +1,20 @@
+/**
+ * Typography - Webfonts
+ * -----------------------------------------------------------------------------
+ */
+ 
+@font-face {
+  font-family: 'brockmann-semibold';
+  src: url('../fonts/brockmann-semibold.eot');
+  src: url('../fonts/brockmann-semibold.eot?iefix') format('eot'),url('../fonts/brockmann-semibold.woff') format('woff'),url('../fonts/brockmann-semibold.ttf') format('truetype'), url('../fonts/brockmann-semibold.svg#webfontDexzrqn6') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brockmann-regular';
+  src: url('../fonts/brockmann-regular.eot');
+  src: url('../fonts/brockmann-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/brockmann-regular.woff') format('woff'), url('../fonts/brockmann-regular.ttf') format('truetype'), url('../fonts/brockmann-regular.svg#DINLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
