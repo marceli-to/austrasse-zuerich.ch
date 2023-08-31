@@ -24,4 +24,4 @@
 @vite('resources/js/web/form/app.js')
 @endif --}}
 </head>
-<body class="antialised font-regular text-olive leading-snug">
+<body>

@@ -1,5 +1,17 @@
 @import "typo/webfonts.css";
+@import "components/heading.css";
+@import "components/pattern.css";
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply antialiased font-regular text-base lg:text-md xl:text-lg leading-6 lg:leading-7 text-olive;
+}
+
+p {
+  @apply mb-16 lg:mb-24;
+}
+
