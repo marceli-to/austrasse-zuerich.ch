@@ -20,3 +20,6 @@ Route::get('/gewerbe', [PageController::class, 'business'])->name('page.business
 Route::get('/angebot', [PageController::class, 'offer'])->name('page.offer');
 Route::get('/kontakt', [PageController::class, 'contact'])->name('page.contact');
 
+Route::get('/impressum', [PageController::class, 'imprint'])->name('page.imprint');
+Route::get('/datenschutz', [PageController::class, 'privacy'])->name('page.privacy');
+
