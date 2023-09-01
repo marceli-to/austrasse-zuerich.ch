@@ -15,3 +15,15 @@ p {
   @apply mb-16 lg:mb-24;
 }
 
+p:last-of-type {
+  @apply mb-0;
+}
+
+.marker {
+  background-image: url('../icons/marker.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 50px;
+  width: 40px;
+}

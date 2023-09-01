@@ -1,5 +1,5 @@
 @layer base {
-  h1 {
-    @apply font-semi font-semibold text-2xl lg:text-4xl xl:text-5xl leading-8;
+  h1, h2 {
+    @apply font-semi font-semibold text-2xl lg:text-4xl xl:text-5xl leading-8 mb-16 lg:mb-32;
   }
 }

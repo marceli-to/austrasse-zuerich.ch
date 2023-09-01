@@ -3,7 +3,7 @@
   <a 
     href="{{ route($route) }}" 
     title="{{ $title }}" 
-    class="lowercase text-md block py-2 xl:text-lg md:mr-20 xl:mr-28 hover:text-serene transition-colors">
+    class="block py-2 lowercase text-md xl:text-lg md:mr-20 xl:mr-28 hover:text-serene transition-colors">
     {{ $title }}
   </a>
 </li>
