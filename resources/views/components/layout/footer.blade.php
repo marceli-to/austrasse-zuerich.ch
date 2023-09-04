@@ -1,9 +1,7 @@
 @if (!Route::is('page.privacy') && !Route::is('page.imprint'))
-  @if (!App::environment('local'))
-  <x-layout.section class="relative !p-0">
-    <x-misc.map />
-  </x-layout.section>
-  @endif
+<x-layout.section class="relative !p-0">
+  <x-misc.map />
+</x-layout.section>
 @endif
 <footer class="bg-olive leading-6">
   <x-layout.section>

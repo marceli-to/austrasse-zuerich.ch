@@ -2,13 +2,16 @@
 @import "components/heading.css";
 @import "components/pattern.css";
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply antialiased font-regular text-base lg:text-md xl:text-lg leading-5 lg:leading-6 text-olive;
+  @apply antialiased font-regular text-base lg:text-md xl:text-lg leading-5 lg:leading-6 text-olive flex min-h-full flex-col;
+}
+
+main {
+  @apply flex-1;
 }
 
 p {
@@ -27,6 +30,10 @@ main ul {
   @apply m-0 p-0 mb-16 lg:mb-20;
 }
 
+main ul:last-child {
+  @apply mb-0;
+}
+
 main ul li {
   @apply list-item list-disc ml-20;
 }
@@ -38,4 +45,26 @@ main ul li {
   cursor: pointer;
   height: 50px;
   width: 40px;
+}
+
+.fancybox__backdrop {
+  @apply !bg-olive;
+}
+
+.fancybox__toolbar {
+  @apply !p-16;
+}
+
+.fancybox__content {
+  @apply !px-4 md:!px-12 xl:!px-48
+}
+
+.fancybox__nav .f-button,
+.fancybox__toolbar .f-button {
+  @apply rounded-full;
+}
+
+.fancybox__nav .f-button svg,
+.fancybox__toolbar .f-button svg {
+  @apply text-white;
 }

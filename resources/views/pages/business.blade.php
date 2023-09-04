@@ -1,7 +1,7 @@
 @extends('app')
 @section('seo_title', 'Gewerbe')
 @section('content')
-<x-layout.section class="bg-serene relative !p-0">
+<x-layout.section class="bg-serene !p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />
   <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
     <h1>Gewerbe</h1>
@@ -16,7 +16,9 @@
         <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
       </x-layout.span>
       <x-layout.span>
-        <x-media.picture :image="'austrasse_zuerich_eingang'" :alt="'Austrasse Zürich – Eingang'" />
+        <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_eingang'" :alt="'Austrasse Zürich – Eingang'" />
+        </a>
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>

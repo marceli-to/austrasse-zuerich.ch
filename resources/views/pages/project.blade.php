@@ -1,7 +1,7 @@
 @extends('app')
 @section('seo_title', 'Projekt')
 @section('content')
-<x-layout.section class="bg-serene relative !p-0">
+<x-layout.section class="bg-serene !p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[20%] xl:w-[25%]" />
   <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
     <h1>Projekt</h1>
@@ -13,7 +13,9 @@
         <p>Zudem ist ein Supermarkt wie auch das Seebad nur wenige Gehminuten von der Liegenschaft entfernt. Das Schulareal von Sempach mit Kindergarten, Primar- und Sekundarschule ist ebenfalls in sicherer Gehdistanz zu erreichen.</p>
       </x-layout.span>
       <x-layout.span>
-        <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" />
+        <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" />
+        </a>
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>
@@ -25,7 +27,7 @@
       <x-layout.span>
         <p>Die Überbauung «Austrasse, Zürich» entsteht im beliebten Kreis 3 im Quartier Alt-Wiedikon. Hier finden Sie alles, was Sie brauchen. Von vielfältigen Einkaufsmöglichkeiten und Gastronomieangeboten, bis hin zu Sporteinrichtungen und Schulen.</p>
         <p>Die drei Gebäude befinden sich zurückversetzt in einer ruhigen 30er-Zone. Der Uetliberg oder der Zürichsee als Naherholungsgebiete lassen sich mit dem Fahrrad in einer angenehmen Fahrzeit erreichen. Nutzer des öffentlichen Verkehrs profitieren von den sehr guten Anschlüssen am Bahnhof Binz, welcher sich in unmittelbarer Nähe befindet. Mit dem Zug erreicht man den Hauptbahnhof Zürich in 13 Fahrminuten. Die Nähe zur Autobahn macht die Lage auch für Automobilisten attraktiv.</p>
-        <div class="mt-20 lg:mt-40 flex sm:gap-24 lg:gap-32">
+        <div class="mt-20 lg:mt-32 flex sm:gap-24">
           <a
            href=""
            title="Situationsplan"
@@ -45,8 +47,12 @@
         </div>
       </x-layout.span>
       <x-layout.span>
-        <x-media.picture :image="'austrasse_zuerich_situationsplan'" :format="'.png'" :alt="'Austrasse Zürich – Situationsplan'" />
-        <x-media.picture :image="'austrasse_zuerich_distanzen'" :format="'.png'" :alt="'Austrasse Zürich – Distanzen'" class="mt-20 lg:mt-40" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_situationsplan-lg.png">
+          <x-media.picture :image="'austrasse_zuerich_situationsplan'" :format="'.png'" :alt="'Austrasse Zürich – Situationsplan'" />
+        </a>
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_distanzen-lg.png">
+          <x-media.picture :image="'austrasse_zuerich_distanzen'" :format="'.png'" :alt="'Austrasse Zürich – Distanzen'" class="mt-20 lg:mt-40" />
+        </a>
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>
