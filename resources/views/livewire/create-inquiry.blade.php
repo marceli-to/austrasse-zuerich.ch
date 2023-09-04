@@ -4,13 +4,12 @@
       <div class="bg-green-600 text-white font-semi py-10 px-15 pr-25 fixed top-10 left-10 inline-block w-auto z-50">
         <div class="relative">
           <a href="javascript:;" x-on:click="open = false">Vielen Dank, wir haben Ihre Anfrage erhalten.
-            <x-icons.cross class="w-16 h-16 absolute -top-5 -right-20" />
+            <x-icons.cross class="w-15 h-15 absolute -top-5 -right-20" />
           </a>
         </div>
       </div>
     </div>
   @endif
-
 
   <div class="mt-24 mb-16 lg:mb-20">
     <p><strong>Ich interessiere mich für folgenden Gewerberaum (bitte auswählen):</strong></p>
@@ -19,7 +18,7 @@
     <x-honeypot />
 
     <x-layout.span class="relative">
-      <strong class="flex">
+      <strong class="flex mb-4">
         Austrasse 46
         @error('interest')
           <x-form.error 
@@ -30,22 +29,22 @@
       </strong>
       <div class="flex">
         <div class="flex items-start">
-          <x-form.checkbox name="interest" value="A46-76.3" isWire="true" class="mt-5" id="interest-763" />
+          <x-form.checkbox name="interest" value="A46-76.3" isWire="true" class="mt-2 lg:mt-3" id="interest-763" />
           <x-form.label for="interest-763">76.3 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A46-58.8" isWire="true" class="mt-5" id="interest-588" />
+          <x-form.checkbox name="interest" value="A46-58.8" isWire="true" class="mt-2 lg:mt-3" id="interest-588" />
           <x-form.label for="interest-588">58.8 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A46-105.2" isWire="true" class="mt-5" id="interest-1052" />
+          <x-form.checkbox name="interest" value="A46-105.2" isWire="true" class="mt-2 lg:mt-3" id="interest-1052" />
           <x-form.label for="interest-1052">105.2 m<sup>2</sup></x-form.label>
         </div>
       </div>
     </x-layout.span>
 
     <x-layout.span class="relative">
-      <strong class="flex">
+      <strong class="flex mb-4">
         Austrasse 48
         @error('interest')
           <x-form.error 
@@ -56,15 +55,15 @@
       </strong>
       <div class="flex">
         <div class="flex items-start">
-          <x-form.checkbox name="interest" value="A48-76.7" isWire="true" class="mt-5" id="interest-767" />
+          <x-form.checkbox name="interest" value="A48-76.7" isWire="true" class="mt-2 lg:mt-3" id="interest-767" />
           <x-form.label for="interest-767">76.7 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A48-58.6" isWire="true" class="mt-5" id="interest-586" />
+          <x-form.checkbox name="interest" value="A48-58.6" isWire="true" class="mt-2 lg:mt-3" id="interest-586" />
           <x-form.label for="interest-586">58.6 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A48-90.5" isWire="true" class="mt-5" id="interest-905" />
+          <x-form.checkbox name="interest" value="A48-90.5" isWire="true" class="mt-2 lg:mt-3" id="interest-905" />
           <x-form.label for="interest-905">90.5 m<sup>2</sup></x-form.label>
         </div>
       </div>
@@ -117,19 +116,19 @@
           />
       @enderror
       <div class="flex items-start">
-        <x-form.checkbox name="privacy" id="privacy" isWire="true" class="mt-5" />
+        <x-form.checkbox name="privacy" id="privacy" isWire="true" class="mt-2 lg:mt-3" />
         <x-form.label for="privacy">
           Ich habe die <a href="{{ route('page.privacy') }}" title="Datenschutzerklärung" target="_blank" class="hover:underline underline-offset-2 decoration-1">Datenschutzerklärung</a> gelesen und akzeptiere diese
         </x-form.label>
       </div>
     </x-layout.span>
     <x-layout.span class="sm:col-span-12 mt-15">
-      <button type="submit" class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+      <x-form.button>
         <div wire:loading>
           <x-form.spinner class="mr-12 text-white" />
         </div>
         Senden
-      </button>
+      </x-form.button>
     </x-layout.span>
   </x-layout.grid>
 </form>

@@ -1,12 +1,13 @@
-@props(['image', 'alt' => ''])
+@props(['image', 'alt' => '', 'format' => '.jpg'])
 <picture class="w-full">
-  <source media="(min-width: 768px)" srcset="/media/img/{{ $image }}.jpg">
-  <source srcset="/media/img/{{ $image }}-sm.jpg">
+  <source media="(min-width: 768px)" srcset="/media/img/{{ $image }}{{ $format }}">
+  <source srcset="/media/img/{{ $image }}-sm{{ $format }}">
   <img 
-    src="/media/img/{{ $image }}-sm.jpg" 
+    src="/media/img/{{ $image }}-sm{{ $format }}" 
     alt="{{ $alt }}" 
     title="{{ $alt }}" 
     height="1600" 
-    width="1050" 
+    width="1050"
+    loading="lazy"
     {{ $attributes->merge(['class' => 'block w-full object-cover']) }}>
 </picture>
