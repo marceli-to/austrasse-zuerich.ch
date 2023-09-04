@@ -1,4 +1,4 @@
-@extends('web.app')
+@extends('app')
 @section('seo_title', 'Home')
 @section('content')
 <x-layout.section class="relative !p-0">
@@ -6,7 +6,7 @@
   <x-layout.inner>
     <div class="flex relative pl-105 md:pl-[203px] lg:pl-[245px]">
       <x-icons.bubble-claim class="absolute -bottom-20 lg:-bottom-30 xl:-bottom-40 left-16 lg:left-20 xl:left-0 w-116 sm:w-200 lg:w-[260px] xl:w-[320px] h-auto" />
-      <x-media.picture :image="'austrasse_zuerich_aussicht'" :alt="'Austrasse Zürich – Aussicht'" />
+      <x-media.picture :image="'austrasse_zuerich_aussicht'" :alt="'Austrasse Zürich – Aussicht'" class="aspect-[16/8] md:aspect-[16/7]" />
     </div>
   </x-layout.inner>
 </x-layout.section>

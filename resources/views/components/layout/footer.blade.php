@@ -1,6 +1,10 @@
-<x-layout.section class="!p-0">
-  <x-misc.map />
-</x-layout.section>
+@if (!Route::is('page.privacy') && !Route::is('page.imprint'))
+  @if (!App::environment('local'))
+  <x-layout.section class="relative !p-0">
+    <x-misc.map />
+  </x-layout.section>
+  @endif
+@endif
 <footer class="bg-olive leading-6">
   <x-layout.section>
     <x-layout.inner>
@@ -15,10 +19,10 @@
           <nav class="text-white">
             <ul>
               <li>
-                <a href="{{ route('page.imprint') }}" title="Impressum" class="hover:text-serene transition-colors">Impressum</a>
+                <a href="{{ route('page.imprint') }}" title="Impressum" class="{{ Route::is('page.imprint') ? 'text-serene' : '' }} hover:text-serene transition-colors">Impressum</a>
               </li>
               <li>
-                <a href="{{ route('page.privacy') }}" title="Datenschutz" class="hover:text-serene transition-colors">Datenschutz</a>
+                <a href="{{ route('page.privacy') }}" title="Datenschutz" class="{{ Route::is('page.privacy') ? 'text-serene' : '' }} hover:text-serene transition-colors">Datenschutz</a>
               </li>
               <li>
                 <a href="https://stoz.ch" target="_blank" title="stoz.ch" rel="noopener" class="hover:text-serene transition-colors">design by stoz</a>
