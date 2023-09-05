@@ -48,7 +48,7 @@ main ul li {
 }
 
 .fancybox__backdrop {
-  @apply !bg-olive;
+  @apply !bg-olive bg-opacity-80;
 }
 
 .fancybox__toolbar {
@@ -56,12 +56,12 @@ main ul li {
 }
 
 .fancybox__content {
-  @apply !px-4 md:!px-12 xl:!px-48
+  @apply !px-4 md:!px-12 lg:!px-24 xl:!px-48
 }
 
 .fancybox__nav .f-button,
 .fancybox__toolbar .f-button {
-  @apply rounded-full;
+  @apply !bg-transparent !border-none !p-0 h-24 w-24;
 }
 
 .fancybox__nav .f-button svg,

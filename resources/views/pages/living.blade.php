@@ -16,10 +16,10 @@
         <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
       </x-layout.span>
       <x-layout.span>
-        <a data-fancybox href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_wohnzimmer'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
-        <a data-fancybox href="/media/img/austrasse_zuerich_eingang-lg.jpg">
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_eingang-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_eingang'" :alt="'Austrasse Zürich – Eingang'" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>

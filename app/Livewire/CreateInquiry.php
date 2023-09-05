@@ -3,6 +3,8 @@ namespace App\Livewire;
 use Livewire\Attributes\Rule; 
 use Livewire\Component;
 use App\Models\Inquiry;
+use App\Notifications\InquiryOwnerEmail;
+use App\Notifications\InquiryUserEmail;
 
 class CreateInquiry extends Component
 {
@@ -50,6 +52,9 @@ class CreateInquiry extends Component
     $interest_string = implode(', ', $this->interest);
     $inquiry->interest = $interest_string;
     $inquiry->save();
+
+    Notification::route('mail', env('MAIL_TO'))->notify(new InquiryOwnerEmail($inquiry));
+    Notification::route('mail', $request->input('email'))->notify(new InquiryUserEmail($inquiry));
 
     session()->flash('status', 'Inquiry was submitted');
     $this->reset();
