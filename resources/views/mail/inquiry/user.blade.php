@@ -1,10 +1,6 @@
 <x-mail::message>
-  <div class="text-base font-regular pb-large">
-    Vielen Dank für Deine Anmeldung für
-    <div class="font-bold">{{ $data->event }}</div>
-  </div>
   <div class="text-base pb-base">
-    Nachfolgend eine Zusammenfassung Deiner Angaben:
+    Vielen Dank für Ihr Interesse.<br>Nachfolgend eine Zusammenfassung Ihrer Angaben:
   </div>
   <div class="text-base pb-base">
     <strong>Vorname</strong><br>
@@ -15,6 +11,14 @@
     {{ $data->name }}
   </div>
   <div class="text-base pb-base">
+    <strong>Strasse/Nr.</strong><br>
+    {{ $data->street }}
+  </div>
+  <div class="text-base pb-base">
+    <strong>PLZ/Ort</strong><br>
+    {{ $data->location }}
+  </div>
+  <div class="text-base pb-base">
     <strong>E-Mail</strong><br>
     {{ $data->email }}
   </div>
@@ -23,7 +27,7 @@
     {{ $data->phone }}
   </div>
   <div class="text-base pb-base">
-    <strong>Nachricht</strong><br>
-    {!! nl2br($data->message) !!}
+    <strong>Gewerberaum</strong><br>
+    {{ $data->interest }}
   </div>
 </x-mail::message>

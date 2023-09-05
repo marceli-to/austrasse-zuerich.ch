@@ -4,9 +4,9 @@
 <tr>
 <td class="content-cell" align="left">
 <div class="text-base pb-base">
-<strong>PS DRIVE ACADEMY<br>PATRICK STEINER</strong><br>
-Zihlstrasse 46b<br>
-8340 Hinwil
+<strong>Apleona Schweiz AG</strong><br>
+Industriestrasse 21<br>
+8304 Wallisellen
 </div>
 </td>
 </tr>

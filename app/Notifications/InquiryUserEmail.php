@@ -39,8 +39,8 @@ class InquiryUserEmail extends Notification
   public function toMail($notifiable)
   {
     return (new MailMessage)
-      ->from('ps@drive-academy.ch')
-      ->subject('Anmeldung drive-academy.ch')
+      ->from('noreply@austrasse-zuerich.ch')
+      ->subject('Ihre Anmeldung Gewerberaum Austrasse Zürich')
       ->markdown('mail.inquiry.user', ['data' => $this->data]);
   }
 

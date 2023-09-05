@@ -4,7 +4,7 @@
       <div class="bg-green-600 text-white font-semi py-10 px-15 pr-25 fixed top-10 left-10 inline-block w-auto z-50">
         <div class="relative">
           <a href="javascript:;" x-on:click="open = false">Vielen Dank, wir haben Ihre Anfrage erhalten.
-            <x-icons.cross class="w-15 h-15 absolute -top-5 -right-20" />
+            <x-icons.cross class="!w-15 !h-15 absolute -top-5 -right-20" />
           </a>
         </div>
       </div>
@@ -29,15 +29,15 @@
       </strong>
       <div class="flex">
         <div class="flex items-start">
-          <x-form.checkbox name="interest" value="A46-76.3" isWire="true" class="mt-2 lg:mt-3" id="interest-763" />
+          <x-form.checkbox name="interest" value="Austrasse 46, 76.3m2" isWire="true" class="mt-2 lg:mt-3" id="interest-763" />
           <x-form.label for="interest-763">76.3 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A46-58.8" isWire="true" class="mt-2 lg:mt-3" id="interest-588" />
+          <x-form.checkbox name="interest" value="Austrasse 46, 58.8m2" isWire="true" class="mt-2 lg:mt-3" id="interest-588" />
           <x-form.label for="interest-588">58.8 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A46-105.2" isWire="true" class="mt-2 lg:mt-3" id="interest-1052" />
+          <x-form.checkbox name="interest" value="Austrasse 46, 105.2m2" isWire="true" class="mt-2 lg:mt-3" id="interest-1052" />
           <x-form.label for="interest-1052">105.2 m<sup>2</sup></x-form.label>
         </div>
       </div>
@@ -55,15 +55,15 @@
       </strong>
       <div class="flex">
         <div class="flex items-start">
-          <x-form.checkbox name="interest" value="A48-76.7" isWire="true" class="mt-2 lg:mt-3" id="interest-767" />
+          <x-form.checkbox name="interest" value="Austrasse 48, 76.7m2" isWire="true" class="mt-2 lg:mt-3" id="interest-767" />
           <x-form.label for="interest-767">76.7 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A48-58.6" isWire="true" class="mt-2 lg:mt-3" id="interest-586" />
+          <x-form.checkbox name="interest" value="Austrasse 48, 58.6m2" isWire="true" class="mt-2 lg:mt-3" id="interest-586" />
           <x-form.label for="interest-586">58.6 m<sup>2</sup></x-form.label>
         </div>
         <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="A48-90.5" isWire="true" class="mt-2 lg:mt-3" id="interest-905" />
+          <x-form.checkbox name="interest" value="Austrasse 48, 90.5m2" isWire="true" class="mt-2 lg:mt-3" id="interest-905" />
           <x-form.label for="interest-905">90.5 m<sup>2</sup></x-form.label>
         </div>
       </div>
