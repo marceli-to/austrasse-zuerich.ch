@@ -19,6 +19,7 @@ Route::view('/gewerbe', 'pages.business')->name('page.business');
 Route::view('/wohnen', 'pages.living')->name('page.living');
 Route::view('/kontakt', 'pages.contact')->name('page.contact');
 Route::view('/projekt',  'pages.project')->name('page.project');
+Route::view('/qa',  'pages.qa')->name('page.qa');
 Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 

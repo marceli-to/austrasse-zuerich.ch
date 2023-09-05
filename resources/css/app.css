@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 body {
-  @apply antialiased font-regular text-base lg:text-md xl:text-lg leading-5 lg:leading-6 text-olive flex min-h-full flex-col;
+  @apply antialiased font-regular text-base lg:text-md xl:text-lg leading-5 lg:leading-6 text-olive flex min-h-full flex-col overflow-y-scroll;
 }
 
 main {

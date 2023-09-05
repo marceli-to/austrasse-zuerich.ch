@@ -4,6 +4,7 @@
     <x-menu.item :route="'page.living'" :title="'Wohnen'" class="{{ Route::is('page.living') ? 'text-serene' : '' }}" />
     <x-menu.item :route="'page.business'" :title="'Gewerbe'" class="{{ Route::is('page.business') ? 'text-serene' : '' }}" />
     <x-menu.item :route="'page.offer'" :title="'Angebot'" class="{{ Route::is('page.offer') ? 'text-serene' : '' }}" />
+    <x-menu.item :route="'page.qa'" :title="'Q&A'" class="{{ Route::is('page.qa') ? 'text-serene' : '' }}" />
     <x-menu.item :route="'page.contact'" :title="'Kontakt'" class="{{ Route::is('page.contact') ? 'text-serene' : '' }}" />
   </ul>
 </nav>
