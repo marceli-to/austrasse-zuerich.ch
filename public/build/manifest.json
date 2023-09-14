@@ -1,0 +1,47 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-823a9569.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/fonts/brockmann-regular.eot": {
+    "file": "assets/brockmann-regular-41e7b2ff.eot",
+    "src": "resources/fonts/brockmann-regular.eot"
+  },
+  "resources/fonts/brockmann-regular.ttf": {
+    "file": "assets/brockmann-regular-e54fcf87.ttf",
+    "src": "resources/fonts/brockmann-regular.ttf"
+  },
+  "resources/fonts/brockmann-regular.woff": {
+    "file": "assets/brockmann-regular-4702d028.woff",
+    "src": "resources/fonts/brockmann-regular.woff"
+  },
+  "resources/fonts/brockmann-semibold.eot": {
+    "file": "assets/brockmann-semibold-36170ab5.eot",
+    "src": "resources/fonts/brockmann-semibold.eot"
+  },
+  "resources/fonts/brockmann-semibold.ttf": {
+    "file": "assets/brockmann-semibold-b019df72.ttf",
+    "src": "resources/fonts/brockmann-semibold.ttf"
+  },
+  "resources/fonts/brockmann-semibold.woff": {
+    "file": "assets/brockmann-semibold-7f37e9eb.woff",
+    "src": "resources/fonts/brockmann-semibold.woff"
+  },
+  "resources/icons/marker.svg": {
+    "file": "assets/marker-fabcc393.svg",
+    "src": "resources/icons/marker.svg"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-4e10d3fe.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-4e10d3fe.css"
+    ],
+    "file": "assets/app-c857108c.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
