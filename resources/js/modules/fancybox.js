@@ -1,6 +1,5 @@
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
-
 Fancybox.bind('[data-fancybox]', {
   hideScrollbar: false,
   Images: {
@@ -14,5 +13,4 @@ Fancybox.bind('[data-fancybox]', {
       right: ['close'],
     },
   },
-
 });

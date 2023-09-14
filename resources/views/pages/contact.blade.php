@@ -9,7 +9,7 @@
       <x-layout.span class="sm:!col-span-8">
         <p><strong>Herzlichen Dank für Ihr Interesse</strong><br>Bei Fragen hilft Ihnen unser Q&A gerne weiter.<br>Für Anmeldungen bitte unter Angebot entsprechende Wohnung auswählen und über Flatfox Ihre Bewerbung einreichen.</p>
         <div class="mt-20 lg:mt-32 flex sm:gap-24">
-          <a href="" title="Q&A" class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:text-serene transition-colors">
+          <a href="{{ route('page.qa') }}" title="Q&A" class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:text-serene transition-colors">
             Q&A
           </a>
           <a href="https://www.sbb.ch/de" title="Flatfox" target="_blank" rel="noopener noreferrer" class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:text-serene transition-colors">

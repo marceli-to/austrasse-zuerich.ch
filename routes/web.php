@@ -16,6 +16,7 @@ use App\Http\Controllers\PageController;
 // Route::get('/', [PageController::class, 'index'])->name('page.home');
 Route::view('/', 'pages.home')->name('page.home');
 Route::view('/gewerbe', 'pages.business')->name('page.business');
+Route::view('/angebot', 'pages.offer')->name('page.offer');
 Route::view('/wohnen', 'pages.living')->name('page.living');
 Route::view('/kontakt', 'pages.contact')->name('page.contact');
 Route::view('/projekt',  'pages.project')->name('page.project');
@@ -23,7 +24,7 @@ Route::view('/qa',  'pages.qa')->name('page.qa');
 Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 
-Route::get('/angebot', [PageController::class, 'offer'])->name('page.offer');
+// Route::get('/angebot', [PageController::class, 'offer'])->name('page.offer');
 
 
 
