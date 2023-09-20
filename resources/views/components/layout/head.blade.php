@@ -22,4 +22,6 @@
 @livewireStyles
 </head>
 <body class="bg-serene">
+@if (!Route::is('page.qa'))
 <x-misc.cta />
+@endif
