@@ -2,7 +2,7 @@
 @section('seo_title', 'Q&A')
 @section('content')
 <div x-data="{ selected: 0 }">
-  <x-layout.section class="bg-serene !p-0">
+  <x-layout.section class="!p-0">
     <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />
     <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
       <h1>Wobei können wir Ihnen helfen?</h1>
@@ -14,7 +14,7 @@
       </div>
     </x-layout.inner>
   </x-layout.section>
-  <x-layout.section>
+  <x-layout.section class="bg-white">
     <x-layout.inner>
 
       <x-accordeon.wrapper :index="1">

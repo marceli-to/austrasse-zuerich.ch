@@ -24,4 +24,4 @@
 @vite('resources/js/web/form/app.js')
 @endif --}}
 </head>
-<body>
+<body class="bg-serene">

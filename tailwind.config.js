@@ -15,6 +15,7 @@ export default {
       colors: {
         'olive': '#49543d',
         'serene': '#b3cb9b',
+        'sage': '#A4AA9E',
       },
 
       fontFamily: {

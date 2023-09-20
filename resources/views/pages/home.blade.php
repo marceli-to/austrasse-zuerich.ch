@@ -1,17 +1,17 @@
 @extends('app')
 @section('seo_title', 'Home')
 @section('content')
-<x-layout.section class="relative !p-0">
+<x-layout.section class="bg-white relative !p-0">
   <x-misc.pattern />
   <x-layout.inner>
     <div class="flex relative pl-105 md:pl-[203px] lg:pl-[245px]">
-      <x-icons.bubble-claim class="absolute -bottom-20 lg:-bottom-30 xl:-bottom-40 left-16 lg:left-20 xl:left-0 w-116 sm:w-200 lg:w-[260px] xl:w-[320px] h-auto" />
+      <x-icons.bubble-claim class="absolute z-50 -bottom-20 lg:-bottom-30 xl:-bottom-40 left-16 lg:left-20 xl:left-0 w-116 sm:w-200 lg:w-[260px] xl:w-[320px] h-auto" />
       <x-media.picture :image="'austrasse_zuerich_aussicht'" :alt="'Austrasse Zürich – Aussicht'" class="aspect-[16/8] md:aspect-[16/7]" />
     </div>
   </x-layout.inner>
 </x-layout.section>
 
-<x-layout.section class="pt-35 xl:pt-70">
+<x-layout.section class="bg-white pt-35 xl:pt-70">
   <x-layout.inner>
     <div class="lg:max-w-3xl xl:max-w-4xl">
       <div class="mb-32">
@@ -24,7 +24,7 @@
   </x-layout.inner>
 </x-layout.section>
 
-<x-layout.section class="bg-serene">
+<x-layout.section>
   <x-layout.inner>
     <x-layout.grid>
       <x-layout.span class="sm:col-span-8">
@@ -43,7 +43,7 @@
   </x-layout.inner>
 </x-layout.section>
 
-<x-layout.section>
+<x-layout.section class="bg-white">
   <x-layout.inner>
     <x-layout.grid class="grid grid-cols-12 gap-15">
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">

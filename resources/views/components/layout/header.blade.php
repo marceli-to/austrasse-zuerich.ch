@@ -1,5 +1,5 @@
 <header class="bg-white h-74 md:h-125 w-full sticky top-0 z-50 p-20 lg:px-40">
-  <x-layout.inner class="h-full flex justify-between md:items-center" x-data="{ menu: false }" >
+  <x-layout.inner class="h-full flex justify-between md:items-center" x-data="{ menu: false }">
     <x-menu.button class="md:hidden" />
     <x-menu.wrapper />
     <a href="{{ route('page.home') }}" title="Startseite / {{ env('APP_NAME') }}" class="flex items-center justify-center">

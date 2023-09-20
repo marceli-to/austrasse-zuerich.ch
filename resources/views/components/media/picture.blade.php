@@ -1,6 +1,6 @@
 @props(['image', 'alt' => '', 'format' => '.jpg'])
 <picture class="w-full">
-  <source media="(min-width: 768px)" srcset="/media/img/{{ $image }}{{ $format }}">
+  <source media="(min-width: 768px)" srcset="/media/img/{{ $image }}-lg{{ $format }}">
   <source srcset="/media/img/{{ $image }}-sm{{ $format }}">
   <img 
     src="/media/img/{{ $image }}-sm{{ $format }}" 

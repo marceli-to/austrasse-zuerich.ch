@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-823a9569.css",
+    "file": "assets/app-d357e05d.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -27,6 +27,10 @@
   "resources/fonts/brockmann-semibold.woff": {
     "file": "assets/brockmann-semibold-7f37e9eb.woff",
     "src": "resources/fonts/brockmann-semibold.woff"
+  },
+  "resources/icons/chevron-down.svg": {
+    "file": "assets/chevron-down-3b95e92a.svg",
+    "src": "resources/icons/chevron-down.svg"
   },
   "resources/icons/marker.svg": {
     "file": "assets/marker-fabcc393.svg",

@@ -1,4 +1,3 @@
-@props(['for' => ''])
-<label for="{{ $for }}" class="ml-8 lg:ml-10 cursor-pointer select-none">
+<label {{ $attributes->merge(['class' => 'block mb-6']) }}>
   {{ $slot }}
 </label>

@@ -6,10 +6,10 @@
   <div class="flex items-center justify-between">
     <div>{{ $title }}</div>
     <template x-if="selected !== {{ $index }}">
-      <x-icons.chevron-up />
+      <x-icons.chevron-up class="text-olive" />
     </template>
     <template x-if="selected === {{ $index }}">
-      <x-icons.chevron-down />
+      <x-icons.chevron-down class="text-olive" />
     </template>
   </div>
 </button>

@@ -30,15 +30,15 @@
       <div class="flex">
         <div class="flex items-start">
           <x-form.checkbox name="interest" value="Austrasse 46, 76.3m2" isWire="true" class="mt-2 lg:mt-3" id="interest-763" />
-          <x-form.label for="interest-763">76.3 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-763">76.3 m<sup>2</sup></x-form.checkbox-label>
         </div>
         <div class="flex items-start ml-20">
           <x-form.checkbox name="interest" value="Austrasse 46, 58.8m2" isWire="true" class="mt-2 lg:mt-3" id="interest-588" />
-          <x-form.label for="interest-588">58.8 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-588">58.8 m<sup>2</sup></x-form.checkbox-label>
         </div>
         <div class="flex items-start ml-20">
           <x-form.checkbox name="interest" value="Austrasse 46, 105.2m2" isWire="true" class="mt-2 lg:mt-3" id="interest-1052" />
-          <x-form.label for="interest-1052">105.2 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-1052">105.2 m<sup>2</sup></x-form.checkbox-label>
         </div>
       </div>
     </x-layout.span>
@@ -56,15 +56,15 @@
       <div class="flex">
         <div class="flex items-start">
           <x-form.checkbox name="interest" value="Austrasse 48, 76.7m2" isWire="true" class="mt-2 lg:mt-3" id="interest-767" />
-          <x-form.label for="interest-767">76.7 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-767">76.7 m<sup>2</sup></x-form.checkbox-label>
         </div>
         <div class="flex items-start ml-20">
           <x-form.checkbox name="interest" value="Austrasse 48, 58.6m2" isWire="true" class="mt-2 lg:mt-3" id="interest-586" />
-          <x-form.label for="interest-586">58.6 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-586">58.6 m<sup>2</sup></x-form.checkbox-label>
         </div>
         <div class="flex items-start ml-20">
           <x-form.checkbox name="interest" value="Austrasse 48, 90.5m2" isWire="true" class="mt-2 lg:mt-3" id="interest-905" />
-          <x-form.label for="interest-905">90.5 m<sup>2</sup></x-form.label>
+          <x-form.checkbox-label for="interest-905">90.5 m<sup>2</sup></x-form.checkbox-label>
         </div>
       </div>
     </x-layout.span>
@@ -117,9 +117,9 @@
       @enderror
       <div class="flex items-start">
         <x-form.checkbox name="privacy" id="privacy" isWire="true" class="mt-2 lg:mt-3" />
-        <x-form.label for="privacy">
+        <x-form.checkbox-label for="privacy">
           Ich habe die <a href="{{ route('page.privacy') }}" title="Datenschutzerklärung" target="_blank" class="hover:underline underline-offset-2 decoration-1">Datenschutzerklärung</a> gelesen und akzeptiere diese
-        </x-form.label>
+        </x-form.checkbox-label>
       </div>
     </x-layout.span>
     <x-layout.span class="sm:col-span-12 mt-15">

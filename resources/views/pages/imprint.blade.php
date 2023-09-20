@@ -1,7 +1,7 @@
 @extends('app')
 @section('seo_title', 'Impressum')
 @section('content')
-<x-layout.section class="bg-serene">
+<x-layout.section>
   <x-layout.inner>
     <h1>Impressum</h1>
     <h2 class="text-base lg:text-md xl:text-lg mb-0">Inhaber der Website</h2>
