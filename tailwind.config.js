@@ -12,6 +12,10 @@ export default {
   theme: {
     extend: {
 
+      screens: {
+        'xs': '500px',
+      },
+
       colors: {
         'olive': '#49543d',
         'serene': '#b3cb9b',

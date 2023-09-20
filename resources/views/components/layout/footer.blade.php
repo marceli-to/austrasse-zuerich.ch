@@ -1,22 +1,12 @@
 @if (!Route::is('page.privacy') && !Route::is('page.imprint') && !Route::is('page.apartments'))
 <x-layout.section class="relative !p-0">
   <x-misc.map />
-  <x-layout.inner class="relative w-full">
-    <a href="{{ route('page.qa') }}">
-      <x-icons.bubble-q-and-a class="absolute z-[10000] -bottom-50 md:-bottom-75 xl:-bottom-90 right-0 md:right-20 xl:-right-100 w-145 sm:w-200 md:w-[240px] xl:w-[300px] h-auto" />
-    </a>
-  </x-layout.inner>
 </x-layout.section>
 @endif
 
 @if (Route::is('page.apartments'))
 <x-layout.section class="relative !p-0">
   <x-media.picture :image="'austrasse_zuerich-3d-modell'" :alt="'Austrasse Zürich – Wohnzimmer'" class="aspect-[16/9]" />
-  <x-layout.inner class="relative w-full">
-    <a href="{{ route('page.qa') }}">
-      <x-icons.bubble-q-and-a class="absolute z-[10000] -bottom-50 md:-bottom-75 xl:-bottom-90 right-0 md:right-20 xl:-right-100 w-145 sm:w-200 md:w-[240px] xl:w-[300px] h-auto" />
-    </a>
-  </x-layout.inner>
 </x-layout.section>
 @endif
 

@@ -20,8 +20,6 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 @vite('resources/css/app.css')
 @livewireStyles
-{{-- @if (request()->routeIs('page.contact'))
-@vite('resources/js/web/form/app.js')
-@endif --}}
 </head>
 <body class="bg-serene">
+<x-misc.cta />
