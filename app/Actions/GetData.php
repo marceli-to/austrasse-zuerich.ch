@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Storage;
 
 class GetData
 {
-  public function execute()
+  public function execute(): \Illuminate\Support\Collection
   { 
     // if there is no file or the existing file is older than 60 minutes, fetch new data
     if (
@@ -17,6 +17,6 @@ class GetData
     }
 
     $data = Storage::disk('public')->get('apartements.json');
-    return collect(json_decode($data, true))->sortBy('title'); 
+    return collect(json_decode($data, true)); 
   }
 }
