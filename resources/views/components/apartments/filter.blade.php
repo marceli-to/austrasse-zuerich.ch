@@ -18,6 +18,7 @@
       <div>
         <x-form.select class="js-filter-attribute" data-filterType="rooms">
           <option value="NULL">Alle Zimmer</option>
+          <option value="1.5">1.5</option>
           <option value="2.5">2.5</option>
           <option value="3.5">3.5</option>
           <option value="4.5">4.5</option>
