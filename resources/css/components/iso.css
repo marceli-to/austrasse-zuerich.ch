@@ -4,7 +4,7 @@
 .is-highlighted .iso-b2-cls-3,
 .is-highlighted .iso-b3-cls-2,
 .is-highlighted .iso-b3-cls-3 {
-  @apply !fill-yellow-400 transition-all duration-100;
+  @apply !fill-pink-500 transition-all duration-100;
 }
 
 [data-iso-structure], 
@@ -13,11 +13,11 @@
 }
 
 .is-up {
-  @apply transform -translate-y-[10%] transition-transform duration-300;
+  @apply transform -translate-y-[12%] transition-transform duration-300;
 }
 
 .is-down {
-  @apply transform translate-y-[10%] transition-transform duration-300;
+  @apply transform translate-y-[12%] transition-transform duration-300;
 }
 
 /** 
