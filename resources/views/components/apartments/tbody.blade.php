@@ -7,7 +7,7 @@
       data-floor="{{ $apartment['floor'] ? config('apartment.floors_filter')[$apartment['floor']] : 'null' }}"
       data-building="{{ $building }}"
       data-state=""
-      data-rooms="{{ $apartment['number_of_rooms'] }}"
+      data-rooms="{{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}"
       data-plan=""
       data-form=""
       data-area="{{ $apartment['surface_living'] }}"
@@ -18,35 +18,53 @@
         {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}
       </td>
       <td>
-        {{-- {{ config('apartment.floors')[$apartment['floor']] }} --}}
+        {{ $apartment['floor'] != null ? config('apartment.floors')[$apartment['floor']] : 'EG' }}
       </td>
       <td>
-        {{ $apartment['number_of_rooms'] }}
+        {{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}
       </td>
       <td>
-        {{ $apartment['surface_living'] }}
+        {{ $apartment['surface_living'] == null ? '–' : $apartment['surface_living'] }}
       </td>
       <td class="!text-right">
-        {{ number_format($apartment['rent_net'], 2, '.', '') }}
+        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
+          {{ number_format($apartment['rent_net'], 2, '.', '') }}
+        @else
+          –
+        @endif
       </td>
       <td class="!text-right">
-        {{ number_format($apartment['rent_charges'], 2, '.', '') }}
+        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
+          {{ number_format($apartment['rent_charges'], 2, '.', '') }}
+        @else
+          –
+        @endif
       </td>
       <td class="!text-right !pr-18">
-        {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }}
+        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
+          {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }}
+        @else
+          –
+        @endif
       </td>
       <td class="!text-center !py-0">
-        <a href="" title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" class="w-full h-full p-6 flex items-center justify-center">
-          <x-icons.download class="-mt-1" />
-        </a>
+        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
+          <a href="" title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" class="w-full h-full p-6 flex items-center justify-center">
+            <x-icons.download class="-mt-1" />
+          </a>
+        @endif
       </td>
       <td class="!text-right !pr-0">
+        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
         <a 
           href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
           target="_blank"
           class="font-semi font-semibold hover:underline hover:underline-offset-2">
           Flatfox
         </a>
+        @else
+          {{ App\Helpers\ApartmentHelper::getState($apartment) }}
+        @endif
       </td>
     </tr>
   @endforeach

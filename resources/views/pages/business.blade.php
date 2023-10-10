@@ -32,7 +32,7 @@
         </div>
       </x-layout.span>
       <x-layout.span class="md:col-span-7 lg:col-span-7 xl:col-span-6 md:-mt-80 lg:-mt-100">
-        <x-apartments.wrapper number="3" address="'Austrasse 46/48'">
+        <x-apartments.wrapper number="3" address="Austrasse 46/48">
           <x-apartments.table :apartments="$apartments" building="3" />
         </x-apartments.wrapper>
       </x-layout.span>
