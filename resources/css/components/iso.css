@@ -4,11 +4,11 @@
 .is-highlighted .iso-b2-cls-3,
 .is-highlighted .iso-b3-cls-2,
 .is-highlighted .iso-b3-cls-3 {
-  @apply !fill-yellow-400;
-  opacity: 1 !important;
+  @apply !fill-yellow-400 transition-all duration-100;
 }
 
-[data-iso-structure], [data-iso-item] {
+[data-iso-structure], 
+[data-iso-item] {
   @apply transform translate-y-0 transition-transform duration-150;
 }
 
