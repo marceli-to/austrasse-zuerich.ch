@@ -1,6 +1,7 @@
 @import "typo/webfonts.css";
 @import "components/heading.css";
 @import "components/pattern.css";
+@import "components/iso.css";
 
 @tailwind base;
 @tailwind components;

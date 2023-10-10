@@ -1,0 +1,143 @@
+.is-highlighted .iso-b1-cls-2,
+.is-highlighted .iso-b1-cls-1,
+.is-highlighted .iso-b2-cls-2,
+.is-highlighted .iso-b2-cls-3,
+.is-highlighted .iso-b3-cls-2,
+.is-highlighted .iso-b3-cls-3 {
+  @apply !fill-yellow-400;
+  opacity: 1 !important;
+}
+
+[data-iso-structure], [data-iso-item] {
+  @apply transform translate-y-0 transition-transform duration-150;
+}
+
+.is-up {
+  @apply transform -translate-y-[10%] transition-transform duration-300;
+}
+
+.is-down {
+  @apply transform translate-y-[10%] transition-transform duration-300;
+}
+
+/** 
+.is-opaque .iso-b1-cls-2,
+.is-opaque .iso-b1-cls-1 {
+  opacity: .1;
+}
+
+/* match all items that are inside [data-iso-structure].is-opaque and start with iso-b1-cls- but are not iso-b1-cls-4 */
+/* [data-iso-structure].is-opaque [class^="iso-b1-cls-"]:not(.iso-b1-cls-4) {
+  opacity: .1;
+}
+
+[data-iso-structure].is-opaque [class="iso-b1-cls-4"] {
+  opacity: .3;
+} */
+
+
+
+/** building 1 **/
+.iso-b1-cls-1, .iso-b1-cls-2 {
+  fill: #6d7765;
+}
+
+.iso-b1-cls-1, .iso-b1-cls-2, .iso-b1-cls-3, .iso-b1-cls-4, .iso-b1-cls-5, .iso-b1-cls-6, .iso-b1-cls-7 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: .1px;
+}
+
+.iso-b1-cls-1, .iso-b1-cls-3, .iso-b1-cls-4, .iso-b1-cls-7 {
+  stroke: #121310;
+}
+
+.iso-b1-cls-2, .iso-b1-cls-5, .iso-b1-cls-6 {
+  stroke: #050404;
+}
+
+.iso-b1-cls-3, .iso-b1-cls-5 {
+  fill: #a7a8a8;
+}
+
+.iso-b1-cls-4 {
+  fill: #cbcccc;
+}
+
+.iso-b1-cls-6, .iso-b1-cls-7 {
+  fill: none;
+}
+
+/** building 2 **/
+.iso-b2-cls-1 {
+  fill: #cbcccc;
+}
+
+.iso-b2-cls-1, .iso-b2-cls-2, .iso-b2-cls-3, .iso-b2-cls-4, .iso-b2-cls-5, .iso-b2-cls-6, .iso-b2-cls-7, .iso-b2-cls-8 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: .1px;
+}
+
+.iso-b2-cls-1, .iso-b2-cls-3, .iso-b2-cls-6, .iso-b2-cls-7 {
+  stroke: #050404;
+}
+
+.iso-b2-cls-2, .iso-b2-cls-3, .iso-b2-cls-9 {
+  fill: #6d7765;
+}
+
+.iso-b2-cls-2, .iso-b2-cls-4, .iso-b2-cls-5, .iso-b2-cls-8 {
+  stroke: #121310;
+}
+
+.iso-b2-cls-4 {
+  fill: #929493;
+}
+
+.iso-b2-cls-5, .iso-b2-cls-6 {
+  fill: #a7a8a8;
+}
+
+.iso-b2-cls-7, .iso-b2-cls-8 {
+  fill: none;
+}
+
+.iso-b2-cls-9 {
+  stroke-width: 0px;
+}
+
+/** building 3 **/
+.iso-b3-cls-1 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.iso-b3-cls-1, .iso-b3-cls-2, .iso-b3-cls-3, .iso-b3-cls-4 {
+  stroke-width: .1px;
+}
+
+.iso-b3-cls-1, .iso-b3-cls-3 {
+  stroke: #121310;
+}
+
+.iso-b3-cls-2 {
+  fill: #6d7765;
+}
+
+.iso-b3-cls-2, .iso-b3-cls-3, .iso-b3-cls-4 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.iso-b3-cls-2, .iso-b3-cls-4 {
+  stroke: #050404;
+}
+
+.iso-b3-cls-3 {
+  fill: #cbcccc;
+}
+
+.iso-b3-cls-4 {
+  fill: #a7a8a8;
+}
