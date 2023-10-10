@@ -33,7 +33,7 @@
            title="Situationsplan"
            target="_blank"
            rel="noopener noreferrer"
-           class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+           class="bg-olive font-semi font-normal flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
            Situationsplan
           </a>
           <a
@@ -41,7 +41,7 @@
            title="SBB-Fahrplan"
            target="_blank"
            rel="noopener noreferrer"
-           class="bg-olive font-semi flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+           class="bg-olive font-semi font-normal flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
            SBB-Fahrplan
           </a>
         </div>

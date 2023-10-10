@@ -59,7 +59,7 @@
         <a 
           href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
           target="_blank"
-          class="font-semi font-semibold hover:underline hover:underline-offset-2">
+          class="font-semi font-normal hover:underline hover:underline-offset-2">
           Flatfox
         </a>
         @else

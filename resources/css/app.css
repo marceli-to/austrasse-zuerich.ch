@@ -24,7 +24,7 @@ p:last-of-type {
 }
 
 strong {
-  @apply font-semi font-semibold;
+  @apply font-semi font-normal;
 }
 
 main ul {

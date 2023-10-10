@@ -168,7 +168,7 @@
     </x-layout.grid>
     <div class="mt-24 lg:mt-32">*Änderungen vorbehalten</div>
     <div class="mt-20 lg:mt-32">
-      <a href="" title="Download Kurzbaubeschrieb (PDF)" target="_blank" class="bg-olive font-semi inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+      <a href="" title="Download Kurzbaubeschrieb (PDF)" target="_blank" class="bg-olive font-semi font-normal inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
         Kurzbaubeschrieb
       </a>
     </div>

@@ -1,5 +1,5 @@
-<thead class="font-semi font-semibold">
-  <tr class="[&>th]:py-6 [&>th]:pr-8 [&>th]:align-middle [&>th]:text-left [&>th]:leading-[1rem] [&>th]:w-auto border-b border-olive">
+<thead class="font-semi font-normal">
+  <tr class="[&>th]:py-6 [&>th]:pr-8 [&>th]:align-middle [&>th]:text-left [&>th]:leading-[1rem] [&>th]:w-auto [&>th]:font-semi [&>th]:font-normal border-b border-olive">
     <th>Nr.</th>
     <th>Etage</th>
     <th>Zi</th>
