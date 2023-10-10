@@ -1,32 +1,5 @@
 @props(['apartments', 'building'])
 <tbody>
-
-  {{-- <th>Nr.</th>
-  <th>Etage</th>
-  <th>Zi</th>
-  <th>HNF/m<sup>2</sup></th>
-  <th>Netto MZ pro Monat</th>
-  <th class="!text-right">NK</th>
-  <th>Brutto MZ pro Monat</th>
-  <th>Grundriss</th>
-  <th class="!text-right !pr-0">Anmeldung</th>
-  
-  <tr data-iso-list-item="" 
-    data-number="3a00.01" 
-    data-floor="eg" 
-    data-building="a" 
-    data-state="reserved" 
-    data-rooms="5.5" 
-    data-plan="/assets/media/nidum-sempach-3a00.01.pdf" 
-    data-form="#" 
-    data-area="122" 
-    data-detail-title="3a 00.01" 
-    data-detail-floor="EG">
-  </tr>
-  
-  
-  --}}
-
   @foreach($apartments as $apartment)
     <tr 
       data-apartment 

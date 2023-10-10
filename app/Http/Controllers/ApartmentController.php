@@ -36,6 +36,13 @@ class ApartmentController extends Controller
       }
     });
 
-    return view('pages.apartments.index', ['apartments' => $apartments]);
+    // addresses
+    $addresses = [
+      'building_1' => 'Wiedingstrasse 87a–d',
+      'building_2' => 'Austrasse 50–56',
+      'building_3' => 'Austrasse 46/48',
+    ];
+
+    return view('pages.apartments.index', ['apartments' => $apartments, 'addresses' => $addresses]);
   }
 }
