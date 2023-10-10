@@ -23,6 +23,22 @@
     </x-layout.grid>
   </x-layout.inner>
 </x-layout.section>
+<x-layout.section>
+  <x-layout.inner class="mt-50 md:mt-100" data-building-group="3">
+    <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
+      <x-layout.span class="hidden md:block md:col-span-5 lg:col-span-5 xl:col-span-6">
+        <div class="md:sticky md:top-150">
+          <x-apartments.iso.wrapper number="3" />
+        </div>
+      </x-layout.span>
+      <x-layout.span class="md:col-span-7 lg:col-span-7 xl:col-span-6 md:-mt-80 lg:-mt-100">
+        <x-apartments.wrapper number="3" address="'Austrasse 46/48'">
+          <x-apartments.table :apartments="$apartments" building="3" />
+        </x-apartments.wrapper>
+      </x-layout.span>
+    </x-layout.grid>
+  </x-layout.inner>
+</x-layout.section>
 <x-layout.section class="bg-white">
   <x-layout.inner>
     <div>

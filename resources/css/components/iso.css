@@ -20,23 +20,6 @@
   @apply transform translate-y-[12%] transition-transform duration-300;
 }
 
-/** 
-.is-opaque .iso-b1-cls-2,
-.is-opaque .iso-b1-cls-1 {
-  opacity: .1;
-}
-
-/* match all items that are inside [data-iso-structure].is-opaque and start with iso-b1-cls- but are not iso-b1-cls-4 */
-/* [data-iso-structure].is-opaque [class^="iso-b1-cls-"]:not(.iso-b1-cls-4) {
-  opacity: .1;
-}
-
-[data-iso-structure].is-opaque [class="iso-b1-cls-4"] {
-  opacity: .3;
-} */
-
-
-
 /** building 1 **/
 .iso-b1-cls-1, .iso-b1-cls-2 {
   fill: #6d7765;

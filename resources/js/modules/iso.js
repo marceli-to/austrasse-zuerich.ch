@@ -39,27 +39,26 @@ const Iso = (function() {
 
     if (isoItem) {
       isoItem.classList.add('is-highlighted');
+      // Get the parent <g> element for the isoItem
+      const parent = isoItem.parentElement;
+
+      // find all siblings of the parent <g> element that are after it
+      const nextSiblings = getNextSiblings(parent);
+
+      // add styles to translate the parent <g> elements siblings
+      nextSiblings.forEach(function(sibling) {
+        sibling.classList.add('is-up')
+      });
+
+      // find all siblings of the parent <g> element that are before it
+      const previousSiblings = getPreviousSiblings(parent);
+
+      // add styles to translate the parent <g> element and all its siblings
+      parent.classList.add('is-down')
+      previousSiblings.forEach(function(sibling) {
+        sibling.classList.add('is-down')
+      });
     }
-
-    // Get the parent <g> element for the isoItem
-    const parent = isoItem.parentElement;
-
-    // find all siblings of the parent <g> element that are after it
-    const nextSiblings = getNextSiblings(parent);
-
-    // add styles to translate the parent <g> elements siblings
-    nextSiblings.forEach(function(sibling) {
-      sibling.classList.add('is-up')
-    });
-
-    // find all siblings of the parent <g> element that are before it
-    const previousSiblings = getPreviousSiblings(parent);
-
-    // add styles to translate the parent <g> element and all its siblings
-    parent.classList.add('is-down')
-    previousSiblings.forEach(function(sibling) {
-      sibling.classList.add('is-down')
-    });
 
   };
 
@@ -69,21 +68,20 @@ const Iso = (function() {
 
     if (isoItem) {
       isoItem.classList.remove('is-highlighted');
+      // Get the parent <g> element for the isoItem
+      const parent = isoItem.parentElement;
+
+      // find all siblings (before and after) of the parent <g> element
+      const siblings = getAllSiblings(parent);
+
+      // remove all instances of the is-up and is-down classes
+      parent.classList.remove('is-up');
+      parent.classList.remove('is-down');
+      siblings.forEach(function(sibling) {
+        sibling.classList.remove('is-up');
+        sibling.classList.remove('is-down');
+      });
     }
-
-    // Get the parent <g> element for the isoItem
-    const parent = isoItem.parentElement;
-
-    // find all siblings (before and after) of the parent <g> element
-    const siblings = getAllSiblings(parent);
-
-    // remove all instances of the is-up and is-down classes
-    parent.classList.remove('is-up');
-    parent.classList.remove('is-down');
-    siblings.forEach(function(sibling) {
-      sibling.classList.remove('is-up');
-      sibling.classList.remove('is-down');
-    });
   };
 
   const getNextSiblings = (parent) => {

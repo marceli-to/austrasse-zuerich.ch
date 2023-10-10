@@ -43,6 +43,6 @@ class ApartmentController extends Controller
       'building_3' => 'Austrasse 46/48',
     ];
 
-    return view('pages.apartments.index', ['apartments' => $apartments, 'addresses' => $addresses]);
+    return view('pages.apartments', ['apartments' => $apartments, 'addresses' => $addresses]);
   }
 }

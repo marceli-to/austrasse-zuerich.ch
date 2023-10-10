@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\BusinessController;
 use App\Http\Controllers\ApartmentController;
 
 /*
@@ -16,7 +17,7 @@ use App\Http\Controllers\ApartmentController;
 
 // Route::get('/', [PageController::class, 'index'])->name('page.home');
 Route::view('/', 'pages.home')->name('page.home');
-Route::view('/gewerbe', 'pages.business')->name('page.business');
+Route::get('/gewerbe', [BusinessController::class, 'index'])->name('page.business');
 Route::get('/angebot', [ApartmentController::class, 'index'])->name('page.apartments');
 Route::view('/wohnen', 'pages.living')->name('page.living');
 Route::view('/kontakt', 'pages.contact')->name('page.contact');
