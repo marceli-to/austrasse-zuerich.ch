@@ -15,7 +15,7 @@ class BusinessController extends Controller
     $apartments = collect($data)->filter(function ($item, $key) {
       return $item['object_category'] == 'INDUSTRY';
     });
-    
+
     return view('pages.business', ['apartments' => $apartments]);
   }
 }

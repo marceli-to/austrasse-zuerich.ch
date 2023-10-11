@@ -7,9 +7,13 @@
   @apply !fill-gold transition-all duration-100;
 }
 
-[data-iso-structure], 
+[data-iso-item], 
 [data-iso-item] {
   @apply transform translate-y-0 transition-transform duration-150;
+}
+
+[data-iso-item]:not([data-iso-item=""]) {
+  @apply cursor-pointer;
 }
 
 .is-up {
@@ -18,6 +22,10 @@
 
 .is-down {
   @apply transform translate-y-[12%] transition-transform duration-300;
+}
+
+[data-apartment].is-highlighted {
+  @apply bg-olive bg-opacity-20
 }
 
 /** building 1 **/

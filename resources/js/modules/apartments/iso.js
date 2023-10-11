@@ -4,11 +4,9 @@ const Iso = (function() {
   const selectors = {
     body: 'body',
     apartment: '[data-apartment]',
+    iso: '[data-iso]',
     isoItem: '[data-iso-item]',
-  };
-
-  const classes = {
-
+    hint: '[data-apartment-hint]',
   };
 
   // METHODS
@@ -17,53 +15,78 @@ const Iso = (function() {
   };
 
   const bind = function() {
+
+    // add a mouseover event listener to each isoItem
+    document.querySelectorAll(selectors.isoItem).forEach(function(isoItem) {
+      isoItem.addEventListener('mouseover', function() {
+        if (isoItem.dataset.isoItem != '') {
+          highlightList(isoItem.dataset.isoItem);
+        }
+      });
+      isoItem.addEventListener('mouseleave', function() {
+        if (isoItem.dataset.isoItem != '') {
+          resetList(isoItem.dataset.isoItem);
+        }
+      });
+    });
+
     // add a mouseover event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
-      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+      if (_isMobile()) {
         return;
       }
       apartment.addEventListener('mouseover', function() {
-        mouseOver(apartment);
+        listMouseOver(apartment);
       });
     });
 
     // add a mouseout event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
       apartment.addEventListener('mouseleave', function() {
-        mouseOut(apartment);
+        listMouseOut(apartment);
       });
     });
 
     // add a touchstart event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
-      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+      if (_isMobile()) {
         apartment.addEventListener('click', function() {
-          touchStart(apartment);
+          listTouchStart(apartment);
         });
       }
     });
   };
 
-  const mouseOver = function(apartment) {
+  const listMouseOver = function(apartment) {
     const number = apartment.dataset.number;
     const isoItem = document.querySelector('[data-iso="lg"] [data-iso-item="' + number + '"]');
-    highlight(isoItem);
+    highlightIso(isoItem);
   };
 
-  const touchStart = function(apartment) {
+  const listTouchStart = function(apartment) {
     clearAll();
     const number = apartment.dataset.number;
     const isoItem = document.querySelector('[data-iso="sm"] [data-iso-item="' + number + '"]');
-    highlight(isoItem);
+    highlightIso(isoItem);
   };
 
-  const mouseOut = function(apartment) {
+  const listMouseOut = function(apartment) {
     const number = apartment.dataset.number;
     const isoItem = document.querySelector('[data-iso="lg"] [data-iso-item="' + number + '"]');
     clear(isoItem);
   };
 
-  const highlight = function(item) {
+  const highlightList = (number) => {
+    const apartment = document.querySelector('[data-number="' + number + '"]');
+    apartment.classList.add('is-highlighted');
+  };
+
+  const resetList = (number) => {
+    const apartment = document.querySelector('[data-number="' + number + '"]');
+    apartment.classList.remove('is-highlighted');
+  }
+
+  const highlightIso = function(item) {
     if (item) {
       item.classList.add('is-highlighted');
       // Get the parent <g> element for the item
@@ -149,6 +172,10 @@ const Iso = (function() {
     return siblings;
   };
 
+  const _isMobile = function() {
+    return (window.matchMedia('(max-width: 700px)').matches || window.innerWidth <= 700) && ('ontouchstart' in window || navigator.maxTouchPoints);
+  };
+
   // RETURN PUBLIC METHODS
   return {
     init: initialize,
@@ -156,7 +183,7 @@ const Iso = (function() {
   };
 })();
 
-export default Iso;
-
 // Initialize
 Iso.init();
+
+export default Iso;

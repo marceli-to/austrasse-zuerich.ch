@@ -23,21 +23,6 @@
     </x-layout.inner>
   @endfor
 </x-layout.section>
-
-<div 
-  data-apartment-show
-  class="hidden sm:!hidden fixed w-full bottom-0 left-0 min-h-[150px] z-[20000] pt-16 pb-24 pl-20 pr-20 bg-white shadow-top text-olive text-sm">
-  <h3 data-apartment-number class="!mb-0"></h3>
-  <span data-apartment-info></span>
-  <div class="mt-32 grid grid-cols-12 gap-x-24 items-end">
-    @for ($i = 1; $i <= 3; $i++)
-      <div data-apartment-iso="{{ $i }}" class="hidden col-span-8">
-        <x-apartments.iso.wrapper :number="$i" size="sm" />
-      </div>
-      <div data-apartment-iso-preview="{{ $i }}" class="hidden col-span-3 col-start-10 flex justify-end">
-        <x-apartments.iso.preview :number="$i" />
-      </div>
-    @endfor
-  </div>
-</div>
+<x-apartments.cart />
+<x-apartments.show />
 @endsection

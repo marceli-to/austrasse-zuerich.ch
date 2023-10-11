@@ -7,6 +7,7 @@ const ApartmentUi = (function () {
     body: document.body,
     wrapper: '[data-apartment-show]',
     apartment: '[data-apartment]',
+    btnClose: '[data-apartment-close]',
   };
 
   // Classes
@@ -28,6 +29,11 @@ const ApartmentUi = (function () {
           show(element);
         });
       }
+    });
+
+    // on click btnClose hide the wrapper
+    document.querySelector(selectors.btnClose).addEventListener('click', function () {
+      hide();
     });
 
     // on resize clear all, use debounce
@@ -52,7 +58,6 @@ const ApartmentUi = (function () {
     }
 
     selectedApartment = elementData.number;
-
     const wrapper = document.querySelector(selectors.wrapper);
 
     // Show the wrapper
