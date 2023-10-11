@@ -12,7 +12,7 @@
       data-form=""
       data-area="{{ $apartment['surface_living'] }}"
       data-detail-title="Wohnung {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
-      data-detail-floor="{{ $apartment['floor'] ? config('apartment.floors_filter')[$apartment['floor']] : 'EG' }}"
+      data-detail-floor="{{ $apartment['floor'] ? config('apartment.floors')[$apartment['floor']] : 'EG' }}"
       class="[&>td]:py-6 [&>td]:pr-6 xs:[&>td]:pr-8 [&>td]:align-middle [&>td]:text-left border-b border-olive hover:cursor-pointer hover:bg-olive hover:bg-opacity-10 transition-all">
       <td>
         {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}

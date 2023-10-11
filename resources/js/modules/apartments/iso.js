@@ -35,41 +35,68 @@ const Iso = (function() {
 
   const listOver = function(apartment) {
     const number = apartment.dataset.number;
-    const isoItem = document.querySelector('[data-iso-item="' + number + '"]');
+    const isoItems = Array.from(document.querySelectorAll('[data-iso-item="' + number + '"]'));
+    isoItems.forEach(function (isoItem) {
+      if (isoItem) {
+        isoItem.classList.add('is-highlighted');
+        // Get the parent <g> element for the isoItem
+        const parent = isoItem.parentElement;
 
-    if (isoItem) {
-      isoItem.classList.add('is-highlighted');
-      // Get the parent <g> element for the isoItem
-      const parent = isoItem.parentElement;
+        // find all siblings of the parent <g> element that are after it
+        const nextSiblings = getNextSiblings(parent);
 
-      // find all siblings of the parent <g> element that are after it
-      const nextSiblings = getNextSiblings(parent);
+        // add styles to translate the parent <g> elements siblings
+        nextSiblings.forEach(function(sibling) {
+          sibling.classList.add('is-up')
+        });
 
-      // add styles to translate the parent <g> elements siblings
-      nextSiblings.forEach(function(sibling) {
-        sibling.classList.add('is-up')
-      });
+        // find all siblings of the parent <g> element that are before it
+        const previousSiblings = getPreviousSiblings(parent);
 
-      // find all siblings of the parent <g> element that are before it
-      const previousSiblings = getPreviousSiblings(parent);
+        // add styles to translate the parent <g> element and all its siblings
+        parent.classList.add('is-down')
+        previousSiblings.forEach(function(sibling) {
+          sibling.classList.add('is-down')
+        });
+      }
+    });
 
-      // add styles to translate the parent <g> element and all its siblings
-      parent.classList.add('is-down')
-      previousSiblings.forEach(function(sibling) {
-        sibling.classList.add('is-down')
-      });
-    }
+    // if (isoItem) {
+    //   isoItem.classList.add('is-highlighted');
+    //   // Get the parent <g> element for the isoItem
+    //   const parent = isoItem.parentElement;
+
+    //   // find all siblings of the parent <g> element that are after it
+    //   const nextSiblings = getNextSiblings(parent);
+
+    //   // add styles to translate the parent <g> elements siblings
+    //   nextSiblings.forEach(function(sibling) {
+    //     sibling.classList.add('is-up')
+    //   });
+
+    //   // find all siblings of the parent <g> element that are before it
+    //   const previousSiblings = getPreviousSiblings(parent);
+
+    //   // add styles to translate the parent <g> element and all its siblings
+    //   parent.classList.add('is-down')
+    //   previousSiblings.forEach(function(sibling) {
+    //     sibling.classList.add('is-down')
+    //   });
+    // }
 
   };
 
   const listOut = function(apartment) {
     const number = apartment.dataset.number;
     const isoItem = document.querySelector('[data-iso-item="' + number + '"]');
+    clear(isoItem);
+  };
 
-    if (isoItem) {
-      isoItem.classList.remove('is-highlighted');
+  const clear = function(item) {
+    if (item) {
+      item.classList.remove('is-highlighted');
       // Get the parent <g> element for the isoItem
-      const parent = isoItem.parentElement;
+      const parent = item.parentElement;
 
       // find all siblings (before and after) of the parent <g> element
       const siblings = getAllSiblings(parent);
@@ -83,6 +110,14 @@ const Iso = (function() {
       });
     }
   };
+
+  const clearAll = function() {
+    const isoItems = Array.from(document.querySelectorAll('[data-iso-item]'));
+    isoItems.forEach(function (isoItem) {
+      clear(isoItem);
+    });
+  };
+
 
   const getNextSiblings = (parent) => {
     const siblings = [];
@@ -122,8 +157,11 @@ const Iso = (function() {
   // RETURN PUBLIC METHODS
   return {
     init: initialize,
+    clearAll: clearAll,
   };
 })();
+
+export default Iso;
 
 // Initialize
 Iso.init();
