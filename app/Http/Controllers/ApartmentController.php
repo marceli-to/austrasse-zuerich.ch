@@ -20,7 +20,7 @@ class ApartmentController extends Controller
     $apartments = ['building_1', 'building_2', 'building_3'];
 
     // group apartments by building
-    $apartments = collect($data)->groupBy(function ($item, $key) {
+    $apartments = collect($data)->sortBy('floor')->groupBy(function ($item, $key) {
       $ref_house = substr($item['ref_house'], 0, 2);
       if (in_array($ref_house, ['01', '02', '03', '04']))
       {

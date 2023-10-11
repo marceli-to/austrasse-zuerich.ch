@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[24%] -my-[24%] block overflow-visible">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[12%] -my-[12%] block overflow-visible">
   <g id="Ebene_04_Balkon" data-iso-structure="Ebene 04 Balkon">
     <polygon class="iso-b1-cls-4" points="257 101.2 259.9 105.3 229.1 109.7 203.4 115.9 199 115.7 198.1 116.8 123.9 113.6 97 129 93 128.5 88.8 131.4 57.8 132.1 57.8 133.2 35.9 133.6 23.4 134.5 27.3 131 23.7 123.3 18.5 117 35 119.1 58.1 120 58.2 120.4 66.6 120.2 86.1 108.3 84.8 108.1 89.8 105.1 89.2 101.8 115.4 101.8 138.9 102.7 144.1 104.7 192.2 101.8 194.8 98.8 223.6 93.5 247.4 98.2 257 101.2"/>
   </g>

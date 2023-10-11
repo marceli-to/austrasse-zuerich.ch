@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[24%] -my-[24%] block overflow-visible">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[12%] -my-[12%] block overflow-visible">
   <g id="EG" data-iso-structure>
     <g id="_09.0003.1" data-iso-item="09.0003">
       <g>

@@ -21,4 +21,17 @@ class ApartmentHelper
     return 'vermietet';
   }
 
+  public static function getStateKey($apartment)
+  {
+    if (ApartmentHelper::isAvailable($apartment))
+    {
+      return 'available';
+    }
+    if ($apartment['status'] == 'pre' && $apartment['reserved'] == true)
+    {
+      return 'reserved';
+    }
+    return 'rented';
+  }
+
 }

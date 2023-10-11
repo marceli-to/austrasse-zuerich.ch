@@ -6,7 +6,7 @@
       data-number="{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
       data-floor="{{ $apartment['floor'] ? config('apartment.floors_filter')[$apartment['floor']] : 'eg' }}"
       data-building="{{ $building }}"
-      data-state=""
+      data-state="{{ App\Helpers\ApartmentHelper::getStateKey($apartment) }}"
       data-rooms="{{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}"
       data-plan=""
       data-form=""
@@ -69,7 +69,7 @@
         <a 
           href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
           target="_blank"
-          class="font-semi font-normal hover:underline hover:underline-offset-2">
+          class="bg-gold py-4 px-6 text-white text-center text-xs leading-none rounded-sm font-semi font-normal hover:bg-olive transition-colors no-underline">
           Flatfox
         </a>
         @else

@@ -20,6 +20,7 @@ export default {
         'olive': '#49543d',
         'serene': '#b3cb9b',
         'sage': '#A4AA9E',
+        'gold': '#c5a66d',
       },
 
       fontFamily: {

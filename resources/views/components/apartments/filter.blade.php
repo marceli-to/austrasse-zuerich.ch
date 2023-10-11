@@ -6,9 +6,9 @@
       <div>
         <x-form.select class="js-filter-attribute" data-filterType="state">
           <option value="NULL">Alle Wohnungen</option>
-          <option value="free">frei</option>
-          <option value="rented">reserviert</option>
-          <option value="reserved">vermietet</option>
+          <option value="available">frei</option>
+          <option value="reserved">reserviert</option>
+          <option value="rented">vermietet</option>
         </x-form.select>
       </div>
     </x-layout.span>
@@ -51,6 +51,7 @@
           <option value="4.og">4. OG</option>
           <option value="5.og">5. OG</option>
           <option value="6.og">6. OG</option>
+          <option value="7.og">7. OG</option>
         </x-form.select>
       </div>
     </x-layout.span>
