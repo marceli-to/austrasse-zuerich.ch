@@ -19,6 +19,9 @@ const Iso = (function() {
   const bind = function() {
     // add a mouseover event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
+      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        return;
+      }
       apartment.addEventListener('mouseover', function() {
         mouseOver(apartment);
       });
@@ -33,9 +36,11 @@ const Iso = (function() {
 
     // add a touchstart event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
-      apartment.addEventListener('touchstart', function() {
-        touchStart(apartment);
-      });
+      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        apartment.addEventListener('click', function() {
+          touchStart(apartment);
+        });
+      }
     });
   };
 
