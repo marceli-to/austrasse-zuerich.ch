@@ -23,9 +23,11 @@ const ApartmentUi = (function () {
   const bind = function () {
     // on touch start (item)  and show the wrapper
     document.querySelectorAll(selectors.apartment).forEach(function (element) {
-      element.addEventListener('touchstart', function () {
-        show(element);
-      });
+      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        element.addEventListener('click', function () {
+          show(element);
+        });
+      }
     });
 
     // on resize clear all, use debounce
