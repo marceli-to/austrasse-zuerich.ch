@@ -48,6 +48,9 @@
           <option value="1.og">1. OG</option>
           <option value="2.og">2. OG</option>
           <option value="3.og">3. OG</option>
+          <option value="4.og">4. OG</option>
+          <option value="5.og">5. OG</option>
+          <option value="6.og">6. OG</option>
         </x-form.select>
       </div>
     </x-layout.span>
