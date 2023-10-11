@@ -3,7 +3,7 @@
     <a href="javascript:;" 
       class="no-underline block absolute top-0 right-0 p-8 -mt-4 -mr-4"
       data-cart-hide>
-      <x-icons.chevron-down-lg class="w-24" />
+      <x-icons.chevron-down-lg class="w-24 xl:w-32" />
     </a>
     <h3 class="mb-12 xl:mb-16">Ihre Auswahl</h3>
     <div class="sm:grid sm:grid-cols-12 sm:gap-24 lg:gap-32">
@@ -25,7 +25,7 @@
           <tbody>
           </tbody>
         </table>
-        <div class="mt-24 flex gap-x-16 lg:gap-x-24 text-sm lg:text-base leading-none">
+        <div class="mt-24 flex gap-x-16 lg:gap-x-24 text-sm xl:text-base leading-none">
           <a 
             href="javascript:;" 
             class="no-underline hover:underline hover:underline-offset-4"
