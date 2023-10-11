@@ -13,8 +13,9 @@
     <th class="!text-right xs:hidden">Brutto/Mt.</th>
     <th class="text-center xs:text-left px-4 !pr-0 xs:!pr-8">
       <span class="hidden xs:block">Grundriss</span>
-      <span class="xs:hidden">PDF</span>
     </th>
-    <th class="!text-right !pr-0">Anmeldung</th>
+    <th class="!text-right !pr-0">
+      <span class="hidden xs:block">Anmeldung</span>
+    </th>
   </tr>
 </thead>

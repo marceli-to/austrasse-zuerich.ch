@@ -56,25 +56,35 @@
         @endif
       </td>
 
-
       <td class="!text-center !py-0 !pr-0 xs:!pr-8">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          <a href="" title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" class="w-full h-full p-6 flex items-center justify-center">
+          <a href="" title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" class="hidden xs:flex w-full h-full p-6 items-center justify-center">
             <x-icons.download class="-mt-1" />
           </a>
         @endif
       </td>
       <td class="!text-right !pr-0">
-        @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-        <a 
-          href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
-          target="_blank"
-          class="bg-gold py-4 px-6 text-white text-center text-xs leading-none rounded-sm font-semi font-normal hover:bg-olive transition-colors no-underline">
-          Flatfox
-        </a>
-        @else
-          {{ App\Helpers\ApartmentHelper::getState($apartment) }}
-        @endif
+        <span class="hidden xs:block">
+          @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
+            <a 
+              href="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/" 
+              target="_blank"
+              title="Jetzt auf Flatfox anmelden"
+              class="bg-gold py-4 px-6 text-white text-center text-xs leading-none rounded-sm font-semi font-normal hover:bg-olive transition-colors no-underline">
+              Flatfox
+            </a>
+          @else
+            {{ App\Helpers\ApartmentHelper::getState($apartment) }}
+          @endif
+        </span>
+        <span class="block xs:hidden">
+          <a 
+            href="javascript:;" 
+            title="Detail anzeigen"
+            class="bg-gold py-4 px-6 text-white text-center text-xs leading-none rounded-sm font-semi font-normal hover:bg-olive transition-colors no-underline">
+            Details
+          </a>
+        </span>
       </td>
     </tr>
   @endforeach
