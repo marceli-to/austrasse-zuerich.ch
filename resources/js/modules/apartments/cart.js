@@ -73,6 +73,9 @@ const Cart = (function() {
       'is-highlighted'
     );
 
+    // remove data attributes
+    apartmentClone.removeAttribute('data-apartment');
+
     table.appendChild(apartmentClone);
 
     // show cart if hidden
