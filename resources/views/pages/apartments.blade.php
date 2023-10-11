@@ -10,7 +10,7 @@
     <x-layout.inner class="mt-50 md:mt-100 {{ $i < 3 ? 'mb-75 lg:mb-150' : 'mb-25 lg:mb-50'}}" data-building-group="{{ $i }}">
       <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
         <x-layout.span class="hidden md:block md:col-span-5 lg:col-span-5 xl:col-span-6">
-          <div class="md:sticky md:top-150">
+          <div class="md:sticky md:top-48">
             <x-apartments.iso.wrapper :number="$i" />
           </div>
         </x-layout.span>

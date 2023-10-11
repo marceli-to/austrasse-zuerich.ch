@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto block overflow-visible">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[24%] -my-[24%] block overflow-visible">
   <g id="Ebene_04_Balkon" data-iso-structure="Ebene 04 Balkon">
     <polygon class="iso-b1-cls-4" points="257 101.2 259.9 105.3 229.1 109.7 203.4 115.9 199 115.7 198.1 116.8 123.9 113.6 97 129 93 128.5 88.8 131.4 57.8 132.1 57.8 133.2 35.9 133.6 23.4 134.5 27.3 131 23.7 123.3 18.5 117 35 119.1 58.1 120 58.2 120.4 66.6 120.2 86.1 108.3 84.8 108.1 89.8 105.1 89.2 101.8 115.4 101.8 138.9 102.7 144.1 104.7 192.2 101.8 194.8 98.8 223.6 93.5 247.4 98.2 257 101.2"/>
   </g>
@@ -161,7 +161,7 @@
         <polygon class="iso-b1-cls-2" points="40.7 115.5 40.7 104.5 26.2 104.9 26.2 115.9 40.7 115.5"/>
       </g>
     </g>
-    <g id="_02.0002" data-iso-item="02.0002">
+    <g id="_02.0001" data-iso-item="02.0001">
       <g>
         <polygon class="iso-b1-cls-2" points="83 98.7 104.4 101.1 104.4 90.2 83 87.7 83 98.7 83 98.7"/>
         <polygon class="iso-b1-cls-2" points="105.8 97 108.2 92.6 108.3 81.7 105.9 86 105.8 97 105.8 97"/>
@@ -177,7 +177,7 @@
       </g>
       <line class="iso-b1-cls-7" x1="98.2" y1="94.7" x2="98.2" y2="105.7"/>
     </g>
-    <g id="_02.0002-2" data-iso-item="02.0002-2">
+    <g id="_02.0002" data-iso-item="02.0002">
       <g>
         <polygon class="iso-b1-cls-2" points="118.6 99.1 120.9 97.7 121 86.8 118.6 88.2 118.6 99.1 118.6 99.1"/>
         <polygon class="iso-b1-cls-2" points="120.9 97.7 124.8 97.9 124.8 86.9 120.9 86.8 120.9 97.7 120.9 97.7"/>
