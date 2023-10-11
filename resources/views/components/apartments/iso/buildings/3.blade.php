@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[12%] -my-[12%] block overflow-visible">
-  <g id="EG" data-iso-structure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[12%] -my-[12%] block overflow-visible" {{ $attributes->merge() }}>
+  <g id="EG" data-iso-item>
     <g id="_09.0003.1" data-iso-item="09.0003">
       <g>
         <polygon class="iso-b3-cls-2" points="166.2 95 169.4 95.9 169.5 84.9 166.2 84.1 166.2 95 166.2 95"/>
@@ -9,7 +9,7 @@
         <path class="iso-b3-cls-2" d="m183.3,81.4l-19.3-5.2-29.5,7.6,11.7,3.4,3.4-.9,3.8,1,12.8-3.3,3.3.9,13.8-3.6h0Z"/>
       </g>
     </g>
-    <g id="Veloraum" data-iso-structure>
+    <g id="Veloraum" data-iso-item>
       <polygon class="iso-b3-cls-4" points="133.3 92.6 117.2 88.2 100 92.6 111.4 95.7 113 95.3 113.7 95.5 118.1 94.4 122 95.4 133.3 92.6"/>
     </g>
     <g id="_10.0003.1" data-iso-item="10.0003">
@@ -40,7 +40,7 @@
         <polygon class="iso-b3-cls-2" points="169.5 97.4 175.1 98.9 175.1 88 169.5 86.5 169.5 97.4 169.5 97.4"/>
       </g>
     </g>
-    <g id="Veloraum-2" data-iso-structure>
+    <g id="Veloraum-2" data-iso-item>
       <polygon class="iso-b3-cls-4" points="150.2 88.4 134.5 83.7 125.5 86 141.2 90.7 150.2 88.4"/>
     </g>
     <g id="_09.0001.1" data-iso-item="09.0001">
@@ -49,7 +49,7 @@
         <path class="iso-b3-cls-2" d="m186.7,90.8l-10.5-3-1.1.3-5.2-1.4-21,5.4,16.1,4.4s14.1-3.6,21.7-5.6h0Z"/>
       </g>
     </g>
-    <g id="Treppenhaus" data-iso-structure>
+    <g id="Treppenhaus" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="164.9 107.3 164.9 96.3 154.6 99 154.6 109.9 164.9 107.3"/>
         <polygon class="iso-b3-cls-4" points="172.7 85.8 166.2 84.1 153.4 87.3 149.6 86.3 146.2 87.2 150.2 88.4 141.2 90.7 125.5 86 117.2 88.2 133.3 92.6 122 95.4 118.1 94.4 113.7 95.5 117.6 96.5 105.6 99.6 112.2 101.4 139.2 94.8 154.6 99 164.9 96.3 148.8 92 172.7 85.8"/>
@@ -64,7 +64,7 @@
       <line class="iso-b3-cls-1" x1="110.2" y1="119" x2="110.2" y2="107.8"/>
     </g>
   </g>
-  <g id="_1._OG_Balkon" data-iso-structure="1. OG Balkon">
+  <g id="_1._OG_Balkon" data-iso-item="1. OG Balkon">
     <path class="iso-b3-cls-3" d="m98.9,93.6l-3.4-.9-4.1,1.1,3.4.9-2.7.7-3.4-.9-5.7,1.5,3.4.9-9.2,2.4,37.5,10,8.8-2.3,3.4.9,5.8-1.5-3.4-.9,2.7-.7,3.4.9,4.1-1.1-3.4-.9,16.2-4.2,3.4.9,4.8-1.2-3.4-.9,2.7-.7,3.4.9,5.1-1.3-3.4-.9,15.9-4.1,3.4.9,4.5-1.2-3.4-.9,2.7-.7,3.4.9,5.4-1.4-3.4-.9s6.4-1.6,9.2-2.4l-37.3-10.1-9.2,2.4-3.4-.9-5.4,1.4,3.4.9-2.7.7-3.4-.9-4.5,1.2,3.4.9-15.9,4.1-3.4-.9-5.1,1.3,3.4.9-2.7.7-3.4-.9-4.8,1.2,3.3.9-16.2,4.2h0Z"/>
   </g>
   <g id="_1._OG" data-iso-item="1. OG">
@@ -102,7 +102,7 @@
         <polygon class="iso-b3-cls-2" points="169.8 86.6 175.4 88.1 175.4 77.2 169.9 75.6 169.8 86.6 169.8 86.6"/>
       </g>
     </g>
-    <g id="Treppenhaus-2" data-iso-structure>
+    <g id="Treppenhaus-2" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="145.9 87.2 156.3 90 156.3 79.1 146 76.3 145.9 87.2 145.9 87.2"/>
         <path class="iso-b3-cls-4" d="m172.7,74.9l-6.5-1.8-12.8,3.3-3.8-1-3.6.9,10.3,2.8c5.5-1.4,11-2.8,16.4-4.2h0Z"/>
@@ -165,7 +165,7 @@
         <polygon class="iso-b3-cls-2" points="95.2 95.8 102.5 97.8 102.6 86.9 95.3 84.9 95.2 95.8 95.2 95.8"/>
       </g>
     </g>
-    <g id="Treppenhaus-3" data-iso-structure>
+    <g id="Treppenhaus-3" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="105.6 99.6 112.2 101.4 112.2 90.4 105.6 88.7 105.6 99.6 105.6 99.6"/>
         <polygon class="iso-b3-cls-4" points="128.5 97.5 128.5 86.2 112.2 90.4 112.2 101.4 128.5 97.5"/>
@@ -200,7 +200,7 @@
       </g>
     </g>
   </g>
-  <g id="_2._OG_Balkon" data-iso-structure="2. OG Balkon">
+  <g id="_2._OG_Balkon" data-iso-item="2. OG Balkon">
     <path class="iso-b3-cls-3" d="m98.9,82.7l-3.4-.9-4.1,1.1,3.4.9-2.7.7-3.4-.9-5.7,1.5,3.4.9-9.2,2.4,37.5,10,8.8-2.3,3.4.9,5.8-1.5-3.4-.9,2.7-.7,3.4.9,4.1-1.1-3.4-.9,16.2-4.2,3.4.9,4.8-1.2-3.4-.9,2.7-.7,3.4.9,5.1-1.3-3.4-.9,15.9-4.1,3.4.9,4.5-1.2-3.4-.9,2.7-.7,3.4.9,5.4-1.4-3.4-.9s6.4-1.6,9.2-2.4l-37.3-10.1-9.2,2.4-3.4-.9-5.4,1.4,3.4.9-2.7.7-3.4-.9-4.5,1.2,3.4.9-15.9,4.1-3.4-.9-5.1,1.3,3.4.9-2.7.7-3.4-.9-4.8,1.2,3.3.9-16.2,4.2h0Z"/>
   </g>
   <g id="_2._OG" data-iso-item="2. OG">
@@ -238,7 +238,7 @@
         <polygon class="iso-b3-cls-2" points="169.8 75.6 175.4 77.1 175.4 66.2 169.9 64.7 169.8 75.6 169.8 75.6"/>
       </g>
     </g>
-    <g id="Treppenhaus-4" data-iso-structure>
+    <g id="Treppenhaus-4" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="145.9 76.3 156.3 79.1 156.3 68.1 146 65.3 145.9 76.3 145.9 76.3"/>
         <path class="iso-b3-cls-4" d="m172.7,63.9l-6.5-1.8-12.8,3.3-3.8-1-3.6.9,10.3,2.8c5.5-1.4,11-2.8,16.4-4.2h0Z"/>
@@ -301,7 +301,7 @@
         <polygon class="iso-b3-cls-2" points="95.2 84.9 102.5 86.9 102.6 75.9 95.3 73.9 95.2 84.9 95.2 84.9"/>
       </g>
     </g>
-    <g id="Treppenhaus-5" data-iso-structure>
+    <g id="Treppenhaus-5" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="105.6 88.7 112.2 90.4 112.2 79.5 105.6 77.7 105.6 88.7 105.6 88.7"/>
         <polygon class="iso-b3-cls-4" points="128.5 86.6 128.5 75.3 112.2 79.5 112.2 90.4 128.5 86.6"/>
@@ -336,7 +336,7 @@
       </g>
     </g>
   </g>
-  <g id="_3._OG_Balkon"  data-iso-structure="3. OG Balkon">
+  <g id="_3._OG_Balkon"  data-iso-item="3. OG Balkon">
     <path class="iso-b3-cls-3" d="m98.9,71.7l-3.4-.9-4.1,1.1,3.4.9-2.7.7-3.4-.9-5.7,1.5,3.4.9-9.2,2.4,37.5,10,8.8-2.3,3.4.9,5.8-1.5-3.4-.9,2.7-.7,3.4.9,4.1-1.1-3.4-.9,16.2-4.2,3.4.9,4.8-1.2-3.4-.9,2.7-.7,3.4.9,5.1-1.3-3.4-.9,15.9-4.1,3.4.9,4.5-1.2-3.4-.9,2.7-.7,3.4.9,5.4-1.4-3.4-.9s6.4-1.6,9.2-2.4l-37.3-10.1-9.2,2.4-3.4-.9-5.4,1.4,3.4.9-2.7.7-3.4-.9-4.5,1.2,3.4.9-15.9,4.1-3.4-.9-5.1,1.3,3.4.9-2.7.7-3.4-.9-4.8,1.2,3.3.9-16.2,4.2h0Z"/>
   </g>
   <g id="_3._OG" data-iso-item="3. OG">
@@ -437,7 +437,7 @@
         <polygon class="iso-b3-cls-2" points="95.2 73.9 102.5 75.9 102.6 65 95.3 63 95.2 73.9 95.2 73.9"/>
       </g>
     </g>
-    <g id="Treppenhaus-7" data-iso-structure>
+    <g id="Treppenhaus-7" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="105.6 77.7 112.2 79.5 112.2 68.5 105.6 66.8 105.6 77.7 105.6 77.7"/>
         <polygon class="iso-b3-cls-4" points="128.5 75.6 128.5 64.3 112.2 68.5 112.2 79.5 128.5 75.6"/>
@@ -472,7 +472,7 @@
       </g>
     </g>
   </g>
-  <g id="_4._OG_Balkon"  data-iso-structure="4. OG Balkon">
+  <g id="_4._OG_Balkon"  data-iso-item="4. OG Balkon">
     <path class="iso-b3-cls-3" d="m98.9,60.8l-3.4-.9-4.1,1.1,3.4.9-2.7.7-3.4-.9-5.7,1.5,3.4.9-9.2,2.4,37.5,10,8.8-2.3,3.4.9,5.8-1.5-3.4-.9,2.7-.7,3.4.9,4.1-1.1-3.4-.9,16.2-4.2,3.4.9,4.8-1.2-3.4-.9,2.7-.7,3.4.9,5.1-1.3-3.4-.9,15.9-4.1,3.4.9,4.5-1.2-3.4-.9,2.7-.7,3.4.9,5.4-1.4-3.4-.9s6.4-1.6,9.2-2.4l-37.3-10.1-9.2,2.4-3.4-.9-5.4,1.4,3.4.9-2.7.7-3.4-.9-4.5,1.2,3.4.9-15.9,4.1-3.4-.9-5.1,1.3,3.4.9-2.7.7-3.4-.9-4.8,1.2,3.3.9-16.2,4.2h0Z"/>
   </g>
   <g id="_4._OG" data-iso-item="4. OG">
@@ -510,7 +510,7 @@
         <polygon class="iso-b3-cls-2" points="169.8 53.7 175.4 55.2 175.4 44.3 169.9 42.8 169.8 53.7 169.8 53.7"/>
       </g>
     </g>
-    <g id="Treppenhaus-8" data-iso-structure>
+    <g id="Treppenhaus-8" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="145.9 54.4 156.3 57.2 156.3 46.3 146 43.4 145.9 54.4 145.9 54.4"/>
         <path class="iso-b3-cls-4" d="m172.7,42l-6.5-1.8-12.8,3.3-3.8-1-3.6.9,10.3,2.8c5.5-1.4,11-2.8,16.4-4.2h0Z"/>
@@ -573,7 +573,7 @@
         <polygon class="iso-b3-cls-2" points="95.2 63 102.5 65 102.6 54 95.3 52.1 95.2 63 95.2 63"/>
       </g>
     </g>
-    <g id="Treppenhaus-9" data-iso-structure>
+    <g id="Treppenhaus-9" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="105.6 66.8 112.2 68.5 112.2 57.6 105.6 55.8 105.6 66.8 105.6 66.8"/>
         <polygon class="iso-b3-cls-4" points="128.5 64.7 128.5 53.4 112.2 57.6 112.2 68.5 128.5 64.7"/>
@@ -608,7 +608,7 @@
       </g>
     </g>
   </g>
-  <g id="_5._OG_Balkon"  data-iso-structure="5. OG Balkon">
+  <g id="_5._OG_Balkon"  data-iso-item="5. OG Balkon">
     <polyline class="iso-b3-cls-3" points="75.7 55.1 114.7 65.5 202.7 42.9 163.4 32.6 75.7 55.1"/>
   </g>
   <g id="_5._OG" data-iso-item="5. OG">
@@ -630,7 +630,7 @@
         <polygon class="iso-b3-cls-2" points="168.9 48.7 182.4 45.3 182.4 34.3 168.9 37.8 168.9 48.7 168.9 48.7"/>
       </g>
     </g>
-    <g id="Treppenhaus-10" data-iso-structure>
+    <g id="Treppenhaus-10" data-iso-item>
       <g>
         <polygon class="iso-b3-cls-4" points="145.4 43.6 155.8 46.4 155.8 35.5 145.4 32.6 145.4 43.6 145.4 43.6"/>
         <path class="iso-b3-cls-4" d="m172.2,31.2l-6.5-1.8-12.8,3.3-3.8-1-3.6.9,10.3,2.8c5.5-1.4,11-2.8,16.4-4.2h0Z"/>
@@ -661,7 +661,7 @@
         <polygon class="iso-b3-cls-2" points="116.4 40.1 109.7 38.2 96.3 41.7 90.9 40.2 75.7 44.2 95.1 49.3 109 45.7 105.8 44.8 117.7 41.8 113.9 40.7 116.4 40.1"/>
       </g>
     </g>
-    <g id="Treppenhaus-11" data-iso-structure>
+    <g id="Treppenhaus-11" data-iso-item>
       <polygon class="iso-b3-cls-4" points="128.6 42.4 118.3 39.6 113.9 40.7 117.7 41.8 105.8 44.8 112.3 46.6 128.6 42.4"/>
     </g>
     <g id="_10.0502" data-iso-item="10.0502">
@@ -674,7 +674,7 @@
       </g>
     </g>
   </g>
-  <g id="Dach" data-iso-structure>
+  <g id="Dach" data-iso-item>
     <polygon class="iso-b3-cls-3" points="114.7 54.5 75.7 44.2 90.9 40.2 96.3 41.7 154.6 26.7 149.1 25.3 163.4 21.6 202.7 32.2 187.7 35.8 182.4 34.3 123.5 49.4 128.8 50.9 114.7 54.5"/>
   </g>
 </svg>

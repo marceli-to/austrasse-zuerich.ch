@@ -12,10 +12,6 @@ const ApartmentUi = (function () {
   // Classes
   const classes = {
     hidden: 'hidden',
-    visible: 'is-visible',
-    activeItem: 'is-active-item',
-    activeBuilding: 'is-active-building',
-    visibleBuilding: 'is-visible-building',
   };
 
   let selectedApartment = null;
@@ -34,19 +30,21 @@ const ApartmentUi = (function () {
 
     // on resize clear all, use debounce
     window.addEventListener('resize', debounce(function () {
-      clear();
+      hide();
     }, 250));
 
+    // on scroll clear all, use debounce
+    window.addEventListener('scroll', debounce(function () {
+      hide();
+    }, 100));
   };
 
   const show = function (element) {
     clear();
+
     const elementData = element.dataset;
 
-    console.log(selectedApartment);
-
     if (selectedApartment == elementData.number) {
-      clear();
       hide();
       return;
     }
@@ -81,12 +79,11 @@ const ApartmentUi = (function () {
   const hide = function () {
     const wrapper = document.querySelector(selectors.wrapper);
     wrapper.classList.add(classes.hidden);
+    clear();
     selectedApartment = null;
   };
 
   const clear = function () {
-
-    Iso.clearAll();
 
     const iso = Array.from(document.querySelectorAll('[data-apartment-iso]'));
     iso.forEach(function (element) {
@@ -104,7 +101,6 @@ const ApartmentUi = (function () {
   const debounce = (func, wait) => {
     let timeout;
     return function executedFunction(...args) {
-  
       const later = () => {
         timeout = null;
         func(...args);
@@ -113,7 +109,6 @@ const ApartmentUi = (function () {
       timeout = setTimeout(later, wait);
     };
   };
-
 
   return {
     init: initialize,

@@ -5,7 +5,6 @@ const Iso = (function() {
     body: 'body',
     apartment: '[data-apartment]',
     isoItem: '[data-iso-item]',
-    isoStructure: '[data-iso-structure]',
   };
 
   const classes = {
@@ -21,75 +20,67 @@ const Iso = (function() {
     // add a mouseover event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
       apartment.addEventListener('mouseover', function() {
-        listOver(apartment);
+        mouseOver(apartment);
       });
     });
 
     // add a mouseout event listener to each apartment
     document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
       apartment.addEventListener('mouseleave', function() {
-        listOut(apartment);
+        mouseOut(apartment);
+      });
+    });
+
+    // add a touchstart event listener to each apartment
+    document.querySelectorAll(selectors.apartment).forEach(function(apartment) {
+      apartment.addEventListener('touchstart', function() {
+        touchStart(apartment);
       });
     });
   };
 
-  const listOver = function(apartment) {
+  const mouseOver = function(apartment) {
     const number = apartment.dataset.number;
-    const isoItems = Array.from(document.querySelectorAll('[data-iso-item="' + number + '"]'));
-    isoItems.forEach(function (isoItem) {
-      if (isoItem) {
-        isoItem.classList.add('is-highlighted');
-        // Get the parent <g> element for the isoItem
-        const parent = isoItem.parentElement;
-
-        // find all siblings of the parent <g> element that are after it
-        const nextSiblings = getNextSiblings(parent);
-
-        // add styles to translate the parent <g> elements siblings
-        nextSiblings.forEach(function(sibling) {
-          sibling.classList.add('is-up')
-        });
-
-        // find all siblings of the parent <g> element that are before it
-        const previousSiblings = getPreviousSiblings(parent);
-
-        // add styles to translate the parent <g> element and all its siblings
-        parent.classList.add('is-down')
-        previousSiblings.forEach(function(sibling) {
-          sibling.classList.add('is-down')
-        });
-      }
-    });
-
-    // if (isoItem) {
-    //   isoItem.classList.add('is-highlighted');
-    //   // Get the parent <g> element for the isoItem
-    //   const parent = isoItem.parentElement;
-
-    //   // find all siblings of the parent <g> element that are after it
-    //   const nextSiblings = getNextSiblings(parent);
-
-    //   // add styles to translate the parent <g> elements siblings
-    //   nextSiblings.forEach(function(sibling) {
-    //     sibling.classList.add('is-up')
-    //   });
-
-    //   // find all siblings of the parent <g> element that are before it
-    //   const previousSiblings = getPreviousSiblings(parent);
-
-    //   // add styles to translate the parent <g> element and all its siblings
-    //   parent.classList.add('is-down')
-    //   previousSiblings.forEach(function(sibling) {
-    //     sibling.classList.add('is-down')
-    //   });
-    // }
-
+    const isoItem = document.querySelector('[data-iso="lg"] [data-iso-item="' + number + '"]');
+    highlight(isoItem);
   };
 
-  const listOut = function(apartment) {
+  const touchStart = function(apartment) {
+    clearAll();
     const number = apartment.dataset.number;
-    const isoItem = document.querySelector('[data-iso-item="' + number + '"]');
+    const isoItem = document.querySelector('[data-iso="sm"] [data-iso-item="' + number + '"]');
+    highlight(isoItem);
+  };
+
+  const mouseOut = function(apartment) {
+    const number = apartment.dataset.number;
+    const isoItem = document.querySelector('[data-iso="lg"] [data-iso-item="' + number + '"]');
     clear(isoItem);
+  };
+
+  const highlight = function(item) {
+    if (item) {
+      item.classList.add('is-highlighted');
+      // Get the parent <g> element for the item
+      const parent = item.parentElement;
+
+      // find all siblings of the parent <g> element that are after it
+      const nextSiblings = getNextSiblings(parent);
+
+      // add styles to translate the parent <g> elements siblings
+      nextSiblings.forEach(function(sibling) {
+        sibling.classList.add('is-up')
+      });
+
+      // find all siblings of the parent <g> element that are before it
+      const previousSiblings = getPreviousSiblings(parent);
+
+      // add styles to translate the parent <g> element and all its siblings
+      parent.classList.add('is-down')
+      previousSiblings.forEach(function(sibling) {
+        sibling.classList.add('is-down')
+      });
+    }
   };
 
   const clear = function(item) {
@@ -117,7 +108,6 @@ const Iso = (function() {
       clear(isoItem);
     });
   };
-
 
   const getNextSiblings = (parent) => {
     const siblings = [];

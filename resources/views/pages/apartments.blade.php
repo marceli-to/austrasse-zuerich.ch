@@ -32,7 +32,7 @@
   <div class="mt-24 grid grid-cols-12 gap-x-24 items-end">
     @for ($i = 1; $i <= 3; $i++)
       <div data-apartment-iso="{{ $i }}" class="hidden col-span-8">
-        <x-apartments.iso.wrapper :number="$i" />
+        <x-apartments.iso.wrapper :number="$i" size="sm" />
       </div>
       <div data-apartment-iso-preview="{{ $i }}" class="hidden col-span-3 col-start-10 flex justify-end">
         <x-apartments.iso.preview :number="$i" />
