@@ -1,4 +1,4 @@
-@props(['apartments', 'building'])
+@props(['apartments', 'building', 'showRooms' => true])
 <tbody>
   @foreach($apartments as $apartment)
     <tr 
@@ -9,7 +9,7 @@
       data-state="{{ App\Helpers\ApartmentHelper::getStateKey($apartment) }}"
       data-rooms="{{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}"
       data-plan=""
-      data-form=""
+      data-form="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/"
       data-area="{{ $apartment['surface_living'] }}"
       data-detail-title="{{ $apartment['object_type'] == 'APARTMENT' ? 'Wohnung' : 'Gewerbeobjekt'}} {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
       data-detail-floor="{{ $apartment['floor'] ? config('apartment.floors')[$apartment['floor']] : 'EG' }}"
@@ -20,9 +20,11 @@
       <td>
         {{ $apartment['floor'] != null ? config('apartment.floors')[$apartment['floor']] : 'EG' }}
       </td>
-      <td>
-        {{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}
-      </td>
+      @if ($showRooms)
+        <td>
+          {{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}
+        </td>
+      @endif
       <td>
         {{ $apartment['surface_living'] == null ? '–' : $apartment['surface_living'] }}
       </td>

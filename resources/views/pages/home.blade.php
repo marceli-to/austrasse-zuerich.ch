@@ -53,7 +53,7 @@
         <x-menu.card :route="'page.living'" :title="'Moderner<br>Ausbau'" :image="'austrasse_zuerich_wohnzimmer_kueche_08_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
-        <x-menu.card :route="'page.living'" :title="'Attraktive<br>Gewerbeflächen'" :image="'austrasse_zuerich_bueros_09_quadrat'" />
+        <x-menu.card :route="'page.business'" :title="'Attraktive<br>Gewerbeflächen'" :image="'austrasse_zuerich_bueros_09_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
         <x-menu.card :route="'page.apartments'" :title="'Wohnen'" :image="'austrasse_zuerich_ansicht_oben_quadrat'" />

@@ -14,7 +14,7 @@
               <th>Nr.</th>
               <th>Etage</th>
               <th>Zi</th>
-              <th>HNF/m<sup>2</sup></th>
+              <th>HNF m<sup>2</sup></th>
               <th class="!text-right !pr-10">Netto MZ/Mt.</th>
               <th class="!text-right !pr-10">NK</th>
               <th class="!text-right !pr-18">Brutto MZ/Mt.</th>
