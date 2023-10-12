@@ -6,7 +6,7 @@
     <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />
     <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
       <h1>Wobei können wir Ihnen helfen?</h1>
-      <div class="mt-20 lg:mt-32 flex gap-12 md:gap-24">
+      <div class="mt-20 lg:mt-32 flex flex-wrap gap-12 md:gap-24">
         <x-accordeon.shortcut :title="'Bewerbungsprozess'" :index="1" />
         <x-accordeon.shortcut :title="'Mietvertrag'" :index="2" />
         <x-accordeon.shortcut :title="'Lage'" :index="6" />
