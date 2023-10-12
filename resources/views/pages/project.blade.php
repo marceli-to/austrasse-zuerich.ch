@@ -47,7 +47,7 @@
         <p>Die drei Gebäude befinden sich zurückversetzt in einer ruhigen 30er Zone. Der Uetliberg oder der Zürichsee als Naherholungsgebiete lassen sich mit dem Fahrrad in einer kurzen Fahrzeit erreichen.</p>
         <p>Nutzer des öffentlichen Verkehrs profitieren von den sehr guten Anschlüssen am Bahnhof Binz, welcher sich in unmittelbarer Nähe befindet. Mit dem Zug erreicht man den Hauptbahnhof Zürich in 13 Fahrminuten. Die Nähe zur Autobahn macht die Lage auch für Automobilisten attraktiv.</p>
        
-        <div class="mt-20 lg:mt-32 flex sm:gap-24">
+        <div class="mt-20 lg:mt-32 flex gap-x-16 sm:gap-x-24">
           <a
            href=""
            title="Situationsplan"
