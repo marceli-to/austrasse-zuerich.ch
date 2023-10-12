@@ -50,8 +50,13 @@ const loadMapScript = () => {
       initMap();
     }
   }
-
-
 }
 
-loadMapScript();
+const scrollEventHandler = () => {
+  if (window.scrollY > 500) {
+    loadMapboxScript();
+    window.removeEventListener('scroll', scrollEventHandler);
+  }
+}
+
+window.addEventListener('scroll', scrollEventHandler);
