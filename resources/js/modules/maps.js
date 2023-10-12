@@ -53,10 +53,22 @@ const loadMapScript = () => {
 }
 
 const scrollEventHandler = () => {
-  if (window.scrollY > 300) {
+  const mapEl = document.getElementById('map');
+  if (mapEl === null) {
+    return;
+  }
+
+  const rect = mapEl.getBoundingClientRect();
+  const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+  const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+  const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+  if (vertInView && horInView) {
     loadMapScript();
     window.removeEventListener('scroll', scrollEventHandler);
   }
+
 }
 
 window.addEventListener('scroll', scrollEventHandler);
