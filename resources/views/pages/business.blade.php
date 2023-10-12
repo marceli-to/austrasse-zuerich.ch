@@ -1,5 +1,6 @@
 @extends('app')
 @section('seo_title', 'Gewerbe')
+@section('seo_description', 'Einst der Hauptsitz der Zürich Versicherungs-Gesellschaft AG und bald ein neues lebendiges Quartier zum Wohnen und Arbeiten. An der Austrasse/Wiedingstrasse entstehen drei neue architektonisch beeindruckende Gebäude, welche sich in die Natur und dem Moränenhügel gut einfügen.')
 @section('content')
 <x-layout.section class="!p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />

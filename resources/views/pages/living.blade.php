@@ -1,5 +1,6 @@
 @extends('app')
 @section('seo_title', 'Wohnungen')
+@section('seo_description', 'Die Mietwohnungen der Überbauung Austrasse überzeugen mit spannenden Grundrissvarianten und attraktiven, privaten Aussenbereichen. Die Balkone und die rindenartige Keramikfassade übertragen das Waldthema in die Gebäude und lassen die Wohnbereiche fliessend in die Aussenräume übergehen. Beim Ausbau der Wohnungen wird auf langlebige, hochwertige Materialien geachtet.')
 @section('content')
 <x-layout.section class="!p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[20%] xl:w-[25%]" />

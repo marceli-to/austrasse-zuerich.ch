@@ -1,5 +1,6 @@
 @extends('app')
 @section('seo_title', 'Q&A')
+@section('seo_description', 'Bei Fragen hilft Ihnen unser Q&A gerne weiter.')
 @section('content')
 <div x-data="{ selected: 0 }">
   <x-layout.section class="!p-0">

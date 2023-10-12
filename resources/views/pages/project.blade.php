@@ -1,5 +1,6 @@
 @extends('app')
 @section('seo_title', 'Projekt')
+@section('seo_description', 'Mit dem Projekt Austrasse entstehen an einer zentralen Lage neue 1.5- bis 5.5-Zimmerwohnungen, welche sich über drei Gebäude verteilen. Die Gebäude betten sich hervorragend in die topografischen Gegebenheiten ein. Sie repräsentieren die zentrale und doch naturnahe Lage.')
 @section('content')
 <x-layout.section class="!p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[20%] xl:w-[25%]" />
