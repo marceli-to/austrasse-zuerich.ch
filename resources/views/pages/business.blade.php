@@ -29,7 +29,6 @@
         <a data-fancybox href="/media/img/austrasse_zuerich_bueros_09-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_bueros_09'" :alt="'Austrasse Zürich – Büro'" class="mt-20 lg:mt-40" />
         </a>
-        
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>

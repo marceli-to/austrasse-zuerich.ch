@@ -125,7 +125,7 @@
     <x-layout.span class="sm:col-span-12 mt-15">
       <x-form.button>
         <div wire:loading>
-          <x-form.spinner class="mr-12 text-white" />
+          <x-form.spinner class="mr-12 text-olive" />
         </div>
         Senden
       </x-form.button>
