@@ -54,7 +54,7 @@ const loadMapScript = () => {
 
 const scrollEventHandler = () => {
   if (window.scrollY > 500) {
-    loadMapboxScript();
+    loadMapScript();
     window.removeEventListener('scroll', scrollEventHandler);
   }
 }
