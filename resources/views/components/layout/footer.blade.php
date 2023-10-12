@@ -40,7 +40,7 @@
   </x-layout.section>
 </footer>
 @livewireScripts
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js' defer></script>
+{{-- <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js' defer></script> --}}
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' defer rel='stylesheet' />
 @vite('resources/js/app.js')
 </body>

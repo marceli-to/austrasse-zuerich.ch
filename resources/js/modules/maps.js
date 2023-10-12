@@ -1,8 +1,8 @@
-const init = () => {
+const initMap = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY2VsaXRvb29vIiwiYSI6ImNrMHNsdmhwdjAzcjIzZ3BldTlqdWhnaWEifQ.EWZE383Tn4xBt0E5pSXh6Q';
   var map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq',
+      style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
       center: [8.518915948100124,47.363909484198],
       zoom: 13
   });
@@ -37,7 +37,21 @@ const init = () => {
     .addTo(map);
   });
 };
-const mapEl = document.getElementById('map');
-if (mapEl !== null) {
-  init();
+
+const loadMapScript = () => {
+  var script = document.createElement('script');
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js';
+  script.async = true;
+  document.head.appendChild(script);
+
+  script.onload = () => {
+    const mapEl = document.getElementById('map');
+    if (mapEl !== null) {
+      initMap();
+    }
+  }
+
+
 }
+
+loadMapScript();
