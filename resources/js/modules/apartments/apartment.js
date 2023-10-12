@@ -77,7 +77,7 @@ const ApartmentUi = (function () {
 
     // create a link for elementData.plan
     const objectDetailPlan = `<a href="${elementData.plan}" target="_blank" class="underline underline-offset-2">Grundriss</a>`;
-    const objectDetail = `${objectDetailInfo}<div class="flex gap-x-16 mt-4">${objectDetailLink} ${objectDetailPlan}</div>`;
+    const objectDetail = `${objectDetailInfo}<div class="flex gap-x-16 mt-8">${objectDetailLink} ${objectDetailPlan}</div>`;
 
     document.querySelector('[data-apartment-number]').innerHTML = `${elementData.detailTitle}`;
     document.querySelector('[data-apartment-info]').innerHTML = objectDetail;
