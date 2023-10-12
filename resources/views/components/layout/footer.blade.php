@@ -15,7 +15,7 @@
     <x-layout.inner>
       <x-layout.grid>
         <x-layout.span class="sm:col-span-6 md:col-span-3">
-          <h3 class="text-serene font-semi">Apleona Schweiz AG</h3>
+          <div class="text-serene font-semi">Apleona Schweiz AG</div>
           <p class="text-white">
             Industriestrasse 21<br>8304 Wallisellen
           </p>
