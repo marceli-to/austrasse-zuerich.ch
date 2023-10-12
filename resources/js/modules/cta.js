@@ -1,4 +1,4 @@
-(function () {
+const CtaButton = (function() {
 
   const selectors = {
     button: '[data-cta]',
@@ -18,20 +18,49 @@
   };
 
   const init = () => {
-    const handleScroll = () => {
-      const button = document.querySelector(selectors.button);
-
-      if (button) {
-        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        button.classList.toggle('opacity-0', scrollPercentage <= 5);
-        button.classList.toggle('opacity-100', scrollPercentage > 50);
-      }
-    };
-
-    // Add debounce to the scroll event
     window.addEventListener('scroll', debounce(handleScroll, 50));
   };
 
-  init();
+  const handleScroll = () => {
+    const button = document.querySelector(selectors.button);
+
+    if (button) {
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercentage <= 5) {
+        button.classList.remove('opacity-100');
+        button.classList.add('opacity-0');
+      }
+      else {
+        button.classList.remove('opacity-0');
+        button.classList.add('opacity-100');
+      }
+    }
+  };
+
+  const show = () => {
+    const button = document.querySelector(selectors.button);
+    if (button) {
+      button.classList.remove('hidden');
+    }
+  };
+
+  const hide = () => {
+    const button = document.querySelector(selectors.button);
+    if (button) {
+      button.classList.add('hidden');
+    }
+  };
+
+  return {
+    init: init,
+    show: show,
+    hide: hide,
+  };
 
 })();
+
+CtaButton.init();
+
+export default CtaButton;
+
+// Path: resources/js/modules/cta.js

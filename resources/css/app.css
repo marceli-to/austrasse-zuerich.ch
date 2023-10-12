@@ -74,3 +74,8 @@ sup {
 .fancybox__toolbar .f-button svg {
   @apply text-white;
 }
+
+/* Cart */
+.is-minimized {
+  @apply translate-y-[calc(100%-60px)] transition-transform duration-300 ease-in-out;
+}

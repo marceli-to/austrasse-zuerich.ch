@@ -23,6 +23,6 @@
     </x-layout.inner>
   @endfor
 </x-layout.section>
-<x-apartments.cart />
+<x-apartments.cart type="apartment" />
 <x-apartments.show />
 @endsection

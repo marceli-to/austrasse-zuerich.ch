@@ -60,7 +60,11 @@
 
       <td class="!text-center !py-0 !pr-0 xs:!pr-8">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          <a href="" title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" class="hidden xs:flex w-full h-full p-6 items-center justify-center">
+          <a 
+            href="/storage/media/plan.pdf" 
+            target="_blank" 
+            title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" 
+            class="hidden xs:flex w-full h-full p-6 items-center justify-center">
             <x-icons.download class="-mt-1" />
           </a>
         @endif

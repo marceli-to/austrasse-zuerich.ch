@@ -54,7 +54,7 @@
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>
-  <x-apartments.cart />
+  <x-apartments.cart type="commercial" />
   <x-apartments.show />
 </x-layout.section>
 <x-layout.section class="">
