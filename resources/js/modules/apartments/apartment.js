@@ -75,10 +75,10 @@ const ApartmentUi = (function () {
     const objectDetailInfo = `${elementData.rooms}-Zimmerwohnung, ${elementData.detailFloor}, ${elementData.area} m²`;
 
     // create a link for elementData.form
-    const objectDetailLink = `<a href="${elementData.form}" target="_blank" class="underline underline-offset-2">Anmeldeformular</a>`;
+    const objectDetailLink = `<a href="${elementData.form}" target="_blank" class="underline underline-offset-2 decoration-1">Anmeldeformular</a>`;
 
     // create a link for elementData.plan
-    const objectDetailPlan = `<a href="${elementData.plan}" target="_blank" class="underline underline-offset-2">Grundriss</a>`;
+    const objectDetailPlan = `<a href="${elementData.plan}" target="_blank" class="underline underline-offset-2 decoration-1">Grundriss</a>`;
     const objectDetail = `${objectDetailInfo}<div class="flex gap-x-16 mt-8">${objectDetailLink} ${objectDetailPlan}</div>`;
 
     document.querySelector('[data-apartment-number]').innerHTML = `${elementData.detailTitle}`;
