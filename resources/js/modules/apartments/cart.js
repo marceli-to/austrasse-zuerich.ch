@@ -44,14 +44,19 @@ const Cart = (function() {
     });
 
     // add click event for clear button
-    document.querySelector(selectors.btns.clear).addEventListener('click', function() {
-      clear();
-    });
+    if (document.querySelector(selectors.btns.clear)) {
+      document.querySelector(selectors.btns.clear).addEventListener('click', function() {
+        clear();
+      });
+    }
 
     // add click event for hide button
-    document.querySelector(selectors.btns.hide).addEventListener('click', function() {
-      hide();
-    });
+    if (document.querySelector(selectors.btns.hide)) {
+      document.querySelector(selectors.btns.hide).addEventListener('click', function() {
+        hide();
+      });
+    }
+
   };
 
   const add = (apartment) => {

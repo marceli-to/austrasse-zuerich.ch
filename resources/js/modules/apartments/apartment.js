@@ -17,11 +17,11 @@ const ApartmentUi = (function () {
 
   let selectedApartment = null;
 
-  const initialize = function () {
+  const initialize = () => {
     bind();
   };
 
-  const bind = function () {
+  const bind = () => {
     // on touch start (item)  and show the wrapper
     document.querySelectorAll(selectors.apartment).forEach(function (element) {
       if ('ontouchstart' in window || navigator.maxTouchPoints) {
@@ -31,10 +31,12 @@ const ApartmentUi = (function () {
       }
     });
 
-    // on click btnClose hide the wrapper
-    document.querySelector(selectors.btnClose).addEventListener('click', function () {
-      hide();
-    });
+    // on click btnClose hide the wrapper if the button is in the document
+    if (document.querySelector(selectors.btnClose)) {
+      document.querySelector(selectors.btnClose).addEventListener('click', function () {
+        hide();
+      });
+    }
 
     // on resize clear all, use debounce
     window.addEventListener('resize', debounce(function () {
@@ -85,7 +87,9 @@ const ApartmentUi = (function () {
 
   const hide = function () {
     const wrapper = document.querySelector(selectors.wrapper);
-    wrapper.classList.add(classes.hidden);
+    if (wrapper) {
+      wrapper.classList.add(classes.hidden);
+    }
     clear();
     selectedApartment = null;
   };

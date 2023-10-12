@@ -1,29 +1,40 @@
 @extends('app')
 @section('seo_title', 'Gewerbe')
 @section('content')
-<x-layout.section class="!p-0 bg-white">
+<x-layout.section class="!p-0">
   <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />
   <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
     <h1>Gewerbe</h1>
     <x-layout.grid>
-      <x-layout.span>
-        <p>Beim Ausbau der Wohnungen wird auf ein architektonisches Gesamtkonzept geachtet. So wurden die Wohnungen schlicht aber dennoch modern in einem gehobenen Ausbaustandard konzipiert. Die Umgebung wird parkähnlich mit viel Grün und Aufenthaltsflächen sowie Spielplätzen gestaltet.</p>
-        <p>Die Wohnungen verfügen über interessante und gut möblierbare Grundrisse. Der hochwertige Ausbaustandard zieht sich durch die gesamte Überbauung, durch die gewählten Farben und Materialien entsteht ein einheitliches Zusammenspiel zwischen Innen- und Aussenwirkung.</p>
-        <p>Die modernen Küchen mit taupe farbenen Keramik-Bodenplatten, weissen Schränken mit Eicheneinlagen, weisser Silestone-Abdeckung und wertigen Elektrogeräten der Marke V-Zug, fügen sich optimal in den restlichen Wohnraum ein und lassen keine Wünsche offen.</p>
-        <p>Ein harmonisches Wohngefühl wird dem Wohn-/Essbereich sowie den Schlafzimmern und dem Korridor durch das ausgewählte Fischgrätparkett verliehen. Jede Wohnung verfügt zudem über einen Sitzplatz oder eine Loggia, welche sich direkt vom Wohnbereich aus betreten lässt.</p>
-        <p>Die modernen Bäder sind mit Keramikplatten in Taupe ausgestattet und verfügen über eine Dusche oder Badewanne.</p>
-        <p>Zudem ist jede Wohnung mit einem eigenen Waschturm im Reduit ausgestattet.</p>
-        <p>Zu jeder Wohnung gehört auch ein Kellerabteil.</p>
+      <x-layout.span class="hyphens-auto">
+        <p>Einst der Hauptsitz der Zürich Versicherungs-<span class="hyphens-none">Gesellschaft</span> AG und bald ein neues lebendiges Quartier zum Wohnen und Arbeiten. An der <span class="hyphens-none">Austrasse</span>/<span class="hyphens-none">Wiedingstrasse</span> entstehen drei neue architektonisch beeindruckende Gebäude, welche sich in die Natur und dem Moränenhügel gut einfügen. Neben den verschiedensten Wohnungen, entstehen im Erdgeschoss an der Austrasse 46/48 auch Gewerbeflächen ab 58 m<sup>2</sup> und bringen für unterschiedlichste Unternehmen grosses Potenzial mit sich.</p>
+        <p>Ob als Büro, Verkaufsladen oder Kita – die Gewerbeflächen im neuen Quartier ermöglichen eine vielseitige Nutzung und damit eine breite Angebotsvielfalt. Mit dem Mix aus Wohnen und Arbeiten sowie der pulsierenden Umgebung der Stadt Zürich, ist die Austrasse ein idealer Standort für Kleingewerbe. Die Bewohnerinnen und Bewohner des Quartiers bergen grosses Kundenpotenzial, ebenso jene Menschen, die in der Nachbarschaft leben oder arbeiten.</p>
+        <p>Vermietet im Rohbau II, stehen Ihnen die ab 58 m<sup>2</sup> grosse Flächen ab 1. Mai 2024 zur Verfügung und können nach Ihren Wünschen ausgebaut und gestaltet werden. Für den Grundausbau wie Zu- und Abschluss von Kalt- und Warmwasser, Hauptverteilung der Elektroanlagen, Basis Lüftungsanlage mit Wärmerückgewinn (nicht für Gastronomie) sowie auch elektrischen Rollläden wird seitens Vermieter gesorgt.</p>
+        <p>Dank des direkt angrenzenden Bahnhof Binz sowie der unweit entfernten Bushaltestelle Manesseplatz bietet der Standort eine ideale Erreichbarkeit für Kunden und Mitarbeitende. Die hauseigene Einstellhalle rundet das hochwertige Angebot ab.</p>
+        <p>Ihre Vorteile auf einen Blick:</p>
+        <ul>
+          <li>Flächen ab 58 m<sup>2</sup> bis 240 m<sup>2</sup></li>
+          <li>Bodenbelastung 3kN/m<sup>2</sup></li>
+          <li>Raumhöhe von 3.00 m bis 3.40 m</li>
+          <li>Maximal flexibel dank mehreren Zugängen (Aussenzugang sowie Zugang über Treppenhaus)</li>
+          <li>Beschriftung der Schaufenster möglich</li>
+          <li>Anmietbare Lagerflächen</li>
+          <li>Anmietbare Einstellplätze (mit Ladestation möglich)</li>
+        </ul>
       </x-layout.span>
       <x-layout.span>
-        <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_eingang'" :alt="'Austrasse Zürich – Eingang'" />
+        <a data-fancybox href="/media/img/austrasse_zuerich_laden_10-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_laden_10'" :alt="'Austrasse Zürich – Gewerbe'" />
         </a>
+        <a data-fancybox href="/media/img/austrasse_zuerich_bueros_09-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_bueros_09'" :alt="'Austrasse Zürich – Büro'" class="mt-20 lg:mt-40" />
+        </a>
+        
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>
 </x-layout.section>
-<x-layout.section>
+<x-layout.section class="bg-white">
   <x-layout.inner data-building-group="3">
     <h2>Angebot</h2>
     <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
@@ -33,8 +44,8 @@
         </div>
       </x-layout.span>
       <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:-mt-80 lg:-mt-100 md:overflow-auto">
-        <x-apartments.wrapper number="3" address="Austrasse 46/48" class="overflow-auto">
-          <x-apartments.table :apartments="$apartments" building="3" />
+        <x-apartments.wrapper number="3" address="Austrasse 46/48" class="!bg-white overflow-auto">
+          <x-apartments.table :apartments="$apartments" building="3" classHeader="bg-white" />
         </x-apartments.wrapper>
       </x-layout.span>
     </x-layout.grid>
@@ -42,7 +53,7 @@
   <x-apartments.cart />
   <x-apartments.show />
 </x-layout.section>
-<x-layout.section class="bg-white">
+<x-layout.section class="">
   <x-layout.inner>
     <div>
       <h2>Kontakt</h2>

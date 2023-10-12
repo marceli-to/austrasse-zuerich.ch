@@ -6,7 +6,7 @@
 
 @if (Route::is('page.apartments'))
 <x-layout.section class="relative !p-0">
-  <x-media.picture :image="'austrasse_zuerich-3d-modell'" :alt="'Austrasse Zürich – Wohnzimmer'" class="aspect-[16/9]" />
+  <x-media.picture :image="'austrasse_zuerich_ansicht_oben'" :alt="'Austrasse Zürich – Vogelperspektive'" class="aspect-[16/9] 2xl:aspect-[16/8]" />
 </x-layout.section>
 @endif
 

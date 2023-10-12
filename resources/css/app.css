@@ -39,6 +39,11 @@ main ul li {
   @apply list-item list-disc ml-20;
 }
 
+sub,
+sup {
+  font-size: 65%;
+}
+
 .marker {
   background-image: url('../icons/marker.svg');
   background-size: contain;

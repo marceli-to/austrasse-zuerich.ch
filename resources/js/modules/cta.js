@@ -20,9 +20,12 @@
   const init = () => {
     const handleScroll = () => {
       const button = document.querySelector(selectors.button);
-      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      button.classList.toggle('opacity-0', scrollPercentage <= 5);
-      button.classList.toggle('opacity-100', scrollPercentage > 50);
+
+      if (button) {
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        button.classList.toggle('opacity-0', scrollPercentage <= 5);
+        button.classList.toggle('opacity-100', scrollPercentage > 50);
+      }
     };
 
     // Add debounce to the scroll event
