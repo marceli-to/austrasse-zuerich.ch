@@ -8,26 +8,29 @@
     </a>
     <h3 class="mb-12 xl:mb-16 group-[.is-minimized]:invisible">Ihre Auswahl</h3>
     <div class="group-[.is-minimized]:hidden sm:grid sm:grid-cols-12 sm:gap-24 lg:gap-32">
-      <div class="sm:col-span-12 md:col-span-12 lg:col-span-8 2xl:col-span-9 max-w-3xl">
-        <table class="w-full text-xs xl:text-sm" data-cart-table>
-          <thead>
-            <tr class="[&>th]:pb-6 [&>th]:pr-6 xs:[&>th]:pr-8 [&>th]:align-middle [&>th]:text-left [&>th]:leading-[1rem] [&>th]:w-auto [&>th]:font-semi [&>th]:font-normal border-b border-olive">
-              <th>Nr.</th>
-              <th>Etage</th>
-              @if ($type == 'apartment')
-                <th>Zi</th>
-              @endif
-              <th>HNF m<sup>2</sup></th>
-              <th class="!text-right !pr-10">Netto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
-              <th class="!text-right !pr-10">NK</th>
-              <th class="!text-right !pr-18">Brutto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
-              <th class="text-center">Grundriss</th>
-              <th class="!text-right !pr-0">Anmeldung</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
+      <div class="sm:col-span-12 md:col-span-12 lg:col-span-9 2xl:col-span-10">
+        <div class="max-h-[180px] overflow-auto pr-20" data-cart-table>
+          <table class="w-full text-xs xl:text-sm">
+            <thead>
+              <tr class="[&>th]:pb-6 [&>th]:pr-6 xs:[&>th]:pr-8 [&>th]:align-middle [&>th]:text-left [&>th]:leading-[1rem] [&>th]:w-auto [&>th]:font-semi [&>th]:font-normal border-b border-olive">
+                <th>Nr.</th>
+                <th>Etage</th>
+                @if ($type == 'apartment')
+                  <th>Zi</th>
+                @endif
+                <th>HNF m<sup>2</sup></th>
+                <th class="!text-right !pr-10">Netto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
+                <th class="!text-right !pr-10">NK</th>
+                <th class="!text-right !pr-18">Brutto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
+                <th class="text-center">Grundriss</th>
+                <th class="!text-right !pr-0">Anmeldung</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
         <div class="mt-24 flex gap-x-16 lg:gap-x-24 text-sm xl:text-base leading-none">
           <a 
             href="javascript:;" 

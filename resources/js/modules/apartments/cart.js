@@ -7,12 +7,13 @@ const Cart = (function() {
     body: 'body',
     apartment: '[data-apartment]',
     isoItem: '[data-iso-item]',
-    table: '[data-cart-table] tbody',
+    table: '[data-cart-table] table tbody',
     cart: '[data-cart]',
     btns: {
       clear: '[data-cart-clear]',
       hide: '[data-cart-hide]',
       toggle: '[data-cart-toggle]',
+      remove: '[data-cart-remove-item]',
     }
   };
 
@@ -75,6 +76,15 @@ const Cart = (function() {
       });
     }
 
+    // add click event for remove button
+    if (document.querySelector(selectors.btns.remove)) {
+      document.querySelectorAll(selectors.btns.remove).forEach((btn) => {
+        btn.addEventListener('click', function() {
+          remove(btn);
+        });
+      });
+    }
+
   };
 
   const add = (apartment) => {
@@ -97,17 +107,40 @@ const Cart = (function() {
       'is-highlighted'
     );
 
-    // remove data attributes
+    // remove data attribute
     apartmentClone.removeAttribute('data-apartment');
+
+    // add a td with a remove link at the end
+    const td = document.createElement('td');
+    td.classList.add('text-right', '!pr-0', 'pl-10');
+
+    const removeLink = document.createElement('a');
+    removeLink.classList.add(
+      'text-xs', 
+      'hover:underline', 
+      'hover:underline-offset-2', 
+      'hover:decoration-1'
+    );
+    removeLink.setAttribute('href', 'javascript:;');
+    removeLink.setAttribute('data-cart-remove-item', apartment.dataset.number);
+    removeLink.innerHTML = 'Entfernen';
+
+    // add event listener to remove link
+    removeLink.addEventListener('click', function() {
+      remove(this);
+    });
+
+    td.appendChild(removeLink);
+    apartmentClone.appendChild(td);
+
+    // add clone to table
+    table.appendChild(apartmentClone);
 
     // save clone in local storage
     save(apartmentClone);
 
-    // add clone to table
-    table.appendChild(apartmentClone);
     CtaButton.hide();
     show();
-
   };
 
   const clear = () => {
@@ -116,6 +149,21 @@ const Cart = (function() {
     localStorage.removeItem(cartType);
     CtaButton.show();
     hide();
+  };
+
+  const remove = (btn) => {
+    const table = document.querySelector(selectors.table);
+    const number = btn.dataset.cartRemoveItem;
+    table.querySelector(`tr[data-number="${number}"]`).remove();
+    localStorage.removeItem(cartType);
+    const cart = table.querySelectorAll('tr');
+    cart.forEach((item) => {
+      save(item);
+    });
+    if (cart.length == 0) {
+      CtaButton.show();
+      hide();
+    }
   };
 
   const show = (minimize = false) => {
