@@ -1,4 +1,4 @@
-<nav x-show="menu" class="fixed bg-white w-full left-0 top-70 md:top-0 px-20 pb-20 md:p-0 md:relative md:!block">
+<nav x-show="menu" x-cloak class="fixed bg-white w-full left-0 top-70 md:top-0 px-20 pb-20 md:p-0 md:relative md:!block">
   <ul class="md:flex md:mt-30">
     <x-menu.item :route="'page.project'" :title="'Projekt'" class="{{ Route::is('page.project') ? 'text-serene' : '' }}" />
     <x-menu.item :route="'page.living'" :title="'Wohnen'" class="{{ Route::is('page.living') ? 'text-serene' : '' }}" />
