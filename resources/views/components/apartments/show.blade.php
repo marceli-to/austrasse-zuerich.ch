@@ -1,6 +1,6 @@
 <div 
   data-apartment-show
-  class="hidden sm:!hidden fixed w-full bottom-0 left-0 min-h-[150px] z-[20000] pt-16 pb-24 pl-20 pr-20 bg-white shadow-top text-olive text-base">
+  class="hidden sm:!hidden fixed w-full bottom-0 left-0 min-h-[150px] z-[400] pt-16 pb-24 pl-20 pr-20 bg-white shadow-top text-olive text-base">
   <div class="relative">
     <a href="javascript:;" class="absolute top-0 right-0 -mt-2 -mr-2 p-4" data-apartment-close>
       <x-icons.cross class="w-18 h-auto" strokeWidth="2" />

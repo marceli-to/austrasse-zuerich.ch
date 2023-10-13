@@ -1,5 +1,5 @@
 @props(['type' => 'apartment'])
-<section data-cart="{{ $type }}" class="group hidden px-20 lg:px-40 py-20 fixed bottom-0 left-0 w-full bg-white z-[20000] shadow-top">
+<section data-cart="{{ $type }}" class="group hidden px-20 lg:px-40 py-20 fixed bottom-0 left-0 w-full bg-white z-[400] shadow-top">
   <x-layout.inner class="relative">
     <a href="javascript:;" 
       class="no-underline block absolute top-0 right-0 p-8 -mt-4 -mr-4"

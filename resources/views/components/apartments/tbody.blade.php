@@ -37,7 +37,7 @@
       </td>
       <td class="!text-right hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ number_format($apartment['rent_charges'], 2, '.', '') }}
+          {{ $apartment['object_type'] == 'COMMERCIAL' ? '480.00' : number_format($apartment['rent_charges'], 2, '.', '') }}
         @else
           –
         @endif

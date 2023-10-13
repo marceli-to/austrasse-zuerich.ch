@@ -6,6 +6,7 @@ const Iso = (function() {
     apartment: '[data-apartment]',
     iso: '[data-iso]',
     isoItem: '[data-iso-item]',
+    isoFloor: '[data-iso-floor]',
     hint: '[data-apartment-hint]',
   };
 
@@ -16,16 +17,28 @@ const Iso = (function() {
 
   const bind = function() {
 
+    // add a mouseover event listener to each isoFloor
+    document.querySelectorAll(selectors.isoFloor).forEach(function(isoFloor) {
+      isoFloor.addEventListener('mouseover', function() {
+        hideFloor(isoFloor);
+      });
+      isoFloor.addEventListener('mouseleave', function() {
+        showFloor(isoFloor);
+      });
+    }); 
+
     // add a mouseover event listener to each isoItem
     document.querySelectorAll(selectors.isoItem).forEach(function(isoItem) {
       isoItem.addEventListener('mouseover', function() {
         if (isoItem.dataset.isoItem != '') {
           highlightList(isoItem.dataset.isoItem);
+          highlightIso(isoItem, false);
         }
       });
       isoItem.addEventListener('mouseleave', function() {
         if (isoItem.dataset.isoItem != '') {
           resetList(isoItem.dataset.isoItem);
+          resetIso();
         }
       });
     });
@@ -86,28 +99,58 @@ const Iso = (function() {
     apartment.classList.remove('is-highlighted');
   }
 
-  const highlightIso = function(item) {
+  const resetIso = function() {
+    const isoItems = Array.from(document.querySelectorAll('[data-iso-item]'));
+    isoItems.forEach(function (isoItem) {
+      clear(isoItem);
+    });
+  };
+
+  const hideFloor = (floor) =>  {
+    // find all siblings of the parent <g> element that are after it
+    const nextSiblings = getNextSiblings(floor);
+
+    // add styles to translate the parent <g> elements siblings
+    nextSiblings.forEach(function(sibling) {
+      sibling.classList.add('is-up-lg')
+    });
+  };
+
+  const showFloor = (floor) =>  {
+    // find all siblings of the parent <g> element that are after it
+    const nextSiblings = getNextSiblings(floor);
+
+    // add styles to translate the parent <g> elements siblings
+    nextSiblings.forEach(function(sibling) {
+      sibling.classList.remove('is-up-lg')
+    });
+  };
+
+  const highlightIso = function(item, moveSiblings = true) {
     if (item) {
       item.classList.add('is-highlighted');
-      // Get the parent <g> element for the item
-      const parent = item.parentElement;
 
-      // find all siblings of the parent <g> element that are after it
-      const nextSiblings = getNextSiblings(parent);
+      if (moveSiblings) {
+        // Get the parent <g> element for the item
+        const parent = item.parentElement;
 
-      // add styles to translate the parent <g> elements siblings
-      nextSiblings.forEach(function(sibling) {
-        sibling.classList.add('is-up')
-      });
+        // find all siblings of the parent <g> element that are after it
+        const nextSiblings = getNextSiblings(parent);
 
-      // find all siblings of the parent <g> element that are before it
-      const previousSiblings = getPreviousSiblings(parent);
+        // add styles to translate the parent <g> elements siblings
+        nextSiblings.forEach(function(sibling) {
+          sibling.classList.add('is-up')
+        });
 
-      // add styles to translate the parent <g> element and all its siblings
-      parent.classList.add('is-down')
-      previousSiblings.forEach(function(sibling) {
-        sibling.classList.add('is-down')
-      });
+        // find all siblings of the parent <g> element that are before it
+        const previousSiblings = getPreviousSiblings(parent);
+
+        // add styles to translate the parent <g> element and all its siblings
+        parent.classList.add('is-down')
+        previousSiblings.forEach(function(sibling) {
+          sibling.classList.add('is-down')
+        });
+      }
     }
   };
 

@@ -10,7 +10,7 @@
 </x-layout.section>
 @endif
 
-<footer class="bg-olive leading-6 relative z-[30000]">
+<footer class="bg-olive leading-6 relative z-[200]">
   <x-layout.section>
     <x-layout.inner>
       <x-layout.grid>

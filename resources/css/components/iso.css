@@ -17,11 +17,15 @@
 }
 
 .is-up {
-  @apply transform -translate-y-[12%] transition-transform duration-300;
+  @apply transform -translate-y-[10%] transition-transform duration-300;
+}
+
+.is-up-lg {
+  @apply transform -translate-y-[18%] transition-transform duration-300;
 }
 
 .is-down {
-  @apply transform translate-y-[12%] transition-transform duration-300;
+  @apply transform translate-y-[10%] transition-transform duration-300;
 }
 
 [data-apartment].is-highlighted {

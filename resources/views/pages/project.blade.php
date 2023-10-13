@@ -13,11 +13,11 @@
         
         <table class="my-16 lg:my-20">
           <tr>
-            <td class="pr-12 pb-4">Haus 1: Wiedingstrasse 87a-d:</td>
+            <td class="pr-12 pb-4">Haus 1: Wiedingstrasse 87a–d:</td>
             <td class="pb-4">01.06.2024</td>
           </tr>
           <tr>
-            <td class="pr-12 pb-4">Haus 2: Austrasse 50-56:</td>
+            <td class="pr-12 pb-4">Haus 2: Austrasse 50–56:</td>
             <td class="pb-4">01.08.2024</td>
           </tr>
           <tr>
@@ -32,8 +32,11 @@
         <p>Verteilt in den Gebäuden stehen den Mietenden drei Gemeinschaftsräume für private oder nachbarschaftliche Anlässe zur Verfügung.</p>
       </x-layout.span>
       <x-layout.span>
+        <a data-fancybox href="/media/img/austrasse_zuerich_aussenvisualisierung-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_aussenvisualisierung'" :alt="'Austrasse Zürich – Aussenvisualisierung'" />
+        </a>
         <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" />
+          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>
     </x-layout.grid>
@@ -50,7 +53,7 @@
        
         <div class="mt-20 lg:mt-32 flex gap-x-16 sm:gap-x-24">
           <a
-           href=""
+           href="/media/img/austrasse_zuerich_situationsplan-lg.png"
            title="Situationsplan"
            target="_blank"
            rel="noopener noreferrer"
@@ -58,12 +61,12 @@
            Situationsplan
           </a>
           <a
-           href="https://www.sbb.ch/de"
-           title="SBB-Fahrplan"
+           href="https://maps.app.goo.gl/L51oqEgKC4ZJ14MC9"
+           title="Google Maps"
            target="_blank"
            rel="noopener noreferrer"
            class="bg-olive font-semi font-normal flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
-           SBB-Fahrplan
+           Google Maps
           </a>
         </div>
       </x-layout.span>

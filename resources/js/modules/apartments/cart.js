@@ -112,7 +112,7 @@ const Cart = (function() {
 
     // add a td with a remove link at the end
     const td = document.createElement('td');
-    td.classList.add('text-right', '!pr-0', 'pl-10');
+    td.classList.add('!text-right', '!pr-0');
 
     const removeLink = document.createElement('a');
     removeLink.classList.add(

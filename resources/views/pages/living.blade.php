@@ -19,8 +19,8 @@
         <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer_01-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_wohnzimmer_01'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_schlafzimmer_05-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_schlafzimmer_05'" :alt="'Austrasse Zürich – Schlafzimmer'" class="mt-20 lg:mt-40" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_kueche_schlafzimmer_06.jpg">
+          <x-media.picture :image="'austrasse_zuerich_kueche_schlafzimmer_06'" :alt="'Austrasse Zürich – Wohnzimmer'" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>
     </x-layout.grid>
@@ -43,8 +43,8 @@
         </ul>
       </x-layout.span>
       <x-layout.span class="order-2">
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_kueche_schlafzimmer_06.jpg">
-          <x-media.picture :image="'austrasse_zuerich_kueche_schlafzimmer_06'" :alt="'Austrasse Zürich – Wohnzimmer'" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_schlafzimmer_05-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_schlafzimmer_05'" :alt="'Austrasse Zürich – Schlafzimmer'" />
         </a>
       </x-layout.span>
       <x-layout.span class="order-4 sm:order-3">
@@ -59,7 +59,7 @@
           <li>Küchenabdeckung: Silestone Marengo (Hybridoberfläche), poliert, Farbton</li>
           <li>Küchenrückwand: Wandschild WSP «Büttenweiss»</li>
           <li>Deckenleuchten: Aufbauleuchte LED rund</li>
-          <li>Geräte Marke Siemens: Allgemein: Induktionskochfeld, Dunstabzug (bei Wohnungen mit Kochinseln integriert in Kochfeld), Geschirrspüler und Kühl-/ Gefriergerät 1.5 – Zimmer-Wohnungen mit Einbaubackofen, 2.5 und 3.5 Zimmer-Wohnungen in den obersten zwei Geschossen mit Dampfbackofen; in allen anderen Geschossen mit Einbaubackofen, 4.5 und 5.5 Zimmer-Wohnungen in den obersten zwei Geschossen mit Einbaubackofen und Dampfgarer; in allen anderen Geschossen mit Einbaubackofen</li>
+          <li>Geräte Marke Siemens: Allgemein: Induktionskochfeld, Dunstabzug (bei Wohnungen mit Kochinseln integriert in Kochfeld), Geschirrspüler und Kühl-/Gefriergerät 1.5-Zimmerwohnungen mit Einbaubackofen, 2.5- und 3.5-Zimmerwohnungen in den obersten zwei Geschossen mit Dampfbackofen; in allen anderen Geschossen mit Einbaubackofen, 4.5- und 5.5-Zimmerwohnungen in den obersten zwei Geschossen mit Einbaubackofen und Dampfgarer; in allen anderen Geschossen mit Einbaubackofen</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-5">
@@ -99,8 +99,7 @@
         </ul>
       </x-layout.span>
       <x-layout.span class="order-9">
-        <h3>Anlagen</h3>
-        <strong>Elektroanlagen</strong><br>
+        <h3>Elektroanlagen</h3>
         <ul>
           <li>Videogegensprechanlage und elektrische Türöffnung</li>
           <li>Alle Wohn- und Schlafräume mit Steckdosen und Lampenstellen in genügender Anzahl.</li>
@@ -115,7 +114,7 @@
         <h3>Heizungsanlagen</h3>
         <ul>
           <li>Beheizung mittels Bodenheizung in den Nasszellen zusätzlich über Badheizkörper</li>
-          <li>Erdsonden Wärmepumpe / Passive Kühlung im Sommer möglich</li>
+          <li>Erdsonden Wärmepumpe/Passive Kühlung im Sommer möglich</li>
         </ul>
         <h3>Lüftungsanlagen</h3>
         <ul>
@@ -127,13 +126,13 @@
         </ul>
       </x-layout.span>
       <x-layout.span class="order-10">
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_wohnzimmer'" :alt="'Austrasse Zürich – Wohnzimmer'" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer_kueche-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_wohnzimmer_kueche'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
       </x-layout.span>
       <x-layout.span class="order-12 sm:order-11">
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_wohnzimmer'" :alt="'Austrasse Zürich – Wohnzimmer'" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_badezimmer_03-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_badezimmer_03'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
       </x-layout.span>
       <x-layout.span class="order-11 sm:order-12">
@@ -141,7 +140,7 @@
         <ul>
           <li>Pro Wohnung ein Kellerabteil, beleuchtet und mit Steckdose auf Wohnungszähler, Schliessung mit Zylinder auf Wohnungsschliessung</li>
         </ul>
-        <h3>Waschküche / Trocknungsraum</h3>
+        <h3>Waschküche/Trocknungsraum</h3>
         <ul>
           <li>Jede Wohnung verfügt über eine Waschmaschine und einen Trockner, Marke Electrolux</li>
           <li>Trocknungsraum im UG pro Haus mit Secomat</li>
@@ -166,8 +165,8 @@
         </ul>
       </x-layout.span>
       <x-layout.span class="order-[14]">
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_wohnzimmer'" :alt="'Austrasse Zürich – Wohnzimmer'" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_aussenvisualisierung-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_aussenvisualisierung'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
       </x-layout.span>
       <x-layout.span class="order-[16] sm:order-[15]">
@@ -176,8 +175,7 @@
         </a>
       </x-layout.span>
       <x-layout.span class="order-[15] sm:order-[16]">
-        <h3>Aussenfläche/Umgebung</h3>
-        <strong>Aussenfläche</strong><br>
+        <h3>Aussenfläche</h3>
         <ul>
           <li>Boden Balkon, Betonplatte, Monobeton, sicht</li>
           <li>Balkongeländer: Hohlprofile und Streckmetall, pulverbeschichtet</li>
@@ -193,7 +191,7 @@
 
     <div class="mt-24 lg:mt-32">*Änderungen vorbehalten</div>
     <div class="mt-20 lg:mt-32">
-      <a href="" title="Download Kurzbaubeschrieb (PDF)" target="_blank" class="bg-olive font-semi font-normal inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+      <a href="/media/austrasse_zuerich_kurzbaubeschrieb.pdf" title="Download Kurzbaubeschrieb (PDF)" target="_blank" class="bg-olive font-semi font-normal inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
         Kurzbaubeschrieb
       </a>
     </div>

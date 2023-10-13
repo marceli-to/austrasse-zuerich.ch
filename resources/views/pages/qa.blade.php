@@ -7,12 +7,17 @@
     <x-misc.pattern class="hidden sm:block right-0 sm:w-[25%] md:w-[33.333%]" />
     <x-layout.inner class="px-20 lg:px-0 py-30 lg:py-50 relative z-10">
       <h1>Wobei können wir Ihnen helfen?</h1>
-      <div class="mt-20 lg:mt-32 flex flex-wrap gap-12 md:gap-24">
+      <div class="mt-20 lg:mt-32 flex flex-wrap gap-12 lg:gap-24 max-w-2xl lg:max-w-3xl">
         <x-accordeon.shortcut :title="'Bewerbungsprozess'" :index="1" />
+        <x-accordeon.shortcut :title="'Besichtigung'" :index="1" />
         <x-accordeon.shortcut :title="'Mietvertrag'" :index="2" />
+        <x-accordeon.shortcut :title="'Mietkaution'" :index="2" />
+        <x-accordeon.shortcut :title="'Haustiere'" :index="2" />
         <x-accordeon.shortcut :title="'Lage'" :index="6" />
         <x-accordeon.shortcut :title="'Ausbau'" :index="5" />
-        {{-- <x-accordeon.shortcut :title="'Haustiere'" :index="2" /> --}}
+        <x-accordeon.shortcut :title="'Kellerabteil'" :index="5" />
+        <x-accordeon.shortcut :title="'Deckenhöhe'" :index="5" />
+        <x-accordeon.shortcut :title="'Bezugstermin'" :index="5" />
       </div>
     </x-layout.inner>
   </x-layout.section>
@@ -167,10 +172,6 @@
           <x-accordeon.item class="!mb-0">
             <x-slot name="question">Verfügen Sie über vermasste Grundrisspläne?</x-slot>
             <x-slot name="answer">Auf den Vermarktungsplänen finden Sie den Massstab, sodass Sie selbstständig die notwendigen Ausmessungen vornehmen können.</x-slot>
-          </x-accordeon.item>
-          <x-accordeon.item class="!mb-0">
-            <x-slot name="question">Welche Haustiere sind erlaubt?</x-slot>
-            <x-slot name="answer">Alle Tiere die eine grösse von 2 x 2 Meter nicht übersteigen.</x-slot>
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
