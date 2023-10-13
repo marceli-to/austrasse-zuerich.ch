@@ -17,14 +17,14 @@
         <x-accordeon.shortcut :title="'Ausbau'" :index="5" />
         <x-accordeon.shortcut :title="'Kellerabteil'" :index="5" />
         <x-accordeon.shortcut :title="'Deckenhöhe'" :index="5" />
-        <x-accordeon.shortcut :title="'Bezugstermin'" :index="5" />
+        <x-accordeon.shortcut :title="'Bezugstermin'" :index="7" />
       </div>
     </x-layout.inner>
   </x-layout.section>
   <x-layout.section class="bg-white">
     <x-layout.inner>
 
-      <x-accordeon.wrapper :index="1">
+      <x-accordeon.wrapper :index="1" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Bewerbungsprozess">
         <x-accordeon.button :title="'Bewerbungsprozess'" :index="1" />
         <x-accordeon.section :index="1">
           <x-accordeon.item>
@@ -43,7 +43,7 @@
             <x-slot name="question">Meine Wunschwohnung ist bereits reserviert, kann ich mich dennoch bewerben?</x-slot>
             <x-slot name="answer">Der Status «reserviert» bedeutet, dass wir hier bereits eine Zusage machen konnten. Sollte der Interessent abspringen, werden wir den Status umgehend wieder anpassen. Wir würden uns freuen, wenn Sie sich für eine alternative Wohnung bewerben oder die Angebotsliste in den nächsten Tagen nochmals prüfen ob Ihre Wunschwohnung wieder verfügbar ist. </x-slot>
           </x-accordeon.item>
-          <x-accordeon.item>
+          <x-accordeon.item data-qa-keyword="Besichtigung" class="scroll-mt-94 md:scroll-mt-[150px]">
             <x-slot name="question">Wann kann die Wohnung besichtigt werden? </x-slot>
             <x-slot name="answer">Da sich die Liegenschaft noch im Bau befindet, sind Besichtigungen zurzeit nicht möglich. </x-slot>
           </x-accordeon.item>
@@ -80,11 +80,10 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
-      <x-accordeon.wrapper :index="2">
+
+      <x-accordeon.wrapper :index="2" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Mietvertrag">
         <x-accordeon.button :title="'Mietvertrag'" :index="2" />
         <x-accordeon.section :index="2">
-
-
           <x-accordeon.item>
             <x-slot name="question">Per wann können die Wohnungen bezogen werden?</x-slot>
             <x-slot name="answer">
@@ -110,7 +109,7 @@
             <x-slot name="answer">Die Mietverträge können nach einer Mindestlaufzeit von 1 Jahr mit einer Frist von 3 Monaten auf auf jedes Monatsende ausser Dezember gekündigt werden. </x-slot>
           </x-accordeon.item>
           
-          <x-accordeon.item>
+          <x-accordeon.item class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Mietkaution">
             <x-slot name="question">Wie hoch ist die Mietkaution?</x-slot>
             <x-slot name="answer">3 Bruttomonatsmietzinse</x-slot>
           </x-accordeon.item>
@@ -146,6 +145,7 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
+
       <x-accordeon.wrapper :index="3">
         <x-accordeon.button :title="'Hausordnung'" :index="3" />
         <x-accordeon.section :index="3">
@@ -166,6 +166,7 @@
           
         </x-accordeon.section>
       </x-accordeon.wrapper>
+
       <x-accordeon.wrapper :index="4">
         <x-accordeon.button :title="'Unterlagen'" :index="4" />
         <x-accordeon.section :index="4">
@@ -175,7 +176,8 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
-      <x-accordeon.wrapper :index="5">
+
+      <x-accordeon.wrapper :index="5" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Ausbau">
         <x-accordeon.button :title="'Ausbau'" :index="5" />
         <x-accordeon.section :index="5">
           <x-accordeon.item>
@@ -207,7 +209,7 @@
             <x-slot name="answer">Ja, in der Tiefgarage können auf Wunsch Parkplätze mit Ladestationen gemietet werden. </x-slot>
           </x-accordeon.item>
           
-          <x-accordeon.item>
+          <x-accordeon.item class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Kellerabteil">
             <x-slot name="question">Sind Kellerabteile vorhanden und wie gross sind diese?</x-slot>
             <x-slot name="answer">Zu jeder Wohnung gehört ein Kellerabteil. Die Grösse ist auf den jeweiligen Wohnungsgrundrissen vermerkt. Die Grundrisse finden Sie in der Angebotsliste</x-slot>
           </x-accordeon.item>
@@ -217,7 +219,7 @@
             <x-slot name="answer">In jedem Kellerabteil ist eine Steckdose vorhanden, welche direkt über den Stromzähler Ihrer Wohnung läuft. </x-slot>
           </x-accordeon.item>
           
-          <x-accordeon.item>
+          <x-accordeon.item class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Deckenhöhe">
             <x-slot name="question">Wie hoch sind die Decken?</x-slot>
             <x-slot name="answer">Die Raumhöhe beträgt in der Regel 2.50 m. Im Erdgeschoss vom Haus 2 (Austrasse 50-56) ist sie 3.20m.</x-slot>
           </x-accordeon.item>
@@ -294,7 +296,8 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
-      <x-accordeon.wrapper :index="6">
+
+      <x-accordeon.wrapper :index="6" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Lage">
         <x-accordeon.button :title="'Lage'" :index="6" />
         <x-accordeon.section :index="6">
           <x-accordeon.item>
@@ -311,7 +314,8 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
-      <x-accordeon.wrapper :index="7">
+
+      <x-accordeon.wrapper :index="7" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Bezugstermin">
         <x-accordeon.button :title="'Übergabe'" :index="7" />
         <x-accordeon.section :index="7">
           <x-accordeon.item>
@@ -327,6 +331,7 @@
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>
+
     </x-layout.inner>
   </x-layout.section>
 </div>

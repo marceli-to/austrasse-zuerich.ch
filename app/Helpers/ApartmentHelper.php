@@ -5,7 +5,7 @@ class ApartmentHelper
 {
   public static function isAvailable($apartment)
   {
-    if ($apartment['status'] == 'pre' && $apartment['reserved'] == false)
+    if ($apartment['state'] == 'free')
     {
       return true;
     }
@@ -14,24 +14,17 @@ class ApartmentHelper
 
   public static function getState($apartment)
   {
-    if ($apartment['status'] == 'pre' && $apartment['reserved'] == true)
-    {
-      return 'reserviert';
-    }
-    return 'vermietet';
+    $states = [
+      'free' => 'frei',
+      'reserved' => 'reserviert',
+      'taken' => 'vermietet',
+    ];
+    return $states[$apartment['state']];
   }
 
   public static function getStateKey($apartment)
   {
-    if (ApartmentHelper::isAvailable($apartment))
-    {
-      return 'available';
-    }
-    if ($apartment['status'] == 'pre' && $apartment['reserved'] == true)
-    {
-      return 'reserved';
-    }
-    return 'rented';
+    return $apartment['state'];
   }
 
 }

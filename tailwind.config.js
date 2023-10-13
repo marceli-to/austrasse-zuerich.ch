@@ -25,6 +25,7 @@ export default {
         'serene': '#b3cb9b',
         'sage': '#A4AA9E',
         'gold': '#c5a66d',
+        'deep-red': '#CC3344',
       },
 
       fontFamily: {

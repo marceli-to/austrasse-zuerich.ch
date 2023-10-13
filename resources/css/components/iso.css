@@ -7,6 +7,16 @@
   @apply !fill-gold transition-all duration-100;
 }
 
+.is-highlighted.not-available .iso-b1-cls-2,
+.is-highlighted.not-available .iso-b1-cls-1,
+.is-highlighted.not-available .iso-b2-cls-2,
+.is-highlighted.not-available .iso-b2-cls-3,
+.is-highlighted.not-available .iso-b3-cls-2,
+.is-highlighted.not-available .iso-b3-cls-3 {
+  @apply !fill-deep-red transition-all duration-100;
+}
+
+
 [data-iso-item], 
 [data-iso-item] {
   @apply transform translate-y-0 transition-transform duration-150;

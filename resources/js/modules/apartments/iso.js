@@ -128,7 +128,23 @@ const Iso = (function() {
 
   const highlightIso = function(item, moveSiblings = true) {
     if (item) {
-      item.classList.add('is-highlighted');
+
+      const number = item.dataset.isoItem;
+
+      // get the state of the corresponding apartment
+      const apartment = document.querySelector('[data-number="' + number + '"]');
+      const state = apartment.dataset.state;
+
+      if (state == 'free') {
+        item.classList.add('is-highlighted');
+      }
+      else {
+        item.classList.add('is-highlighted');
+        item.classList.add('not-available');
+      }
+
+
+
 
       if (moveSiblings) {
         // Get the parent <g> element for the item

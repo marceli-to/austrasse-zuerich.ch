@@ -6,9 +6,9 @@
       data-number="{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
       data-floor="{{ $apartment['floor'] ? config('apartment.floors_filter')[$apartment['floor']] : 'eg' }}"
       data-building="{{ $building }}"
-      data-state="{{ App\Helpers\ApartmentHelper::getStateKey($apartment) }}"
+      data-state="{{ $apartment['state'] }}"
       data-rooms="{{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}"
-      data-plan=""
+      data-plan="/media/pdf/austrasse_zuerich_{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}.pdf"
       data-form="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/"
       data-area="{{ $apartment['surface_living'] }}"
       data-detail-title="{{ $apartment['object_type'] == 'APARTMENT' ? 'Wohnung' : 'Gewerbeobjekt'}} {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
@@ -61,7 +61,7 @@
       <td class="!text-center !py-0 !pr-0 xs:!pr-8">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
           <a 
-            href="/storage/media/plan.pdf" 
+            href="/media/pdf/austrasse_zuerich_{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}.pdf" 
             target="_blank" 
             title="Download Grundriss Objekt Nr. {{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}" 
             class="hidden xs:flex w-full h-full p-6 items-center justify-center">
