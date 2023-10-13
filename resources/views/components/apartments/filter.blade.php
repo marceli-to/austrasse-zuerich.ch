@@ -4,7 +4,7 @@
     <x-layout.span class="sm:!col-span-6 lg:!col-span-3">
       <x-form.label>Verfügbarkeit</x-form.label>
       <div>
-        <x-form.select class="js-filter-attribute" data-filterType="state">
+        <x-form.select class="js-filter-attribute" data-filterType="state" aria-label="Verfügbarkeit">
           <option value="NULL">Alle Wohnungen</option>
           <option value="free">frei</option>
           <option value="reserved">reserviert</option>
@@ -16,7 +16,7 @@
     <x-layout.span class="sm:!col-span-6 lg:!col-span-3">
       <x-form.label>Zimmer</x-form.label>
       <div>
-        <x-form.select class="js-filter-attribute" data-filterType="rooms">
+        <x-form.select class="js-filter-attribute" data-filterType="rooms" aria-label="Zimmer">
           <option value="NULL">Alle Zimmer</option>
           <option value="1.5">1.5</option>
           <option value="2.5">2.5</option>
@@ -30,7 +30,7 @@
     <x-layout.span class="sm:!col-span-6 lg:!col-span-3">
       <x-form.label>Haus</x-form.label>
       <div>
-        <x-form.select class="js-filter-attribute" data-filterType="building">
+        <x-form.select class="js-filter-attribute" data-filterType="building" aria-label="Haus">
           <option value="NULL">Alle Häuser</option>
           <option value="1">Wiedingstrasse 87a–d</option>
           <option value="2">Austrasse 50-56</option>
@@ -42,7 +42,7 @@
     <x-layout.span class="sm:!col-span-6 lg:!col-span-3">
       <x-form.label>Etage</x-form.label>
       <div>
-        <x-form.select class="js-filter-attribute" data-filterType="floor">
+        <x-form.select class="js-filter-attribute" data-filterType="floor" aria-label="Etage">
           <option value="NULL">Alle Etagen</option>
           <option value="eg">EG</option>
           <option value="1.og">1. OG</option>
