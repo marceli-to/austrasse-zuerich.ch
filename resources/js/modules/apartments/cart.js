@@ -88,6 +88,10 @@ const Cart = (function() {
   };
 
   const add = (apartment) => {
+
+    // only apartments with state 'free' can be added to cart
+    if (apartment.dataset.state != 'free') return;
+
     // clone apartment and add to cart if not already there
     const apartmentClone = apartment.cloneNode(true);
     const table = document.querySelector(selectors.table);
