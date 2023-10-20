@@ -24,7 +24,7 @@
   <x-layout.section class="bg-white">
     <x-layout.inner>
 
-      <x-accordeon.wrapper :index="1" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Bewerbungsprozess">
+      <x-accordeon.wrapper :index="1" data-qa-keyword="Bewerbungsprozess">
         <x-accordeon.button :title="'Bewerbungsprozess'" :index="1" />
         <x-accordeon.section :index="1">
           <x-accordeon.item>
@@ -43,7 +43,7 @@
             <x-slot name="question">Meine Wunschwohnung ist bereits reserviert, kann ich mich dennoch bewerben?</x-slot>
             <x-slot name="answer">Der Status «reserviert» bedeutet, dass wir hier bereits eine Zusage machen konnten. Sollte der Interessent abspringen, werden wir den Status umgehend wieder anpassen. Wir würden uns freuen, wenn Sie sich für eine alternative Wohnung bewerben oder die Angebotsliste in den nächsten Tagen nochmals prüfen ob Ihre Wunschwohnung wieder verfügbar ist. </x-slot>
           </x-accordeon.item>
-          <x-accordeon.item data-qa-keyword="Besichtigung" class="scroll-mt-94 md:scroll-mt-[150px]">
+          <x-accordeon.item data-qa-keyword="Besichtigung">
             <x-slot name="question">Wann kann die Wohnung besichtigt werden? </x-slot>
             <x-slot name="answer">Da sich die Liegenschaft noch im Bau befindet, sind Besichtigungen zurzeit nicht möglich. </x-slot>
           </x-accordeon.item>
@@ -81,7 +81,7 @@
         </x-accordeon.section>
       </x-accordeon.wrapper>
 
-      <x-accordeon.wrapper :index="2" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Mietvertrag">
+      <x-accordeon.wrapper :index="2" data-qa-keyword="Mietvertrag">
         <x-accordeon.button :title="'Mietvertrag'" :index="2" />
         <x-accordeon.section :index="2">
           <x-accordeon.item>
@@ -177,7 +177,7 @@
         </x-accordeon.section>
       </x-accordeon.wrapper>
 
-      <x-accordeon.wrapper :index="5" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Ausbau">
+      <x-accordeon.wrapper :index="5" data-qa-keyword="Ausbau">
         <x-accordeon.button :title="'Ausbau'" :index="5" />
         <x-accordeon.section :index="5">
           <x-accordeon.item>
@@ -297,7 +297,7 @@
         </x-accordeon.section>
       </x-accordeon.wrapper>
 
-      <x-accordeon.wrapper :index="6" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Lage">
+      <x-accordeon.wrapper :index="6" data-qa-keyword="Lage">
         <x-accordeon.button :title="'Lage'" :index="6" />
         <x-accordeon.section :index="6">
           <x-accordeon.item>
@@ -315,7 +315,7 @@
         </x-accordeon.section>
       </x-accordeon.wrapper>
 
-      <x-accordeon.wrapper :index="7" class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Bezugstermin">
+      <x-accordeon.wrapper :index="7" data-qa-keyword="Bezugstermin">
         <x-accordeon.button :title="'Übergabe'" :index="7" />
         <x-accordeon.section :index="7">
           <x-accordeon.item>

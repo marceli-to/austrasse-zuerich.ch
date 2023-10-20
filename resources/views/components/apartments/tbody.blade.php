@@ -26,7 +26,7 @@
         </td>
       @endif
       <td>
-        {{ $apartment['surface_living'] == null ? '–' : $apartment['surface_living'] }}
+        {{ $apartment['surface_usable'] ? $apartment['surface_usable'] : $apartment['surface_living'] }}
       </td>
       <td class="!text-right hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))

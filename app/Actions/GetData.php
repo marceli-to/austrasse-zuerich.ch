@@ -37,24 +37,6 @@ class GetData
     // remove duplicates
     $data = $data->unique('reference');
 
-    // for testing purposes add a couple of reserved states to:
-    // 7908.01.0002, 7908.01.0101, 7908.01.0003
-    $data = $data->map(function ($apartment) {
-      if (in_array($apartment['reference'], ['7908.01.0002', '7908.01.0101', '7908.01.0003'])) {
-        $apartment['state'] = $this->status_reserved;
-      }
-      return $apartment;
-    });
-
-    // for testing purposes add a couple of reserved states to:
-    // 7908.02.0202, 7908.03.0401, 7908.03.0201
-    $data = $data->map(function ($apartment) {
-      if (in_array($apartment['reference'], ['7908.02.0202', '7908.03.0401', '7908.03.0201'])) {
-        $apartment['state'] = $this->status_taken;
-      }
-      return $apartment;
-    });
-
     return $data; 
   }
 

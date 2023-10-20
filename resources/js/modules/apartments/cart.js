@@ -44,8 +44,16 @@ const Cart = (function() {
     document.querySelectorAll(selectors.isoItem).forEach((isoItem) => {
       isoItem.addEventListener('click', function() {
         if (isoItem.dataset.isoItem != '') {
-          const table = document.querySelector('table[data-apartments]');
-          const apartment = table.querySelector(`tr[data-number="${isoItem.dataset.isoItem}"]`);
+          const tables = document.querySelectorAll('table[data-apartments]');
+          
+          // find apartment in tables
+          let apartment = null;
+          tables.forEach((table) => {
+            const apartmentInTable = table.querySelector(`tr[data-number="${isoItem.dataset.isoItem}"]`);
+            if (apartmentInTable) {
+              apartment = apartmentInTable;
+            }
+          });
           if (apartment) {
             add(apartment)
           }

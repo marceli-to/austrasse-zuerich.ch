@@ -2,7 +2,7 @@
 <button 
   type="button" 
   {{ $attributes->merge(['class' => 'bg-serene font-semi font-normal text-olive w-full px-12 py-10 text-left']) }}
-  @click="selected !== {{ $index }} ? selected = {{ $index }} : selected = null">
+  @click="selected !== {{ $index }} ? selected = {{ $index }} : selected = null; setTimeout(() => { document.querySelector('[data-qa-index=\'{{ $index }}\']').scrollIntoView()}, 15);">
   <div class="flex items-center justify-between">
     <div>{{ $title }}</div>
     <template x-if="selected !== {{ $index }}">

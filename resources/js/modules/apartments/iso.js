@@ -90,13 +90,17 @@ const Iso = (function() {
   };
 
   const highlightList = (number) => {
-    const apartment = document.querySelector('[data-number="' + number + '"]');
-    apartment.classList.add('is-highlighted');
+    const apartments = document.querySelectorAll('[data-number="' + number + '"]');
+    apartments.forEach(function(apartment) {
+      apartment.classList.add('is-highlighted');
+    });
   };
 
   const resetList = (number) => {
-    const apartment = document.querySelector('[data-number="' + number + '"]');
-    apartment.classList.remove('is-highlighted');
+    const apartments = document.querySelectorAll('[data-number="' + number + '"]');
+    apartments.forEach(function(apartment) {
+      apartment.classList.remove('is-highlighted');
+    });
   }
 
   const resetIso = function() {
@@ -128,11 +132,12 @@ const Iso = (function() {
 
   const highlightIso = function(item, moveSiblings = true) {
     if (item) {
-
       const number = item.dataset.isoItem;
-
-      // get the state of the corresponding apartment
       const apartment = document.querySelector('[data-number="' + number + '"]');
+      if (!apartment) {
+        return
+      }
+
       const state = apartment.dataset.state;
 
       if (state == 'free') {
@@ -142,10 +147,7 @@ const Iso = (function() {
         item.classList.add('is-highlighted');
         item.classList.add('not-available');
       }
-
-
-
-
+      
       if (moveSiblings) {
         // Get the parent <g> element for the item
         const parent = item.parentElement;
