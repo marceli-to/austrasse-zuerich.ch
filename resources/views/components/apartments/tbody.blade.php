@@ -25,7 +25,7 @@
           {{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}
         </td>
       @endif
-      <td>
+      <td class="!text-center">
         {{ $apartment['surface_usable'] ? $apartment['surface_usable'] : $apartment['surface_living'] }}
       </td>
       <td class="!text-right hidden xs:table-cell">
@@ -37,7 +37,7 @@
       </td>
       <td class="!text-right hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ $apartment['object_type'] == 'COMMERCIAL' ? '480.00' : number_format($apartment['rent_charges'], 2, '.', '') }}
+          {{ $apartment['object_type'] == 'COMMERCIAL' ? '40.00' : number_format($apartment['rent_charges'], 2, '.', '') }}
         @else
           –
         @endif

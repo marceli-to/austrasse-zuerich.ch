@@ -39,17 +39,18 @@
     <h2>Angebot</h2>
     <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
       <x-layout.span class="hidden md:block md:col-span-5 lg:col-span-5 2xl:col-span-6">
-        <div class="md:sticky md:top-150">
+        <div class="md:sticky md:top-75">
           <x-apartments.iso.wrapper number="3" />
         </div>
       </x-layout.span>
-      <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:-mt-80 lg:-mt-100 md:overflow-auto">
+      <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:overflow-auto">
         <x-apartments.wrapper number="3" address="Austrasse 46/48" class="!bg-white overflow-auto">
           <x-apartments.table 
             :apartments="$apartments" 
             building="3" 
             classHeader="bg-white"
             showRooms="0"
+            labelAdditionalCost="NK/m<sup>2</sup>/Jahr"
             paymentInterval="Jahr" />
         </x-apartments.wrapper>
       </x-layout.span>

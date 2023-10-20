@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 140" class="w-full h-auto py-[12%] -my-[12%] block overflow-visible" {{ $attributes->merge() }}>
   <g data-iso-item data-iso-floor>
-    <g data-iso-item="09.0003">
+    <g data-iso-item="09.0001">
       <g>
         <polygon class="iso-b3-cls-2" points="166.2 95 169.4 95.9 169.5 84.9 166.2 84.1 166.2 95 166.2 95"/>
         <polygon class="iso-b3-cls-2" points="166.2 95 166.2 84.1 153.4 87.3 153.4 98.3 166.2 95"/>
@@ -43,7 +43,7 @@
     <g data-iso-item>
       <polygon class="iso-b3-cls-4" points="150.2 88.4 134.5 83.7 125.5 86 141.2 90.7 150.2 88.4"/>
     </g>
-    <g data-iso-item="09.0001">
+    <g data-iso-item="09.0003">
       <g>
         <polygon class="iso-b3-cls-2" points="186.7 101.7 186.7 90.8 164.9 96.3 164.9 107.3 186.7 101.7"/>
         <path class="iso-b3-cls-2" d="m186.7,90.8l-10.5-3-1.1.3-5.2-1.4-21,5.4,16.1,4.4s14.1-3.6,21.7-5.6h0Z"/>
