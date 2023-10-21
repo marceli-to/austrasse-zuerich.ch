@@ -8,10 +8,10 @@
     <x-apartments.filter />
   </x-layout.inner>
   @for ($i = 1; $i <= 3; $i++)
-    <x-layout.inner class="{{ $i == 1 ? 'mt-0 md:mt-75' : 'mt-25 md:mt-50 lg:mt-75' }}" data-building-group="{{ $i }}">
+    <x-layout.inner class="{{ $i == 1 ? 'mt-25 md:mt-75' : 'mt-25 md:mt-50 lg:mt-75' }}" data-building-group="{{ $i }}">
       <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
         <x-layout.span class="hidden md:block md:col-span-5 lg:col-span-5 2xl:col-span-6">
-          <div class="md:sticky md:top-100">
+          <div class="md:sticky md:top-125">
             <x-apartments.iso.wrapper :number="$i" />
           </div>
         </x-layout.span>
