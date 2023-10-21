@@ -1,5 +1,5 @@
 @extends('app')
-@section('seo_title', 'Home')
+@section('seo_title', 'Stadt Natur Leben – Erstvermietung Frühsommer 2024')
 @section('seo_description', 'Im Kreis 3 der Stadt Zürich entsteht zwischen dem historischen Kern von Alt-Wiedikon und der Binz die neue Wohnüberbauung «Austrasse», welche die Natur in die Stadt bringt. Verteilt auf mehrere Gebäudeteile (Austrasse 46 – 56 und Wiedingstrasse 87a-d) werden in drei Etappen Mietwohnungen und diverse Büro- und Gewerbeflächen realisiert. Das Wohnungsangebot reicht von der 1.5 – Zimmerwohnung bis hin zur grosszügigen 5.5 – Zimmerwohnung.')
 @section('content')
 <x-layout.section class="bg-white relative !p-0">
@@ -51,7 +51,7 @@
         <x-menu.card :route="'page.living'" :title="'Wohnungen'" :image="'austrasse_zuerich_wohnzimmer_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
-        <x-menu.card :route="'page.living'" :title="'Moderner<br>Ausbau'" :image="'austrasse_zuerich_wohnzimmer_kueche_08_quadrat'" />
+        <x-menu.card :route="'page.living'" :hash="'#ausbau-wohnungen'" :title="'Moderner<br>Ausbau'" :image="'austrasse_zuerich_wohnzimmer_kueche_08_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
         <x-menu.card :route="'page.business'" :title="'Attraktive<br>Gewerbeflächen'" :image="'austrasse_zuerich_bueros_09_quadrat'" />
@@ -60,7 +60,7 @@
         <x-menu.card :route="'page.apartments'" :title="'Wohnen'" :image="'austrasse_zuerich_ansicht_oben_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
-        <x-menu.card :route="'page.contact'" :title="'Umgebung'" :image="'austrasse_zuerich_aussicht_quadrat'" />
+        <x-menu.card :route="'page.project'" :hash="'#umgebung'" :title="'Umgebung'" :image="'austrasse_zuerich_aussicht_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
         <x-menu.card :route="'page.qa'" :title="'Q&A'" :image="'austrasse_zuerich_balkon_quadrat'" />

@@ -27,9 +27,10 @@
         </table>
         <p>Ein Spazierweg in Form eines «Belt Walk» führt um die zwei länglichen, vielwinkligen Baukörper, wodurch ein zusammenhängender und deshalb prägender Landschaftsraum – der Waldgarten – entsteht. Die Umgebung wird parkähnlich mit Spielplatz, Sitzbänken und viel Aufenthaltsflächen gestaltet.</p>
         <p>Die drei Gebäude bestechen nicht nur mit ihrer einzigartigen Architektur, sondern auch durch einen ausgewogenen Wohnungsmix und grosszügigen Aussenbereichen.</p>
-        <p>Mit der zentralen Lage dieser neuen Überbauung in Alt-Wiedikon profitieren die Bewohner und Bewohnerinnen von kurzen Wegen in der Stadt Zürich. Zudem existiert eine hervorragende Infrastruktur und Anbindung an den öffentlichen Verkehr. Der Bahnhof Zürich Binz zum Beispiel liegt in direkter Nachbarschaft von dem neuen Zuhause.</p>
+        <p>Mit der zentralen Lage dieser neuen Überbauung in Alt-Wiedikon profitieren die Bewohner und Bewohnerinnen von kurzen Wegen in der Stadt Zürich. Zudem existiert eine hervorragende Infrastruktur und Anbindung an den öffentlichen Verkehr. Der Bahnhof Zürich Binz zum Beispiel liegt in direkter Nachbarschaft zu Ihrem neuen Zuhause.</p>
         <p>In der Überbauung Austrasse stehen für die Bewohnenden Paketboxanlagen zur Verfügung. So können Pakete zeitlich unabhängig sicher empfangen und Rücksendungen bequem aufgegeben werden.</p>
         <p>Verteilt in den Gebäuden stehen den Mietenden drei Gemeinschaftsräume für private oder nachbarschaftliche Anlässe zur Verfügung.</p>
+        <p>Des Weiteren verfügt die Überbauung über eine eigen Photovoltaikanlage auf dem Dach, wo der produzierte Strom im Rahmen eines Zusammenschlusses zum Eigenverbrauch (ZEV) genutzt wird.</p>
       </x-layout.span>
       <x-layout.span>
         <a data-fancybox href="/media/img/austrasse_zuerich_aussenvisualisierung-lg.jpg">
@@ -47,6 +48,7 @@
 </x-layout.section>
 <x-layout.section class="bg-white">
   <x-layout.inner>
+    <a name="umgebung" class="scroll-mt-94 md:scroll-mt-[150px]"></a>
     <h2>Umgebung</h2>
     <x-layout.grid>
       <x-layout.span class="hyphens-auto">

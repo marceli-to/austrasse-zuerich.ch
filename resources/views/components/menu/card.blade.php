@@ -1,6 +1,12 @@
-@props(['route', 'title' => '', 'image'])
+@props(['route', 'title' => '', 'image', 'hash' => ''])
 <figure class="relative">
-  <a href="{{ route($route) }}" title="{{ str_replace('<br>', ' ', $title) }}">
+  <a 
+    @if ($hash)
+      href="{{ route($route) . $hash }}"
+    @else
+      href="{{ route($route) }}" 
+    @endif
+    title="{{ str_replace('<br>', ' ', $title) }}">
     <img 
     src="/media/img/{{ $image }}.jpg" 
     height="350" 

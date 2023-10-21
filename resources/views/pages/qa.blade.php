@@ -33,7 +33,7 @@
           </x-accordeon.item>
           <x-accordeon.item>
             <x-slot name="question">Wie kann ich mich für eine Wohnung bewerben?</x-slot>
-            <x-slot name="answer">Über die Angebotsliste auf dieser Website gelangen Sie mit Klick auf das Feld «Formular» direkt zu dem digitalen Bewerbungsformular. Der gesamte Anmeldungsprozess wird über FlatFox abgewickelt. </x-slot>
+            <x-slot name="answer">Über die Angebotsliste auf dieser Website gelangen Sie mit Klick auf das Feld «Flatfox» direkt zu dem digitalen Bewerbungsformular. Der gesamte Anmeldungsprozess wird über FlatFox abgewickelt. </x-slot>
           </x-accordeon.item>
           <x-accordeon.item>
             <x-slot name="question">Kann ich mich für mehrere Wohnungen bewerben?</x-slot>
@@ -106,7 +106,7 @@
           
           <x-accordeon.item>
             <x-slot name="question">Wie sind die Kündigungsfristen des Mietvertrages? </x-slot>
-            <x-slot name="answer">Die Mietverträge können nach einer Mindestlaufzeit von 1 Jahr mit einer Frist von 3 Monaten auf auf jedes Monatsende ausser Dezember gekündigt werden. </x-slot>
+            <x-slot name="answer">Die Mietverträge können nach einer Mindestlaufzeit von 1 Jahr mit einer Frist von 3 Monaten auf jedes Monatsende ausser Dezember gekündigt werden. </x-slot>
           </x-accordeon.item>
           
           <x-accordeon.item class="scroll-mt-94 md:scroll-mt-[150px]" data-qa-keyword="Mietkaution">
@@ -139,10 +139,19 @@
             <x-slot name="answer">Die Nebenkostenakonto ersehen Sie aus der Angebotsliste. Diese werden einmal jährlich nach den effektiven Kosten abgerechnet. Je nach Verbrauch kann es vorkommen, dass Sie eine Nachzahlung vornehmen müssen oder wenn die Kosten tief waren eine Rückerstattung erhalten. In Ihrer Wohnung haben Sie sowohl Wasser- wie auch Wärmezähler. Somit haben Sie einen direkten Einfluss auf Ihre Nebenkosten. </x-slot>
           </x-accordeon.item>
           
-          <x-accordeon.item class="!mb-0">
+          <x-accordeon.item>
             <x-slot name="question">Kann ich auch zwei Parkplätze mieten?</x-slot>
             <x-slot name="answer">Zu Beginn wird aufgrund der Anzahl der Wohnungen jeweils nur je ein Parkplatz pro Mietwohnung zugesprochen. Sollte es nach der Vollvermietung noch freie Parkplätze zur Verfügung haben, erhalten alle Mietparteien nochmals die Chance einen zusätzlichen Parkplatz zu mieten.</x-slot>
           </x-accordeon.item>
+
+          <x-accordeon.item class="!mb-0">
+            <x-slot name="question">Wie viel bezahle ich für einen Parkplatz?</x-slot>
+            <x-slot name="answer">
+              <p>Parking:<br>Einstellplatz CHF 200.00/Mt.<br>Einstellplatz mit Ladestation CHF 245.00/Mt.<br>Motorradabstellplatz CHF 60.00/Mt.</p>
+              <p>Bitte geben Sie bei der Anmeldung die gewünschte Anzahl Parkplätze an. Bitte beachten Sie, dass zu Beginn nur ein Parkplatz pro Wohnung gemietet werden kann.</p>
+            </x-slot>
+          </x-accordeon.item>
+
         </x-accordeon.section>
       </x-accordeon.wrapper>
 
@@ -290,9 +299,13 @@
             <x-slot name="answer">Ja, jedes Zimmer hat einen Raumthermostat.</x-slot>
           </x-accordeon.item>
           
-          <x-accordeon.item class="!mb-0">
+          <x-accordeon.item>
             <x-slot name="question">Wurde eine kontrollierte Lüftung eingebaut?</x-slot>
             <x-slot name="answer">Nein. Es findet ein stetiger Luftwechsel über Abzüge bei der Küche (nicht über den Dampfabzug) und über die Nasszellen, und Zuluft über Lüftungsschlitze bei den Fenstern statt.</x-slot>
+          </x-accordeon.item>
+          <x-accordeon.item class="!mb-0">
+            <x-slot name="question">Kann Solarstrom bezogen werden?</x-slot>
+            <x-slot name="answer">Ja, die Nutzung des Solarstroms erfolg mittels eines Zusammenschlusses zum Eigenverbrauch (ZEV).</x-slot>
           </x-accordeon.item>
         </x-accordeon.section>
       </x-accordeon.wrapper>

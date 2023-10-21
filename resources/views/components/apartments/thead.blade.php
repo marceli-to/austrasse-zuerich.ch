@@ -12,7 +12,7 @@
     </th>
     <th class="!text-right !pr-10 hidden xs:table-cell">Netto<br>MZ/{{ $paymentInterval}}</th>
     <th class="!text-right !pr-10 hidden xs:table-cell">
-      {!! $labelAdditionalCost !!}
+      {!! $labelAdditionalCost ? $labelAdditionalCost : 'NK/Mt.' !!}
     </th>
     <th class="!text-right !pr-18 hidden xs:table-cell">Brutto<br>MZ/{{ $paymentInterval}}</th>
     <th class="!text-right xs:hidden">Brutto/Mt.</th>

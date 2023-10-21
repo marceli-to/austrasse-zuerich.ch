@@ -13,7 +13,7 @@
         <p>Die modernen Küchen mit wertigen Elektrogeräten lassen keine Wünsche offen. Dank der Vielfältigkeit der verschiedenen Küchenarten, welche sich von Wohnung zu Wohnung unterscheiden, findet jeder die passende Küche für sich.</p>
         <p>Ein harmonisches Wohngefühl wird dem Wohn-/Essbereich sowie den Schlafzimmern mit einem parallel verlegten Riemenparkett (Eiche) verliehen. Jede Wohnung verfügt zudem über einen Sitzplatz oder Balkon. Ein Grossteil der Wohnungen geniessen den Luxus von zwei Balkonen, welche sich direkt vom Wohn- oder Essbereich oder gar von den Schlafzimmern aus betreten lassen.</p>
         <p>Die modernen Bäder sind mit glasierten Steingutplatten ausgestattet und verfügen über bodenebene Duschen oder eine Badewanne.</p>
-        <p>Zudem ist jede Wohnung mit einem eigenen Waschturm, welcher sich in einem Einbauschrank in den Badezimmern befindet, ausgestattet.</p>
+        <p>Zudem ist jede Wohnung mit einem eigenen Waschturm ausgestattet.</p>
       </x-layout.span>
       <x-layout.span>
         <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer_01-lg.jpg">
@@ -28,18 +28,19 @@
 </x-layout.section>
 <x-layout.section class="bg-white">
   <x-layout.inner>
+    <a name="ausbau-wohnungen" class="scroll-mt-94 md:scroll-mt-[150px]"></a>
     <h2>Ausbau Wohnungen</h2>
     <x-layout.grid class="grid sm:gap-24 lg:gap-48">
       <x-layout.span class="order-1">
         <h3>Bodenbeläge</h3>
         <ul>
-          <li>Riemenparkett (Bauwerk Monopark) Eiche, matt versiegelt, parallel verlegt</li>
-          <li>Nasszellen Feinsteinzeugplatten, unglasiert, Cinza – (Graubraun), matt</li>
+          <li>Riemenparkett Eiche</li>
+          <li>Nasszellen Feinsteinzeugplatten Graubraun, matt</li>
         </ul>
         <h3>Wandbeläge + Decken</h3>
         <ul>
           <li>Weissputz, weiss gestrichen</li>
-          <li>Nasszellen: Steingutplatten glasiert, Pergamo, glänzend</li>
+          <li>Nasszellen: Steingutplatten</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-2">
@@ -55,22 +56,20 @@
       <x-layout.span class="order-3 sm:order-4">
         <h3>Küche</h3>
         <ul>
-          <li>Einbauten: Küchenfronten Kunstharzfronten, Hochschränke und Kücheninseln, Oberschränke Trendino QD, seide</li>
-          <li>Küchenabdeckung: Silestone Marengo (Hybridoberfläche), poliert, Farbton</li>
+          <li>Kunstharzfronten seide</li>
+          <li>Küchenabdeckung: Silestone Marengo</li>
           <li>Küchenrückwand: Wandschild WSP «Büttenweiss»</li>
-          <li>Deckenleuchten: Aufbauleuchte LED rund</li>
-          <li>Geräte Marke Siemens: Allgemein: Induktionskochfeld, Dunstabzug (bei Wohnungen mit Kochinseln integriert in Kochfeld), Geschirrspüler und Kühl-/Gefriergerät 1.5-Zimmerwohnungen mit Einbaubackofen, 2.5- und 3.5-Zimmerwohnungen in den obersten zwei Geschossen mit Dampfbackofen; in allen anderen Geschossen mit Einbaubackofen, 4.5- und 5.5-Zimmerwohnungen in den obersten zwei Geschossen mit Einbaubackofen und Dampfgarer; in allen anderen Geschossen mit Einbaubackofen</li>
+          <li>Deckenleuchten: Aufbauleuchte LED rund</li> 
+          <li>Geräte Marke Siemens: Induktionskochfeld, Dunstabzug, Geschirrspüler und Kühl-/ Gefriergerät. Teilweise Dampfgarer vorhanden.</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-5">
         <h3>Badezimmer</h3>
         <ul>
           <li>Sanitärapparate: Keramik weiss</li>
-          <li>Armaturen: Verchromt</li>
-          <li>Spiegelschrank: weiss mit LED-Beleuchtung und Steckdose</li>
-          <li>Duschen mit Glastrennwand</li>
-          <li>Badheizkörper weiss (gekoppelt mit Bodenheizung)</li>
-          <li>Einbauschränke (Waschtürme): Kunstharzbeschichtet, weiss</li>
+          <li>Spiegelschrank mit LED und Steckdose</li>
+          <li>Duschen mit Glastrennwand und/oder Badewanne</li>
+          <li>Eigene Waschtürme in jeder Wohnung</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-6">
@@ -86,7 +85,7 @@
       <x-layout.span class="order-7 sm:order-8">
         <h3>Fenster</h3>
         <ul>
-          <li>Holz/Metall-Fenster, 3-fach verglast, innen weiss, aussen Metall pulverbeschichtet </li>
+          <li>Holz/Metall-Fenster, 3-fach verglast, innen weiss, aussen Metall pulverbeschichtet</li>
         </ul>
         <h3>Verdunkelung</h3>
         <ul>
@@ -101,28 +100,27 @@
       <x-layout.span class="order-9">
         <h3>Elektroanlagen</h3>
         <ul>
-          <li>Videogegensprechanlage und elektrische Türöffnung</li>
-          <li>Alle Wohn- und Schlafräume mit Steckdosen und Lampenstellen in genügender Anzahl.</li>
+          <li>Gegensprechanlage</li>
           <li>Küche und Korridor: LED Einbauspots</li>
           <li>Multimedia-Verteiler im Eingangsbereich</li>
-          <li>Wohnzimmer: ausgebaute Multimedia-Dose inkl. Glasfaseranschluss</li>
-          <li>Grosses Schlafzimmer: ausgebaute Multimedia-Dose</li>
-          <li>Übrige Zimmer: Leerrohre mit Blindabdeckung</li>
-          <li>Internetangebot: EWZ (Swisscom) und Sunrise (UPC, Cablecom)</li>
+          <li>Glasfaseranschluss - Internetangebot: EWZ (Swisscom) und Sunrise (UPC, Cablecom)</li>
           <li>Aussenfläche: Steckdose</li>
-        </ul>
+          <li>Photovoltaik-Anlage</li>
+        </ul>      
         <h3>Heizungsanlagen</h3>
         <ul>
-          <li>Beheizung mittels Bodenheizung in den Nasszellen zusätzlich über Badheizkörper</li>
-          <li>Erdsonden Wärmepumpe/Passive Kühlung im Sommer möglich</li>
-        </ul>
+          <li>Bodenheizung</li>
+          <li>Heizungstyp: Erdsonden Wärmepumpe</li>
+          <li>Passive Kühlung im Sommer möglich</li>
+        </ul>        
         <h3>Lüftungsanlagen</h3>
         <ul>
-          <li>Wohnungsgrundlüftung über zentrale Abluft (Küche und Nasszellen) über Dach. Frischluftzufuhr über Aussenluftdurchlass über den Fenstern.</li>
-        </ul>
+          <li>Wohnungsgrundlüftung</li>
+          <li>Frischluftzufuhr über Aussenluftdurchlass über den Fenstern.</li>
+        </ul>       
         <h3>Liftanlagen</h3>
         <ul>
-          <li>Pro Haus ein Personenaufzug für max. 9 Personen. Nutzlast 675 kg, rollstuhlgängig</li>
+          <li>Pro Haus ein Personenaufzug für max. 9 Personen, rollstuhlgängig</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-10">
@@ -138,27 +136,27 @@
       <x-layout.span class="order-11 sm:order-12">
         <h3>Keller</h3>
         <ul>
-          <li>Pro Wohnung ein Kellerabteil, beleuchtet und mit Steckdose auf Wohnungszähler, Schliessung mit Zylinder auf Wohnungsschliessung</li>
+          <li>Pro Wohnung ein Kellerabteil, beleuchtet und mit Steckdose</li>
         </ul>
         <h3>Waschküche/Trocknungsraum</h3>
         <ul>
-          <li>Jede Wohnung verfügt über eine Waschmaschine und einen Trockner, Marke Electrolux</li>
+          <li>Jede Wohnung verfügt über eine Waschmaschine und einen Trockner</li>
           <li>Trocknungsraum im UG pro Haus mit Secomat</li>
-        </ul>
+        </ul>       
         <h3>Entsorgung</h3>
         <ul>
-          <li>4 Unterflurcontainer in der Überbauung, Abstellflächen für Karton- und Zeitungslagerung vorhanden, 3 Grünabfallbehälter</li>
+          <li>Entsorgung mittels Unterflurcontainer, Abstellflächen für Karton- und Zeitungslagerung vorhanden</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-[13]">
         <h3>Veloabstellplätze</h3>
         <ul>
-          <li>Aussenabstellplätze, Veloräume mit zahlreichen Abstellplätzen teilweise mit Ladestationen für E-Bikes (Steckdosen)</li>
+          <li>Aussenabstellplätze und Veloräume mit zahlreichen Abstellplätzen teilweise mit Ladestationen für E-Bikes (Steckdosen)</li>
         </ul>
         <h3>Parking</h3>
         <ul>
           <li>126 Einstellhallenplätze</li>
-          <li>3 Aussenabstellplätze für Mobility</li>
+          <li>3 Aussenabstellplätze</li>
           <li>20 Motorradeinstellplätze</li>
           <li>18 Besucherparkplätze in der Einstellhalle</li>
           <li>Einstellhalle bis max. 88 Einstellplätze mit Ladestationen möglich</li>
@@ -177,13 +175,14 @@
       <x-layout.span class="order-[15] sm:order-[16]">
         <h3>Aussenfläche</h3>
         <ul>
-          <li>Boden Balkon, Betonplatte, Monobeton, sicht</li>
-          <li>Balkongeländer: Hohlprofile und Streckmetall, pulverbeschichtet</li>
-          <li>Wasseranschluss: Dachterrassen in Haus 1 und 2 je einen Wasseranschluss auf Terrasse, Attikageschosse in Haus 3 je einen Wasseranschluss auf der Terrasse</li>
+          <li>Balkon Boden Betonplatte, Monobeton</li>
+          <li>Balkongeländer: Hohlprofile und Streckmetall</li>
+          <li>Balkontrennwände: Metallkonstruktion mit Alublech</li>
+          <li>Wasseranschluss: Teilweise vorhanden</li>
         </ul>
         <h3>Umgebung</h3>
         <ul>
-          <li>Begrünte Aussenanlage (Waldgarten) mit Brunnen, Sitzbänken, Spielplatz sowie Beltwalk um die komplette Überbauung </li>
+          <li>Begrünte Aussenanlage (Waldgarten), Sitzbänken, Spielplatz sowie Beltwalk um die komplette Überbauung</li>
         </ul>
       </x-layout.span>
     </x-layout.grid>
@@ -191,9 +190,17 @@
 
     <div class="mt-24 lg:mt-32">*Änderungen vorbehalten</div>
     <div class="mt-20 lg:mt-32">
-      <a href="/media/austrasse_zuerich_kurzbaubeschrieb.pdf" title="Download Kurzbaubeschrieb (PDF)" target="_blank" class="bg-olive font-semi font-normal inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
-        Kurzbaubeschrieb
-      </a>
+      <p>
+        Weitere detaillierte Ausführungen zum Ausbau finden Sie hier
+      </p>
+      <p>
+        <a href="/media/austrasse_zuerich_kurzbaubeschrieb.pdf" 
+          title="Download Kurzbaubeschrieb (PDF)" 
+          target="_blank" 
+          class="bg-olive font-semi font-normal inline-flex text-white py-12 px-12 leading-none hover:bg-serene transition-colors">
+          Kurzbaubeschrieb
+        </a>
+      </p>
     </div>
   </x-layout.inner>
 </x-layout.section>

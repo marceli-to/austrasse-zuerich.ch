@@ -8,15 +8,9 @@
     <h1>Kontakt</h1>
     <x-layout.grid>
       <x-layout.span class="sm:!col-span-8">
-        <p><strong>Herzlichen Dank für Ihr Interesse</strong><br>Bei Fragen hilft Ihnen unser Q&A gerne weiter.<br>Für Anmeldungen bitte unter <a href="{{ route('page.apartments') }}" title="Angeobt" class="underline decoration-1 underline-offset-2 hover:no-underline">Angebot</a> entsprechende Wohnung auswählen und über Flatfox Ihre Bewerbung einreichen.</p>
-        <div class="mt-20 lg:mt-32 flex gap-16 sm:gap-24">
-          <a href="{{ route('page.qa') }}" title="Q&A" class="bg-olive font-semi font-normal flex text-white py-12 px-12 leading-none hover:text-serene transition-colors">
-            Q&A
-          </a>
-          <a href="https://flatfox.ch/c/de/" title="Flatfox" target="_blank" rel="noopener noreferrer" class="bg-olive font-semi font-normal flex text-white py-12 px-12 leading-none hover:text-serene transition-colors">
-            Flatfox
-          </a>
-        </div>
+        <p>
+          <strong>Herzlichen Dank für Ihr Interesse</strong><br>
+          Bei Fragen hilft Ihnen unser <a href="{{ route('page.qa') }}" title="Q&A" class="underline decoration-1 underline-offset-2 hover:no-underline">Q&A</a> gerne weiter.<br>Für Anmeldungen bitte unter <a href="{{ route('page.apartments') }}" title="Angeobt" class="underline decoration-1 underline-offset-2 hover:no-underline">Angebot</a> entsprechende Wohnung auswählen und über Flatfox Ihre Bewerbung einreichen.</p>
       </x-layout.span>
     </x-layout.grid>   
   </x-layout.inner>

@@ -8,7 +8,7 @@
     <x-apartments.filter />
   </x-layout.inner>
   @for ($i = 1; $i <= 3; $i++)
-    <x-layout.inner class="{{ $i == 1 ? 'mt-0 md:mt-75' : 'mt-25 sm:mt-50 lg:mt-100' }}" data-building-group="{{ $i }}">
+    <x-layout.inner class="{{ $i == 1 ? 'mt-0 md:mt-75' : 'mt-25 md:mt-50 lg:mt-75' }}" data-building-group="{{ $i }}">
       <x-layout.grid class="sm:!block md:!grid md:grid-cols-12 md:gap-24 lg:gap-32">
         <x-layout.span class="hidden md:block md:col-span-5 lg:col-span-5 2xl:col-span-6">
           <div class="md:sticky md:top-100">
@@ -18,6 +18,11 @@
         <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:overflow-auto">
           <x-apartments.wrapper :number="$i" :address="$addresses['building_' . $i]">
             <x-apartments.table :apartments="$apartments['building_' . $i]" :building="$i" />
+            <div class="text-xs lg:text-sm leading-5 mt-20 lg:mt-20">
+              <h3>Parking</h3>
+              <p>Einstellplatz CHF 200.00/Mt.<br>Einstellplatz mit Ladestation CHF 245.00/Mt.<br>Motorradabstellplatz CHF 60.00/Mt.</p>
+              <p>Bitte geben Sie bei der Anmeldung die gewünschte Anzahl Parkplätze an. Bitte beachten Sie, dass zu Beginn nur ein Parkplatz pro Wohnung gemietet werden kann.</p>
+            </div>
           </x-apartments.wrapper>
         </x-layout.span>
       </x-layout.grid>
