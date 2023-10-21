@@ -1,5 +1,5 @@
 @props(['showRooms' => true, 'paymentInterval' => 'Mt.', 'labelAdditionalCost' => ''])
-<thead {{ $attributes->merge(['class' => 'font-semi font-normal sticky top-118 md:relative md:top-0 bg-serene'])}}>
+<thead {{ $attributes->merge(['class' => 'font-semi font-normal sticky top-120 md:relative md:top-0 bg-serene'])}}>
   <tr class="[&>th]:py-6 [&>th]:pr-6 xs:[&>th]:pr-8 [&>th]:align-middle [&>th]:text-left [&>th]:leading-[1rem] [&>th]:w-auto [&>th]:font-semi [&>th]:font-normal border-b border-olive">
     <th>Nr.</th>
     <th>Etage</th>
