@@ -34,13 +34,13 @@
       </x-layout.span>
       <x-layout.span>
         <a data-fancybox href="/media/img/austrasse_zuerich_aussenvisualisierung-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_aussenvisualisierung'" :alt="'Austrasse Zürich – Aussenvisualisierung'" />
+          <x-media.picture :image="'austrasse_zuerich_aussenvisualisierung'" :alt="'Austrasse Zürich – Aussenvisualisierung'" :lazy="false" />
         </a>
         <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" class="mt-20 lg:mt-40" />
+          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" :lazy="false" class="mt-20 lg:mt-40" />
         </a>
         <a data-fancybox href="/media/img/austrasse_zuerich_ansicht_oben-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_ansicht_oben'" :alt="'Austrasse Zürich – Ansicht von oben'" class="mt-20 lg:mt-40" />
+          <x-media.picture :image="'austrasse_zuerich_ansicht_oben'" :alt="'Austrasse Zürich – Ansicht von oben'" :lazy="false" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>
     </x-layout.grid>
