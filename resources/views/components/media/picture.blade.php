@@ -8,8 +8,8 @@
     title="{{ $alt }}" 
     height="1600" 
     width="1050"
-    @if ($lazy)
+    {{-- @if ($lazy)
     loading="lazy"
-    @endif
+    @endif --}}
     {{ $attributes->merge(['class' => 'block w-full object-cover']) }}>
 </picture>
