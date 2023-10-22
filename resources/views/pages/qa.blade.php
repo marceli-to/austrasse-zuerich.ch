@@ -147,7 +147,7 @@
           <x-accordeon.item class="!mb-0">
             <x-slot name="question">Wie viel bezahle ich für einen Parkplatz?</x-slot>
             <x-slot name="answer">
-              <p>Parking:<br>Einstellplatz CHF 200.00/Mt.<br>Einstellplatz mit Ladestation CHF 245.00/Mt.<br>Motorradabstellplatz CHF 60.00/Mt.</p>
+              <p>Einstellplatz CHF 200.00/Mt.<br>Einstellplatz mit Ladestation CHF 245.00/Mt.<br>Motorradabstellplatz CHF 60.00/Mt.</p>
               <p>Bitte geben Sie bei der Anmeldung die gewünschte Anzahl Parkplätze an. Bitte beachten Sie, dass zu Beginn nur ein Parkplatz pro Wohnung gemietet werden kann.</p>
             </x-slot>
           </x-accordeon.item>

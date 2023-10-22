@@ -39,7 +39,7 @@
         <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Balkon'" class="mt-20 lg:mt-40" />
         </a>
-        <a data-fancybox href="/media/img/austrasse_zuerich_balkon-lg.jpg">
+        <a data-fancybox href="/media/img/austrasse_zuerich_ansicht_oben-lg.jpg">
           <x-media.picture :image="'austrasse_zuerich_ansicht_oben'" :alt="'Austrasse Zürich – Ansicht von oben'" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>

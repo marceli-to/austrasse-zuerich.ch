@@ -11,7 +11,7 @@ return [
   |
   */
 
-  'title' => 'Austrasse, Zürich',
+  'title' => 'Austrasse Zürich – stadt - natur - leben.',
 
   /*
   |--------------------------------------------------------------------------
@@ -22,6 +22,6 @@ return [
   |
   */
 
-  'description' => 'An der Austrasse 46–56 und Wiedingstrasse 87a-d entstehen per Sommer 2024 neue, moderne und energetisch nachhaltige 1.5- bis 5.5-Zimmerwohnungen sowie wenige Gewerbeflächen.',   
+  'description' => 'Im Kreis 3 der Stadt Zürich entsteht zwischen dem historischen Kern von Alt-Wiedikon und der Binz die neue Wohnüberbauung «Austrasse», welche die Natur in die Stadt bringt.',   
 
 ];
