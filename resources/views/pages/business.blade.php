@@ -46,12 +46,10 @@
       <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:overflow-auto">
         <x-apartments.wrapper number="3" address="Austrasse 46/48" class="!bg-white overflow-auto">
           <x-apartments.table 
-            :apartments="$apartments" 
+            :apartments="$apartments"
+            type="business"
             building="3" 
-            classHeader="bg-white"
-            showRooms="0"
-            labelAdditionalCost="NK/m<sup>2</sup>/Jahr"
-            paymentInterval="Jahr" />
+            classHeader="bg-white" />
         </x-apartments.wrapper>
       </x-layout.span>
     </x-layout.grid>

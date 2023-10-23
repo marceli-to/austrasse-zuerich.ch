@@ -1,4 +1,4 @@
-@props(['apartments', 'building', 'showRooms' => true])
+@props(['apartments', 'type' => 'living', 'building'])
 <tbody>
   @foreach($apartments as $apartment)
     <tr 
@@ -20,7 +20,7 @@
       <td>
         {{ $apartment['floor'] != null ? config('apartment.floors')[$apartment['floor']] : 'EG' }}
       </td>
-      @if ($showRooms)
+      @if ($type == 'living')
         <td>
           {{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}
         </td>

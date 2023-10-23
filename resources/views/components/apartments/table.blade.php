@@ -1,15 +1,13 @@
-@props(['apartments', 'building', 'showRooms' => true, 'paymentInterval' => 'Mt.', 'labelAdditionalCost' => '', 'classHeader' => ''])
+@props(['apartments', 'type' => 'living', 'building', 'classHeader' => ''])
 <table class="border-t-2 border-olive w-full text-xs xl:text-sm mt-8" data-apartments>
   <x-apartments.thead 
     class="{{ $classHeader }}"
-    :labelAdditionalCost="$labelAdditionalCost"
-    :showRooms="$showRooms"
-    :paymentInterval="$paymentInterval">
+    :type="$type">
   </x-apartments.thead>
   <x-apartments.tbody 
     :apartments="$apartments" 
     :building="$building" 
-    :showRooms="$showRooms">
+    :type="$type">
   </x-apartments.tbody>
 </table>
 <div class="text-xs lg:text-sm leading-5 mt-20 lg:mt-20">

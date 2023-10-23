@@ -19,9 +19,9 @@
                   <th>Zi</th>
                 @endif
                 <th>HNF m<sup>2</sup></th>
-                <th class="!text-right !pr-10">Netto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
-                <th class="!text-right !pr-10">NK</th>
-                <th class="!text-right !pr-18">Brutto MZ/{{ $type == 'commercial' ? 'Jahr' : 'Mt.' }}</th>
+                <th class="!text-right !pr-10">Netto MZ{!! $type == 'commercial' ? '<br>m<sup>2</sup>/Jahr' : '/Mt.' !!}</th>
+                <th class="!text-right !pr-10">NK{!! $type == 'commercial' ? '<br>m<sup>2</sup>/Jahr' : '/Mt.' !!}</th>
+                <th class="!text-right !pr-18">Brutto MZ{!! $type == 'commercial' ? '<br>m<sup>2</sup>/Jahr' : '/Mt.' !!}</th>
                 <th class="text-center">Grundriss</th>
                 <th class="!text-right !pr-0">Anmeldung</th>
                 <th></th>

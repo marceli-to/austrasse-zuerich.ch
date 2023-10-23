@@ -3,7 +3,8 @@
     <div x-data="{ open: true }" x-show="open">
       <div class="bg-green-600 text-white font-semi font-normal py-10 px-15 pr-25 fixed top-10 left-10 inline-block w-auto z-[101]">
         <div class="relative">
-          <a href="javascript:;" x-on:click="open = false">Vielen Dank, wir haben Ihre Anfrage erhalten.
+          <a href="javascript:;" x-on:click="open = false">
+            Vielen Dank, wir haben Ihre Anfrage erhalten.
             <x-icons.cross class="!w-15 !h-15 absolute -top-5 -right-20" />
           </a>
         </div>
@@ -16,7 +17,6 @@
   </div>
   <x-layout.grid class="sm:gap-y-16 lg:gap-x-24 lg:gap-y-16">
     <x-honeypot />
-
     <x-layout.span class="relative">
       <strong class="flex mb-4">
         Austrasse 46
