@@ -12,9 +12,9 @@
         <div data-apartment-iso="{{ $i }}" class="hidden col-span-8">
           <x-apartments.iso.wrapper :number="$i" size="sm" />
         </div>
-        <div data-apartment-iso-preview="{{ $i }}" class="hidden col-span-3 col-start-10 flex justify-end">
+        {{-- <div data-apartment-iso-preview="{{ $i }}" class="hidden col-span-3 col-start-10 flex justify-end">
           <x-apartments.iso.preview :number="$i" />
-        </div>
+        </div> --}}
       @endfor
     </div>
   </div>

@@ -69,7 +69,7 @@ const ApartmentUi = (function () {
     document.querySelector(`[data-apartment-iso="${elementData.building}"]`).classList.remove(classes.hidden);
 
     // Show the iso preview (data-apartment-iso-preview[elementData.building])
-    document.querySelector(`[data-apartment-iso-preview="${elementData.building}"]`).classList.remove(classes.hidden);
+    // document.querySelector(`[data-apartment-iso-preview="${elementData.building}"]`).classList.remove(classes.hidden);
 
     // Add elementData to data-apartment-info innerHTML
     const objectDetailInfo = `${elementData.rooms}-Zimmerwohnung, ${elementData.detailFloor}, ${elementData.area} m²`;

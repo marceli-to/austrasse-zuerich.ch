@@ -14,6 +14,4 @@
     Alle Mietzinse in CHF
   </div>
 </div>
-
-
 {{ $slot }}
