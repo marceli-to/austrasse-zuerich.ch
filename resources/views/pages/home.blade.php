@@ -29,17 +29,17 @@
   <x-layout.inner>
     <x-layout.grid>
       <x-layout.span class="sm:col-span-8">
-        <h2>SNBS- Zertifizierung</h2>
-        <p>Die Wohnsiedlung Austrasse hat die erste Konformitätsprüfung bestanden und ist somit provisorisch mit einer SNBS-Zertifizierung (Standard Nachhaltiges Bauen Schweiz) ausgezeichnet worden.</p>
+        <h2>Bewusste Nachhaltigkeit</h2>
+        <p>Die Wohnsiedlung Austrasse wird bewusst Nachhaltig gebaut, sodass es mit einer SNBS-Zertifizierung in Gold ausgezeichnet werden kann. Die SNBS-Zertifizierung wird durch eine Konformitätsprüfung nach Bauabschluss erfolgen.</p>
       </x-layout.span>
-      <x-layout.span class="!mb-0 sm:col-span-4 sm:col-start-10">
+      {{-- <x-layout.span class="!mb-0 sm:col-span-4 sm:col-start-10">
         <img 
           src="/media/img/austrasse_zuerich_snbs_zertifizierung.png" 
           height="350" 
           width="350" 
           alt="Austrasse Zürich – SNBS-Zertifizierung"
           class="block w-120 md:w-145 xl:w-180 h-auto">
-      </x-layout.span>
+      </x-layout.span> --}}
     </x-layout.grid>
   </x-layout.inner>
 </x-layout.section>
