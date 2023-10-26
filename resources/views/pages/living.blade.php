@@ -78,8 +78,8 @@
         </a>
       </x-layout.span>
       <x-layout.span class="order-8 sm:order-7">
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_wohnzimmer-lg.jpg">
-          <x-media.picture :image="'austrasse_zuerich_wohnzimmer'" :alt="'Austrasse Zürich – Wohnzimmer'" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_balkon-lg.jpg">
+          <x-media.picture :image="'austrasse_zuerich_balkon'" :alt="'Austrasse Zürich – Wohnzimmer'" />
         </a>
       </x-layout.span>
       <x-layout.span class="order-7 sm:order-8">
