@@ -79,8 +79,8 @@
         <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_situationsplan-lg.png">
           <x-media.picture :image="'austrasse_zuerich_situationsplan'" :format="'.png'" :alt="'Austrasse Zürich – Situationsplan'" />
         </a>
-        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_distanzen-lg.png">
-          <x-media.picture :image="'austrasse_zuerich_distanzen'" :format="'.png'" :alt="'Austrasse Zürich – Distanzen'" class="mt-20 lg:mt-40" />
+        <a data-fancybox="gallery" href="/media/img/austrasse_zuerich_distanzen_v2-lg.png">
+          <x-media.picture :image="'austrasse_zuerich_distanzen_v2'" :format="'.png'" :alt="'Austrasse Zürich – Distanzen'" class="mt-20 lg:mt-40" />
         </a>
       </x-layout.span>
     </x-layout.grid>
