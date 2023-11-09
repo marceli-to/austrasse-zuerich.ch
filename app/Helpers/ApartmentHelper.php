@@ -13,7 +13,6 @@ class ApartmentHelper
 
   public static function getState($apartment, $asKey = false)
   {
-
     if ($apartment['status'] == 'pre' || $apartment['status'] == 'act' || $apartment['status'] == 'dis')
     {
       if ($apartment['reserved'] == false)
@@ -31,6 +30,4 @@ class ApartmentHelper
       return $asKey ? 'taken' : 'vermietet';
     }
   }
-
-
 }
