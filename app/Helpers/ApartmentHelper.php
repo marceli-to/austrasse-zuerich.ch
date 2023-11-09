@@ -5,26 +5,32 @@ class ApartmentHelper
 {
   public static function isAvailable($apartment)
   {
-    if ($apartment['state'] == 'free')
+    if (($apartment['status'] == 'pre' || $apartment['status'] == 'act' || $apartment['status'] == 'dis') && $apartment['reserved'] == false)
     {
       return true;
     }
-    return false;
   }
 
-  public static function getState($apartment)
+  public static function getState($apartment, $asKey = false)
   {
-    $states = [
-      'free' => 'frei',
-      'reserved' => 'reserviert',
-      'taken' => 'vermietet',
-    ];
-    return $states[$apartment['state']];
+
+    if ($apartment['status'] == 'pre' || $apartment['status'] == 'act' || $apartment['status'] == 'dis')
+    {
+      if ($apartment['reserved'] == false)
+      {
+        return $asKey ? 'free' : 'frei';
+      }
+      else
+      {
+        return $asKey ? 'reserved' : 'reserviert';
+      }
+    }
+
+    if ($apartment['status'] == 'arc' || $apartment['status'] == 'rem')
+    {
+      return $asKey ? 'taken' : 'vermietet';
+    }
   }
 
-  public static function getStateKey($apartment)
-  {
-    return $apartment['state'];
-  }
 
 }

@@ -28,14 +28,22 @@ class GetData
     }
     $data = Storage::disk('public')->get('apartements.json');
     $data = collect(json_decode($data, true));
-    $states = $this->getState($data);
-    $data = $data->map(function ($apartment) use ($states) {
-      $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
-      return $apartment;
-    });
 
-    // remove duplicates
-    $data = $data->unique('reference');
+    // Removed for fix (09.11.2023)
+    // $states = $this->getState($data);
+    // $data = $data->map(function ($apartment) use ($states) {
+    //   $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
+    //   return $apartment;
+    // });
+    // $data = $data->unique('reference');
+    // -- end removed for fix
+
+    // Added for fix (09.11.2023)
+    // it is possible that the same listing is in the list twice, so we need to remove duplicates
+    // find duplicates and keep the one with the higher pk
+    $data = $data->sortByDesc('pk')->unique('reference');
+    $data = $data->sortBy('reference');
+    // -- end added for fix
 
     return $data; 
   }

@@ -6,7 +6,7 @@
       data-number="{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}"
       data-floor="{{ $apartment['floor'] ? config('apartment.floors_filter')[$apartment['floor']] : 'eg' }}"
       data-building="{{ $building }}"
-      data-state="{{ $apartment['state'] }}"
+      data-state="{{ App\Helpers\ApartmentHelper::getState($apartment, true) }}"
       data-rooms="{{ $apartment['number_of_rooms'] == null ? 1 : $apartment['number_of_rooms'] }}"
       data-plan="/media/pdf/austrasse_zuerich_grundriss_{{ $apartment['ref_house'] }}.{{ $apartment['ref_object'] }}.pdf"
       data-form="https://flatfox.ch/de/listing{{ $apartment['short_url'] }}submit/"
