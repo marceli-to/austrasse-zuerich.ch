@@ -48,7 +48,7 @@
   <x-layout.inner>
     <x-layout.grid class="grid grid-cols-12 gap-15">
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
-        <x-menu.card :route="'page.living'" :title="'Wohnen'" :image="'austrasse_zuerich_wohnzimmer_quadrat'" />
+        <x-menu.card :route="'page.living'" :title="'Wohnen'" :image="'austrasse_zuerich_kueche_schlafzimmer_06-quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
         <x-menu.card :route="'page.living'" :hash="'#ausbau-wohnungen'" :title="'Moderner<br>Ausbau'" :image="'austrasse_zuerich_wohnzimmer_kueche_08_quadrat'" />
