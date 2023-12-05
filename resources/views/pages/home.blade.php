@@ -60,7 +60,7 @@
         <x-menu.card :route="'page.apartments'" :title="'Angebot'" :image="'austrasse_zuerich_ansicht_oben_quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
-        <x-menu.card :route="'page.living'" :hash="'#virtual-tour'" :title="'Virtual Tour'" :image="'austrasse_zuerich_aussicht_quadrat'" />
+        <x-menu.card :route="'page.living'" :hash="'#virtual-tour'" :title="'Virtual Tour'" :image="'austrasse_zuerich_schlafzimmer_05-quadrat'" />
       </x-layout.span>
       <x-layout.span class="!mb-0 col-span-6 md:col-span-4">
         <x-menu.card :route="'page.qa'" :title="'Q&A'" :image="'austrasse_zuerich_balkon_quadrat'" />
