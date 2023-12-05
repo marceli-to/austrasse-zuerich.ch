@@ -32,6 +32,7 @@
     <h2>Virtual Tour</h2>
     <x-layout.grid class="sm:grid sm:grid-cols-12 sm:gap-15">
       <x-layout.span class="mb-40 sm:!mb-0">
+        <h3 class="mb-10">Virtual Staging</h3>
         <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://floorfy.com/de/tour/1966902" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe>
         <a href="https://floorfy.com/de/tour/1966902" 
           target="_blank"
@@ -40,6 +41,7 @@
         </a>
       </x-layout.span>
       <x-layout.span>
+        <h3 class="mb-10">360° Rundgang</h3>
         <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://my.matterport.com/show/?m=SxKC38kPgqC" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe> 
         <a href="https://my.matterport.com/show/?m=SxKC38kPgqC"
           target="_blank"
