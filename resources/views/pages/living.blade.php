@@ -28,6 +28,30 @@
 </x-layout.section>
 <x-layout.section class="bg-white">
   <x-layout.inner>
+    <a name="virtual-tour" class="scroll-mt-94 md:scroll-mt-[150px]"></a>
+    <h2>Virtual Tour</h2>
+    <x-layout.grid class="sm:grid sm:grid-cols-12 sm:gap-15">
+      <x-layout.span class="mb-40 sm:!mb-0">
+        <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://floorfy.com/de/tour/1966902" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe>
+        <a href="https://floorfy.com/de/tour/1966902" 
+          target="_blank"
+          class="block mt-10 text-sm lg:text-base xl:text-md underline decoration-1 underline-offset-2 hover:no-underline">
+          In neuem Fenster öffnen
+        </a>
+      </x-layout.span>
+      <x-layout.span>
+        <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://my.matterport.com/show/?m=SxKC38kPgqC" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe> 
+        <a href="https://my.matterport.com/show/?m=SxKC38kPgqC"
+          target="_blank"
+          class="block mt-10 text-sm lg:text-base xl:text-md underline decoration-1 underline-offset-2 hover:no-underline">
+          In neuem Fenster öffnen
+      </a>
+      </x-layout.span>
+    </x-layout.grid>
+  </x-layout.inner>
+</x-layout.section>
+<x-layout.section>
+  <x-layout.inner>
     <a name="ausbau-wohnungen" class="scroll-mt-94 md:scroll-mt-[150px]"></a>
     <h2>Ausbau Wohnungen</h2>
     <x-layout.grid class="grid sm:gap-24 lg:gap-48">
