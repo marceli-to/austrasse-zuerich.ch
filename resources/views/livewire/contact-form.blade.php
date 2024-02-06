@@ -1,6 +1,6 @@
 <form wire:submit="save" class="mt-24 lg:mt-36">
   @if (session()->has('status'))
-    <div class="font-semi font-normal text-green-500 mb-20 inline-block w-auto z-[101]">
+    <div class="font-semi font-normal mb-20 inline-block w-auto z-[101]">
       <div class="relative">
         Vielen Dank, wir haben Ihre Anfrage erhalten.
       </div>
