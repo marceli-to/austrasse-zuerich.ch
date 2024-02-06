@@ -10,9 +10,12 @@
       <x-layout.span class="sm:!col-span-8">
         <p>
           <strong>Herzlichen Dank für Ihr Interesse</strong><br>
-          Bei Fragen hilft Ihnen unser <a href="{{ route('page.qa') }}" title="Q&A" class="underline decoration-1 underline-offset-2 hover:no-underline">Q&A</a> gerne weiter.<br>Für Anmeldungen bitte unter <a href="{{ route('page.apartments') }}" title="Angeobt" class="underline decoration-1 underline-offset-2 hover:no-underline">Angebot</a> entsprechende Wohnung auswählen und über Flatfox Ihre Bewerbung einreichen.</p>
+          Bei Fragen hilft Ihnen unser <a href="{{ route('page.qa') }}" title="Q&A" class="underline decoration-1 underline-offset-2 hover:no-underline">Q&A</a> gerne weiter.<br>Für Anmeldungen bitte unter <a href="{{ route('page.apartments') }}" title="Angeobt" class="underline decoration-1 underline-offset-2 hover:no-underline">Angebot</a> entsprechende Wohnung auswählen und über Flatfox Ihre Bewerbung einreichen.
+        </p>
+        @livewire('contact-form')
       </x-layout.span>
     </x-layout.grid>   
   </x-layout.inner>
 </x-layout.section>
+
 @endsection

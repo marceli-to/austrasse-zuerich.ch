@@ -1,6 +1,6 @@
 <x-mail::message>
   <div class="text-base pb-base">
-    Neuer Interessent
+    Neue Nachricht über das Kontaktformular
   </div>
   <div class="text-base pb-base">
     <strong>Vorname</strong><br>
@@ -11,29 +11,19 @@
     {{ $data->name }}
   </div>
   <div class="text-base pb-base">
-    <strong>Strasse/Nr.</strong><br>
-    {{ $data->street }}
-  </div>
-  <div class="text-base pb-base">
-    <strong>PLZ/Ort</strong><br>
-    {{ $data->location }}
-  </div>
-  <div class="text-base pb-base">
     <strong>E-Mail</strong><br>
     {{ $data->email }}
   </div>
   <div class="text-base pb-base">
     <strong>Telefon</strong><br>
-    {{ $data->phone }}
+    {{ $data->phone ?? '-' }}
   </div>
   <div class="text-base pb-base">
-    <strong>Gewerberaum</strong><br>
-    {{ $data->interest }}
+    <strong>Telefon</strong><br>
+    {{ $data->phone ?? '-' }}
   </div>
-  @if ($data->message)
-    <div class="text-base pb-base">
-      <strong>Nachricht</strong><br>
-      {{ $data->message }}
-    </div>
-  @endif
+  <div class="text-base pb-base">
+    <strong>Nachricht</strong><br>
+    {{ $data->message }}
+  </div>
 </x-mail::message>

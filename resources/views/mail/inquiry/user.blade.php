@@ -30,4 +30,10 @@
     <strong>Gewerberaum</strong><br>
     {{ $data->interest }}
   </div>
+  @if ($data->message)
+    <div class="text-base pb-base">
+      <strong>Nachricht</strong><br>
+      {{ $data->message }}
+    </div>
+  @endif
 </x-mail::message>
