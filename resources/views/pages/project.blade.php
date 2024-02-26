@@ -29,6 +29,7 @@
         <p>Die drei Gebäude bestechen nicht nur mit ihrer einzigartigen Architektur, sondern auch durch einen ausgewogenen Wohnungsmix und grosszügigen Aussenbereichen.</p>
         <p>Mit der zentralen Lage dieser neuen Überbauung in Alt-Wiedikon profitieren die Bewohner und Bewohnerinnen von kurzen Wegen in der Stadt Zürich. Zudem existiert eine hervorragende Infrastruktur und Anbindung an den öffentlichen Verkehr. Der Bahnhof Zürich Binz zum Beispiel liegt in direkter Nachbarschaft zu Ihrem neuen Zuhause.</p>
         <p>In der Überbauung Austrasse stehen für die Bewohnenden Paketboxanlagen zur Verfügung. So können Pakete zeitlich unabhängig sicher empfangen und Rücksendungen bequem aufgegeben werden.</p>
+        <p>Direkt auf der Liegenschaft wird ein neuer Standort von Mobility Carsharing realisiert. Bei uns bleiben Sie mobil.</p>
         <p>Verteilt in den Gebäuden stehen den Mietenden drei Gemeinschaftsräume für private oder nachbarschaftliche Anlässe zur Verfügung.</p>
         <p>Des Weiteren verfügt die Überbauung über eine eigen Photovoltaikanlage auf dem Dach, wo der produzierte Strom im Rahmen eines Zusammenschlusses zum Eigenverbrauch (ZEV) genutzt wird.</p>
       </x-layout.span>

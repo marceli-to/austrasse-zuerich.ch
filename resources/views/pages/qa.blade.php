@@ -45,7 +45,7 @@
           </x-accordeon.item>
           <x-accordeon.item data-qa-keyword="Besichtigung">
             <x-slot name="question">Wann kann die Wohnung besichtigt werden? </x-slot>
-            <x-slot name="answer">Da sich die Liegenschaft noch im Bau befindet, sind Besichtigungen zurzeit nicht möglich. </x-slot>
+            <x-slot name="answer">In einer 2.5-Zimmer-Musterwohnung und einer 4.5-Zimmer-Musterwohnung werden in regelmässigen Abständen Besichtigungen durchgeführt. Die Termine werden jeweils in den Wohnungsinseraten publiziert. Gerne dürfen Sie sich auch via Kontaktformular bei uns melden, damit wir Ihnen die Termine mitteilen können.</x-slot>
           </x-accordeon.item>
           <x-accordeon.item>
             <x-slot name="question">Kann ich die Wohnung zu einem späteren Zeitpunkt besichtigen und ausmessen?</x-slot>
@@ -335,7 +335,7 @@
             <x-slot name="question">Kann die Wohnung auch früher bezogen werden?</x-slot>
             <x-slot name="answer">
               <p>Aufgrund der hohen Anzahl Wohnungen, wird für die Wohnungsübergaben sowie den anschliessenden Umzug ein Konzept erstellt. Dieses wird Ihnen frühzeitig zugestellt, sodass Sie Ihren Einzug effizient planen können.</p>
-              <p>Der definitive Bezugstermin wird spätestens 4 Monate vor Bezug nochmals bekanntgegeben bzw. bestätigt.</p>
+              <p>Der Baufortschritt verläuft nach Plan und die Bezugstermine wurden bestätigt.</p>
             </x-slot>
           </x-accordeon.item>
           <x-accordeon.item class="!mb-0">

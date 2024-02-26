@@ -65,6 +65,7 @@
         </ul>
         <h3>Wandbeläge + Decken</h3>
         <ul>
+          <li>Raumhöhe in der Regel <strong>2.50m</strong> / im <strong>Erdgeschoss vom Haus 2</strong> (Austrasse 50 – 56) bis <strong>3.20m</strong></li>
           <li>Weissputz, weiss gestrichen</li>
           <li>Nasszellen: Steingutplatten</li>
         </ul>
@@ -86,7 +87,7 @@
           <li>Küchenabdeckung: Silestone Marengo</li>
           <li>Küchenrückwand: Wandschild WSP «Büttenweiss»</li>
           <li>Deckenleuchten: Aufbauleuchte LED rund</li> 
-          <li>Geräte Marke Siemens: Induktionskochfeld, Dunstabzug, Geschirrspüler und Kühl-/ Gefriergerät. Teilweise Dampfgarer vorhanden.</li>
+          <li>Geräte Marke Siemens: Induktionskochfeld, Dunstabzug, Geschirrspüler und Kühl-/ Gefriergerät. Teilweise Dampfgarer oder Steamer.</li>
         </ul>
       </x-layout.span>
       <x-layout.span class="order-5">
@@ -182,7 +183,7 @@
         <h3>Parking</h3>
         <ul>
           <li>126 Einstellhallenplätze</li>
-          <li>3 Aussenabstellplätze</li>
+          <li>1 Aussenabstellplatz / 2 Mobility Parkplätze</li>
           <li>20 Motorradeinstellplätze</li>
           <li>18 Besucherparkplätze in der Einstellhalle</li>
           <li>Einstellhalle bis max. 88 Einstellplätze mit Ladestationen möglich</li>
@@ -212,7 +213,6 @@
         </ul>
       </x-layout.span>
     </x-layout.grid>
-
 
     <div class="mt-24 lg:mt-32">*Änderungen vorbehalten</div>
     <div class="mt-20 lg:mt-32">
