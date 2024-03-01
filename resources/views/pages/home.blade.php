@@ -20,7 +20,7 @@
         <p>1.5– bis 5.5–Zimmerwohnungen<br>Gewerbeflächen ab 58 m<sup>2</sup></p>
       </div>
       <p>Im Kreis 3 der Stadt Zürich entsteht zwischen dem historischen Kern von Alt-Wiedikon und der Binz die neue Wohnüberbauung «Austrasse», welche die Natur in die Stadt bringt. Verteilt auf mehrere Gebäudeteile (Austrasse 46–56 und Wiedingstrasse 87a–d) werden in drei Etappen Mietwohnungen und diverse Büro- und Gewerbeflächen realisiert. Das Wohnungsangebot reicht von der 1.5-Zimmerwohnung bis hin zur grosszügigen 5.5-Zimmerwohnung.</p>
-      <p>Die modernen und energetisch nachhaltigen Wohnungen können etappiert ab ab Mai 2024 bezogen werden.</p>
+      <p>Die modernen und energetisch nachhaltigen Wohnungen können etappiert ab Mai 2024 bezogen werden.</p>
     </div>
   </x-layout.inner>
 </x-layout.section>
