@@ -10,8 +10,11 @@
       <div>{{ $address }}</div>
     </div>
   </div>
-  <div class="text-xs xl:text-sm">
-    Alle Mietzinse in CHF
+  <div class="flex justify-between">
+    <div class="text-xs xl:text-sm">
+      Alle Mietzinse in CHF
+    </div>
+    <div class="text-xs xl:text-sm">Bezugstermin 01.06.2024</div>
   </div>
 </div>
 {{ $slot }}

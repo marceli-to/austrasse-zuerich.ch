@@ -332,6 +332,26 @@
         <x-accordeon.button :title="'Übergabe'" :index="7" />
         <x-accordeon.section :index="7">
           <x-accordeon.item>
+            <x-slot name="question">Wann sind die Wohnungen bezugsbereit?</x-slot>
+            <x-slot name="answer">
+              <p>Die Wohnung werden in drei Etappen fertiggestellt und können wie folgt bezogen werden:</p>
+              <table class="mt-12">
+                <tr>
+                  <td>Haus 1: Wiedingstrasse 87a–d:</td>
+                  <td class="pl-12">01.06.2024</td>
+                </tr>
+                <tr>
+                  <td>Haus 2: Austrasse 50–56:</td>
+                  <td class="pl-12">01.08.2024</td>
+                </tr>
+                <tr>
+                  <td>Haus 3: Austrasse 46/48:</td>
+                  <td class="pl-12">01.05.2024</td>
+                </tr>
+              </table>
+            </x-slot>
+          </x-accordeon.item>
+          <x-accordeon.item>
             <x-slot name="question">Kann die Wohnung auch früher bezogen werden?</x-slot>
             <x-slot name="answer">
               <p>Aufgrund der hohen Anzahl Wohnungen, wird für die Wohnungsübergaben sowie den anschliessenden Umzug ein Konzept erstellt. Dieses wird Ihnen frühzeitig zugestellt, sodass Sie Ihren Einzug effizient planen können.</p>

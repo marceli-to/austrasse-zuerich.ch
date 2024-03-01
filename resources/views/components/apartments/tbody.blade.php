@@ -35,7 +35,7 @@
           –
         @endif
       </td>
-      <td class="{{ $apartment['object_type'] == 'COMMERCIAL' ? '!text-center' : '!text-right' }} hidden xs:table-cell">
+      <td class="{{ $apartment['object_type'] == 'COMMERCIAL' ? '!text-right' : '!text-right' }} hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
           {{ $apartment['object_type'] == 'COMMERCIAL' ? '40.00' : number_format($apartment['rent_charges'], 2, '.', '') }}
         @else

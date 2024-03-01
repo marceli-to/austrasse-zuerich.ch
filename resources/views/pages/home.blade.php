@@ -1,5 +1,5 @@
 @extends('app')
-@section('seo_title', 'Erstvermietung Frühsommer 2024')
+@section('seo_title', 'Erstvermietung ab Mai 2024')
 @section('seo_description', 'Im Kreis 3 der Stadt Zürich entsteht zwischen dem historischen Kern von Alt-Wiedikon und der Binz die neue Wohnüberbauung «Austrasse», welche die Natur in die Stadt bringt. Verteilt auf mehrere Gebäudeteile (Austrasse 46 – 56 und Wiedingstrasse 87a-d) werden in drei Etappen Mietwohnungen und diverse Büro- und Gewerbeflächen realisiert. Das Wohnungsangebot reicht von der 1.5 – Zimmerwohnung bis hin zur grosszügigen 5.5 – Zimmerwohnung.')
 @section('content')
 <x-layout.section class="bg-white relative !p-0">
@@ -16,11 +16,11 @@
   <x-layout.inner>
     <div class="lg:max-w-3xl xl:max-w-4xl">
       <div class="mb-32">
-        <h1 class="mb-6 lg:mb-6">Erstvermietung Frühsommer 2024</h1>
+        <h1 class="mb-6 lg:mb-6">Erstvermietung ab Mai 2024</h1>
         <p>1.5– bis 5.5–Zimmerwohnungen<br>Gewerbeflächen ab 58 m<sup>2</sup></p>
       </div>
       <p>Im Kreis 3 der Stadt Zürich entsteht zwischen dem historischen Kern von Alt-Wiedikon und der Binz die neue Wohnüberbauung «Austrasse», welche die Natur in die Stadt bringt. Verteilt auf mehrere Gebäudeteile (Austrasse 46–56 und Wiedingstrasse 87a–d) werden in drei Etappen Mietwohnungen und diverse Büro- und Gewerbeflächen realisiert. Das Wohnungsangebot reicht von der 1.5-Zimmerwohnung bis hin zur grosszügigen 5.5-Zimmerwohnung.</p>
-      <p>Die modernen und energetisch nachhaltigen Wohnungen können etappiert ab Frühsommer 2024 bezogen werden.</p>
+      <p>Die modernen und energetisch nachhaltigen Wohnungen können etappiert ab ab Mai 2024 bezogen werden.</p>
     </div>
   </x-layout.inner>
 </x-layout.section>
