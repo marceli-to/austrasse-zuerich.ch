@@ -8,7 +8,7 @@
           <option value="NULL">Alle Wohnungen</option>
           <option value="free">frei</option>
           <option value="reserved">reserviert</option>
-          <option value="rented">vermietet</option>
+          <option value="taken">vermietet</option>
         </x-form.select>
       </div>
     </x-layout.span>
