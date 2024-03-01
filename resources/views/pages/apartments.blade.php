@@ -16,7 +16,7 @@
           </div>
         </x-layout.span>
         <x-layout.span class="md:col-span-7 lg:col-span-7 2xl:col-span-6 md:overflow-auto">
-          <x-apartments.wrapper :number="$i" :address="$addresses['building_' . $i]">
+          <x-apartments.wrapper :number="$i" :address="$addresses['building_' . $i]" :reference_date="$reference_date['building_' . $i]">
             <x-apartments.table 
               :apartments="$apartments['building_' . $i]" 
               :building="$i"

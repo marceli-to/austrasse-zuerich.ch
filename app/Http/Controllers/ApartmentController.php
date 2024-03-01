@@ -43,6 +43,12 @@ class ApartmentController extends Controller
       'building_3' => 'Austrasse 46/48',
     ];
 
-    return view('pages.apartments', ['apartments' => $apartments, 'addresses' => $addresses]);
+    $reference_date = [
+      'building_1' => '01.06.2024',
+      'building_2' => '01.08.2024',
+      'building_3' => '01.05.2024',
+    ];
+
+    return view('pages.apartments', ['apartments' => $apartments, 'addresses' => $addresses, 'reference_date' => $reference_date]);
   }
 }

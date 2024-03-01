@@ -1,4 +1,4 @@
-@props(['number', 'address', 'iso' => ''])
+@props(['number', 'address', 'iso' => '', 'reference_date' => ''])
 <div {{ $attributes->merge(['class' => 'sticky top-74 z-5 md:top-0 pt-10 md:pt-0 pb-6 md:pb-0 bg-serene w-full'])}}>
   <div class="flex gap-24 items-end">
     <div class="shrink-0">
@@ -14,7 +14,7 @@
     <div class="text-xs xl:text-sm">
       Alle Mietzinse in CHF
     </div>
-    <div class="text-xs xl:text-sm">Bezugstermin 01.06.2024</div>
+    <div class="text-xs xl:text-sm">Bezugstermin {{ $reference_date }}</div>
   </div>
 </div>
 {{ $slot }}
