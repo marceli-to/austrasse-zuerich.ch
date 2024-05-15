@@ -26,25 +26,25 @@
         </td>
       @endif
       <td class="!text-center">
-        {{ $apartment['surface_usable'] ? $apartment['surface_usable'] : $apartment['surface_living'] }}
+        {{ isset($apartment['surface_usable']) ? $apartment['surface_usable'] : $apartment['surface_living'] }}
       </td>
       <td class="!text-right hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ number_format($apartment['rent_net'], 2, '.', '') }}
+          {{-- {{ number_format($apartment['rent_net'], 2, '.', '') }} --}}
         @else
           –
         @endif
       </td>
       <td class="{{ $apartment['object_type'] == 'COMMERCIAL' ? '!text-right' : '!text-right' }} hidden xs:table-cell">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ $apartment['object_type'] == 'COMMERCIAL' ? '40.00' : number_format($apartment['rent_charges'], 2, '.', '') }}
+          {{-- {{ $apartment['object_type'] == 'COMMERCIAL' ? '40.00' : number_format($apartment['rent_charges'], 2, '.', '') }} --}}
         @else
           –
         @endif
       </td>
       <td class="!text-right hidden xs:table-cell xs:!pr-18">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }}
+          {{-- {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }} --}}
         @else
           –
         @endif
@@ -52,7 +52,7 @@
 
       <td class="!text-right xs:hidden xs:!pr-18">
         @if (App\Helpers\ApartmentHelper::isAvailable($apartment))
-          {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }}
+          {{-- {{ number_format(($apartment['rent_net'] + $apartment['rent_charges']), 2, '.', '') }} --}}
         @else
           –
         @endif
