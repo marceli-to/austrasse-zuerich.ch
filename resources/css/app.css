@@ -54,7 +54,7 @@ sup {
 }
 
 .fancybox__backdrop {
-  @apply !bg-olive bg-opacity-80;
+  @apply !bg-olive bg-opacity-95;
 }
 
 .fancybox__toolbar {
@@ -73,6 +73,10 @@ sup {
 .fancybox__nav .f-button svg,
 .fancybox__toolbar .f-button svg {
   @apply text-white;
+}
+
+.fancybox__caption {
+  @apply !pb-16 !pt-0
 }
 
 /* Cart */

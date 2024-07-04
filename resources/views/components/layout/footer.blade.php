@@ -1,4 +1,4 @@
-@if (!Route::is('page.privacy') && !Route::is('page.imprint') && !Route::is('page.apartments'))
+@if (!Route::is('page.privacy') && !Route::is('page.imprint') && !Route::is('page.apartments') && !Route::is('page.gallery'))
 <x-layout.section class="relative !p-0">
   <x-misc.map />
 </x-layout.section>
