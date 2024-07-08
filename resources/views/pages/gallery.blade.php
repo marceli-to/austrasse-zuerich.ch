@@ -29,6 +29,8 @@ $images_type_b = [
   'austrasse_zuerich_galerie_typ_b_8',
   'austrasse_zuerich_galerie_typ_b_9',
   'austrasse_zuerich_galerie_typ_b_10',
+  'austrasse_zuerich_galerie_typ_b_11',
+  'austrasse_zuerich_galerie_typ_b_12'
 ];
 
 $images_type_c = [
@@ -42,6 +44,7 @@ $images_type_c = [
   'austrasse_zuerich_galerie_typ_c_8',
   'austrasse_zuerich_galerie_typ_c_9',
   'austrasse_zuerich_galerie_typ_c_10',
+  'austrasse_zuerich_galerie_typ_c_11'
 ];
 
 @endphp
