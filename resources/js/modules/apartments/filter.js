@@ -14,11 +14,14 @@ const Filter = (function() {
     visible: 'is-visible',
   };
 
-  let userFilter = {};
+  let userFilter = {
+    state: "free",
+  };
 
   // METHODS
   const initialize = function() {
     bind();
+    filter();
   };
 
   const bind = function() {
@@ -48,6 +51,7 @@ const Filter = (function() {
   };
 
   const filter = function() {
+    console.log(userFilter);
     if (Object.keys(userFilter).length > 0) {
       let attrString = '';
       Object.keys(userFilter).forEach(function(k) {

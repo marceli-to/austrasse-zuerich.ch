@@ -6,7 +6,7 @@
       <div>
         <x-form.select class="js-filter-attribute" data-filterType="state" aria-label="Verfügbarkeit">
           <option value="NULL">Alle Wohnungen</option>
-          <option value="free">frei</option>
+          <option value="free" selected>frei</option>
           <option value="reserved">reserviert</option>
           <option value="taken">vermietet</option>
         </x-form.select>
