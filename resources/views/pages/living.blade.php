@@ -42,8 +42,8 @@
       </x-layout.span>
       <x-layout.span>
         <h3 class="mb-10">360° Rundgang</h3>
-        <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://my.matterport.com/show/?m=SxKC38kPgqC" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe> 
-        <a href="https://my.matterport.com/show/?m=SxKC38kPgqC"
+        <iframe class="w-full h-auto aspect-video" width="853" height="480" src="https://my.matterport.com/show/?m=R6xphhX5EYN&mls=2" frameBorder="0" allowFullScreen allow="xr-spatial-tracking"></iframe> 
+        <a href="https://my.matterport.com/show/?m=R6xphhX5EYN&mls=2"
           target="_blank"
           class="block mt-10 text-sm lg:text-base xl:text-md underline decoration-1 underline-offset-2 hover:no-underline">
           In neuem Fenster öffnen
